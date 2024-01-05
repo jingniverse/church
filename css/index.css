@@ -1,0 +1,153 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    z-index: -1;
+    border: 0;
+  }
+header{
+    height: 70px;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: 1s all ease;
+    z-index: 1;
+}
+header:hover{
+    background: #fff;
+    height: 300px;
+    color: black;
+}
+header>article{
+    margin: 0 auto;
+    width: 1035px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 33.696px;
+    height: 50px;
+    margin-right: 15px;
+}
+.logo p{
+    font-family:Istok Web;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+}
+.gnb{
+    width: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gnb>li{
+    font-family: Noto Sans KR;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    width: 127px;
+}
+.gnb>li>ul{
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top:50px
+}
+.gnb>li>ul>li{
+    padding: 20px 0 0;
+}
+.gnb>li>ul>li:hover{
+    color: #03FF1C;
+
+}
+main{
+}
+.banner{
+    max-width: 100vw;
+    height: 1200px;
+    position: relative;
+    background: url(../img/mainback.png) no-repeat 0 0/cover ;
+}
+/* .banner img{
+    width: 100vw;
+    height: 1000px;
+} */
+.banner article{
+    margin: 0 auto;
+    border: 1px solid blue;
+    width: 1440px;
+    height: 1200px;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.b_writing1{
+    width: 500px;
+    height: 35px;
+    position: absolute;
+    left:5%;    
+    top:40%;
+    border-top: 10px solid #03FF1C;
+    border-right: 10px solid #03FF1C;
+}
+.b_writing2{
+    width: 25px;
+    height: 145px;
+    position: absolute;
+    left:5%;    
+    top:40%;
+    border-left: 10px solid #03FF1C;
+    border-bottom: 10px solid #03FF1C;
+}
+.b_writing1 p{ 
+    width: 550px;
+    position: absolute;
+    top:50%;
+    font-size: 60px;
+    font-weight: 500;
+    color: #FFF;
+    letter-spacing: -1.2px;
+    line-height: normal;
+    transform: translate(8%,8%);
+}
+.introduce{
+    height: 1000px;
+}
+.int_box{
+    margin: 0 auto;
+    width: 1440px;
+    height: 1000px;
+    padding: 125px 160px;
+    border: 1px solid red;
+    box-sizing: border-box;
+
+}
+.int_box h3{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Inter;
+    margin-bottom: 50px;
+}
+.int_box p{
+    width: 654px;
+    height: 60px;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
