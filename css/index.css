@@ -67,14 +67,26 @@ header>article{
 .gnb>li>ul>li{
     padding: 20px 0 0;
 }
+.gnb>li>ul>li a{
+    display: block;
+    width: 100%;
+}
 .gnb>li>ul>li:hover{
     color: #03FF1C;
 
 }
 main{
 }
+section{
+    height: 1000px;
+}
+section>article{
+    width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 .banner{
-    max-width: 100vw;
+    width: 100vw;
     height: 1200px;
     position: relative;
     background: url(../img/mainback.png) no-repeat 0 0/cover ;
@@ -84,9 +96,6 @@ main{
     height: 1000px;
 } */
 .banner article{
-    margin: 0 auto;
-    border: 1px solid blue;
-    width: 1440px;
     height: 1200px;
     position: absolute;
     top:0;
@@ -99,8 +108,8 @@ main{
     position: absolute;
     left:5%;    
     top:40%;
-    border-top: 10px solid #03FF1C;
-    border-right: 10px solid #03FF1C;
+    border-top: 10px solid #00A25B;
+    border-right: 10px solid #00A25B;
 }
 .b_writing2{
     width: 25px;
@@ -108,8 +117,8 @@ main{
     position: absolute;
     left:5%;    
     top:40%;
-    border-left: 10px solid #03FF1C;
-    border-bottom: 10px solid #03FF1C;
+    border-left: 10px solid #00A25B;
+    border-bottom: 10px solid #00A25B;
 }
 .b_writing1 p{ 
     width: 550px;
@@ -124,30 +133,137 @@ main{
 }
 .introduce{
     height: 1000px;
+    font-family: Inter;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+
 }
 .int_box{
-    margin: 0 auto;
-    width: 1440px;
-    height: 1000px;
     padding: 125px 160px;
-    border: 1px solid red;
-    box-sizing: border-box;
-
 }
 .int_box h3{
     font-size: 60px;
     font-weight: 600;
-    font-family: Inter;
     margin-bottom: 50px;
-}
-.int_box p{
-    width: 654px;
-    height: 60px;
-    font-family: Inter;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    letter-spacing: -1.2px;
     
 }
+.int_box>p{
+    width: 654px;
+    height: 60px;
+    margin-bottom: 60px;
+    
+}
+.int_box ul{
+    width: 1120px;
+    display: flex;
+    justify-content: center ;
+}
+.int_box ul>li{
+    margin-right: 62px;
+}
+.int_box ul>li:last-of-type{
+    margin-right: 0;
+}
+.circle div a{
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    background: #00A25B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.circle>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new_family{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 0 160px 0; 
+    height: 260px;
 
+}
+.new_f_box{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+.n_f_left h4{
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: -0.9px;
+    margin-bottom: 15px;
+}
+
+.n_f_right{
+    display: flex;
+    width: 252px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background: #00A25B;
+    color: #FFF;
+    transition: 0.5s all ease;
+    box-sizing: border-box;
+}
+.n_f_right:hover{
+    color: #00A25B;
+    border: #00A25B 2px solid;
+    background: #fff;
+}
+.new_f_icon{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new_f_icon li{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.new_f_icon li p{
+    margin-top: 20px;
+}
+.worship{
+    padding: 120px 70px 0;
+    font-family: Inter;
+}
+.worship h2{
+    width: 260px;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+    border-bottom: 5px solid #00A25B;
+    padding-bottom: 5px;
+    margin:0 auto 140px;
+}
+.worship p{
+    text-align: right;
+    margin-bottom: 20px;
+}
+.worship p a{
+    display: inline-block;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #00A25B;
+}
+.worship_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.worship_content>div{
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
