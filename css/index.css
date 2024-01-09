@@ -65,7 +65,7 @@ header>article{
     top:50px
 }
 .gnb>li>ul>li{
-    padding: 20px 0 0;
+    margin: 20px 0 0;
 }
 .gnb>li>ul>li a{
     display: block;
@@ -260,10 +260,30 @@ section>article{
     display: flex;
     justify-content: space-between;
 }
-
+.worship_content img{
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+}
 .worship_content>div{
     width: 600px;
     height: 500px;
     border: 1px solid black;
     box-sizing: border-box;
+    line-height: 0;
 }
+.w_c_title{
+    line-height: normal;
+    width: 100%;
+    border: 1px solid red;
+    box-sizing: border-box;
+    display: flex;
+    padding: 24px 45px;
+    justify-content: space-between;
+}
+.w_c_title>span{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
