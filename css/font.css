@@ -1,0 +1,160 @@
+@font-face {
+    font-family : 'Inter';
+    font-style : normal;
+    font-weight : 100;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyeMZg.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Inter';
+    font-style : normal;
+    font-weight : 200;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyfMZg.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Inter';
+    font-style : normal;
+    font-weight : 300;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Inter';
+    font-style : normal;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Inter';
+    font-style : normal;
+    font-weight : 500;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Inter';
+    font-style : normal;
+    font-weight : 600;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Inter';
+    font-style : normal;
+    font-weight : 700;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Inter';
+    font-style : normal;
+    font-weight : 800;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZg.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Inter';
+    font-style : normal;
+    font-weight : 900;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZg.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Istok Web';
+    font-style : italic;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/istokweb/v24/3qTpojGmgSyUukBzKslpA2t6.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Istok Web';
+    font-style : italic;
+    font-weight : 700;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/istokweb/v24/3qT0ojGmgSyUukBzKslpA1PG-2MQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Istok Web';
+    font-style : normal;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/istokweb/v24/3qTvojGmgSyUukBzKslZAQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Istok Web';
+    font-style : normal;
+    font-weight : 700;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/istokweb/v24/3qTqojGmgSyUukBzKslhvU5a_g.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Noto Sans KR';
+    font-style : normal;
+    font-weight : 100;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuozeLQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Noto Sans KR';
+    font-style : normal;
+    font-weight : 200;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzmoyeLQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Noto Sans KR';
+    font-style : normal;
+    font-weight : 300;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzrQyeLQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Noto Sans KR';
+    font-style : normal;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Noto Sans KR';
+    font-style : normal;
+    font-weight : 500;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzztgyeLQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Noto Sans KR';
+    font-style : normal;
+    font-weight : 600;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzjQ1eLQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Noto Sans KR';
+    font-style : normal;
+    font-weight : 700;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzg01eLQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Noto Sans KR';
+    font-style : normal;
+    font-weight : 800;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzmo1eLQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Noto Sans KR';
+    font-style : normal;
+    font-weight : 900;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzkM1eLQ.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Noto Sans KR';
+    font-style : normal;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLQ.ttf) format('truetype');}
