@@ -1,4 +1,4 @@
-.blind {
+.blind{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -45,7 +45,7 @@ header>article{
     margin-right: 15px;
 }
 .logo p{
-    font-family:Istok Web;
+    font-family:'Istok We';
     font-size: 30px;
     font-weight: 700;
     font-style: normal;
@@ -57,7 +57,7 @@ header>article{
     justify-content: space-between;
 }
 .gnb>li{
-    font-family: Noto Sans KR;
+    font-family: 'Noto Sans KR';
     font-size: 25px;
     font-weight: 500;
     position: relative;
