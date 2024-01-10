@@ -34,16 +34,16 @@ header>article{
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+.logo a{
     display: flex;
     align-items: center;
 }
 .logo img{
-    width: 33.696px;
+    width: 34px;
     height: 50px;
     margin-right: 15px;
 }
-.logo p{
+.logo span{
     font-family:'Istok We';
     font-size: 30px;
     font-weight: 700;
@@ -60,7 +60,7 @@ header>article{
     font-size: 25px;
     font-weight: 500;
     position: relative;
-    width: 127px;
+    width: 130px;
 }
 .gnb>li>ul{
     font-size: 20px;
@@ -75,15 +75,8 @@ header>article{
     display: block;
     width: 100%;
 }
-.gnb>li>ul>li:hover{
-    color: #00A25B;
-
-}
-main{
-}
-section{
-    height: 1000px;
-}
+.gnb>li>ul>li:hover{color: #00A25B;}
+section{height: 1000px;}
 section>article{
     width: 1440px;
     margin: 0 auto;
@@ -95,10 +88,6 @@ section>article{
     position: relative;
     background: url(../img/mainback.png) no-repeat 0 0/cover ;
 }
-/* .banner img{
-    width: 100vw;
-    height: 1000px;
-} */
 .banner article{
     height: 1200px;
     position: absolute;
@@ -141,7 +130,6 @@ section>article{
     font-size: 25px;
     letter-spacing: -0.5px;
     font-weight: 400;
-
 }
 .int_box{
     padding: 125px 160px;
@@ -151,13 +139,11 @@ section>article{
     font-weight: 600;
     margin-bottom: 50px;
     letter-spacing: -1.2px;
-    
 }
 .int_box>p{
     width: 654px;
     height: 60px;
     margin-bottom: 60px;
-    
 }
 .int_box ul{
     width: 1120px;
@@ -179,12 +165,23 @@ section>article{
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: 0.5s background-color ease;
 }
 .circle>a{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.circle:hover>a{
+    color: #00A25B;
+    font-weight: 500;
+}
+.circle:hover div a{
+    background: #FFF;
+    border: 1px solid #00A25B;
+}
+
 .new_family{
     display: flex;
     flex-flow: column;
@@ -238,11 +235,11 @@ section>article{
 .new_f_icon li p{
     margin-top: 20px;
 }
-.worship{
+.w_content{
     padding: 125px 70px;
     font-family: Inter;
 }
-.worship h2{
+.w_content h2{
     width: 260px;
     font-size: 60px;
     font-weight: 500;
@@ -251,26 +248,26 @@ section>article{
     padding-bottom: 5px;
     margin:0 auto 140px;
 }
-.worship p{
+.w_content p{
     text-align: right;
     margin-bottom: 20px;
 }
-.worship p a{
+.w_content p a{
     display: inline-block;
     padding-bottom: 3px;
     border-bottom: 2px solid #00A25B;
 }
-.worship_content{
+.w_c_box{
     display: flex;
     justify-content: space-between;
 }
-.worship_content img{
+.w_c_box img{
     width: 100%;
     height: 340px;
     font-size: 0;
     line-height: 0;
 }
-.worship_content>div{
+.w_c_box>div{
     width: 600px;
     height: 500px;
     border: 1px solid black;
