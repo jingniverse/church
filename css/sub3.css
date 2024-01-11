@@ -133,7 +133,7 @@ section>article{
     width: 35px;
     height: 35px;
 }
-.introduce_list{
+.news_list{
     width: 100vw;    
 }
 .lnb{
@@ -162,125 +162,108 @@ section>article{
     color: #00A25B;
     border: 1px solid #00A25B;
 }
-.introduce_content{
-    padding: 110px 65px;
+.consulting_content{
+    padding: 140px 0;
 }
-
-.w_s_video{
-    padding: 110px 65px;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
+.c_c_box{
+    margin: 0 190px ;
 }
-iframe{
-    width:100%;
-}
-.w_s_info{
-    width: 100%;
-    margin:40px 0 0;
-}
-.w_s_info>p{
-    display: flex;
-    justify-content: space-between;
-    font-size: 45px;
-    font-weight: 600;
-    letter-spacing: -0.9px;
-}
-.w_s_info>p:last-of-type{
-    font-size: 35px;
-    font-weight: 400;
-    justify-content:flex-end;
-    margin: 0;
-}
-
-.w_s_info>p span{
-    font-size: 20px;
-    font-weight: 400;
-    
-}
-.bible{
-    display: flex;
-    flex-flow: column;
-}
-.bible p{
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: -0.6px;
-    display: flex;
-    align-items: center;    
-    margin: 40px 0 15px;
-}
-.bible p>span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: 400;
-    margin-left: 20px;
-    margin-bottom: 0;
-    letter-spacing: -0.4px;
-    
-}
-.bible span{
-    letter-spacing: -0.6px;
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 10px;    
-}
-.bible span i{
-    color: #00A25B;
-    font-weight: bold;
-    padding-right: 10px;
-}
-
-.worship_content{padding: 65px 65px 100px;}
-.worship_content>p{
-    font-size: 35px;
+.c_c_box p{
+    font-size: 50px;
     font-weight: 700;
-    letter-spacing: -0.7px;
+    letter-spacing: -1px;
+    position: relative;
 }
-.w_c_box{
-    width: 100%;
-    overflow: hidden;
+.c_c_box p::before{
+    content: "";
+    width: 260px;
+    height: 21px;
+    display: block;
+    background: #00A25B;
+    position: absolute;   
+    z-index: -1;
+    bottom: 0;
+    left: 5px;
 }
-.w_list{
-    width: 300%;
+.c_c_box span{
+    display: inline-block;
+    margin: 15px 0 80px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.choice{
     display: flex;
+    color: #fff;
 }
-.w_box{
-    margin-top: 90px;
-    margin-right: 50px;
+.choice span,.choice label{
+    display:flex;
+    width: 480px;
+    height: 80px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    justify-content: center;
+    align-items: center;
+    background: #2C3D51;
+    border: 1px solid #2C3D51;
+    box-sizing: border-box;
 }
-.w_box a{
+.choice span.on,.choice span:hover
+,.choice label.on,.choice label:hover{
+    color: black;
+    background: #fff;
+}
+article.choice{
+    margin-bottom: 80px;
+}
+.detail,.attach{
+    margin: 0 auto;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
-    width: 290px;
-    height: 290px;
-    border-radius: 20px;
-    background: #00A25B;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    color: #FFF;
+    width: 1060px;
 }
-.w_box p:nth-of-type(1){
-    font-size: 23px;
-    font-weight: 600;
-    letter-spacing: -0.4px;
+.detail label{
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+    margin:40px 0 20px;
+}
+#name,#phone,#title{
+    height: 40px;
+    border-radius:10px ;
+}
+#counseling{
+    border-radius: 10px;
+    height: 350px;
+    resize: none;
     
 }
-.w_box p:nth-of-type(2){
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: -0.4px; 
+.attach{
+    justify-content: center;
+    align-items: center;
 }
-.w_box p:nth-of-type(3){
+.file_send_box{
     display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: -0.36px;
 }
+.f_s{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 700px;
+    display: block;
+}
+.send_box{
+    background: #00A25B;
+    width: 400px;
+    height: 80px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer{
     width: 100vw;
     height: 200px;
