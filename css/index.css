@@ -75,6 +75,7 @@ header>article{
     display: block;
     width: 100%;
 }
+.gnb>li:hover>a{color: #00A25B;}
 .gnb>li>ul>li:hover{color: #00A25B;}
 section{height: 1000px;}
 section>article{
@@ -364,8 +365,12 @@ section>article{
     display: flex;
     justify-content: space-between;
 }
+.news_content{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
 .news_content ul li:first-child{margin-top:30px;}
-.notice{margin-top: 60px;}
 .photo{
     display: flex;
     flex-flow: column;
@@ -431,6 +436,11 @@ section>article{
     font-size: 25px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    transition: 0.7s  all ease;
+}
+.P_C_box p:hover{
+    color: #FFF;
+    background: #00A25B;
 }
 .consulting{
     width: 100vw;
@@ -472,6 +482,13 @@ section>article{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s  all ease;
+    box-sizing: border-box;
+}
+.c_content_box a:hover{
+    border: 1px solid #00A25B;
+    color: #00A25B;
+    background: #fff;
 }
 footer{
     width: 100vw;
