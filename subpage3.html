@@ -95,11 +95,6 @@
                         </div>
 
                     </div>
-                    <div class="choice">
-                        <span>상담문의</span>
-                        <span>심방요청</span>
-                        <span>문의사항</span>
-                    </div>
                     <form action="">
                         <article class="choice">
                             <label for="ch_rad1">상담문의</label>
@@ -120,17 +115,19 @@
                             <textarea name="" id="counseling" cols="30" rows="10"></textarea>
                         </article>
                         <article class="attach">
+                            <p>첨부파일</p>
                             <p>사진 및 첨부파일</p>
                             <div class="file_send_box">
                                 <label class="f_s" for="file_send"></label>
-                                <input id="file_send" type="file">
+                                <label class="f_textbox" for="file_send">찾아보기</label>
+                                <input class="blind" id="file_send" type="file">
+                                <p>삭제</p>
                             </div>
-                            <div>
+                            <div class="Privacy">
                                 <input id="check" type="checkbox">
-                                <label for="check">개인정보 수집 및 이용동의</label>
+                                <label for="check">개인정보 수집 및 이용동의</label><a href="#">[ 자세히 보기 ]</a>
                             </div>   
-                            <label class="send_box" for="send">문의하기</label>
-                            <input class="blind" id="send" type="submit">
+                            <input class="" id="send" type="submit" value="문의하기">
                         </article>
                     </form>
                 </article>    

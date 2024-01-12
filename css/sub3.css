@@ -99,7 +99,6 @@ section>article{
     background: rgba(0, 0, 0, 0.2);    
 } 
 .banner article{
-    border: 1px solid red;
     height: 560px;
     position: absolute;
     top:0;
@@ -236,34 +235,92 @@ article.choice{
     border-radius: 10px;
     height: 350px;
     resize: none;
-    
+    border: 1px solid black;
 }
 .attach{
     justify-content: center;
-    align-items: center;
 }
+.attach>p{
+    width: 100%;
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    
+}
+.attach p:nth-of-type(2){
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+    margin: 40px 0 20px;
+}
+
 .file_send_box{
     display: flex;
 }
 .f_s{
     height: 40px;
-    border-radius: 10px;
-    border: 1px solid #000;
     width: 700px;
-    display: block;
+    border-radius: 10px;
+    border: 1px solid #000
+}
+.f_textbox{
+    height: 40px;
+    width: 165px;
+    background: #2C3D51;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    margin: 0 15px;
+}
+.file_send_box p{
+    height: 40px;
+    width: 165px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
 }
 .send_box{
+    margin: 0 auto;
     background: #00A25B;
     width: 400px;
     height: 80px;
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00A25B;
+}
+#send{
+    margin: 0 auto;
+    background: #00A25B;
+    width: 400px;
+    height: 80px;
+    color: #fff;
+    font-size: 30px;
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.Privacy{
+    text-align: center;   
+    margin: 70px 0 50px; 
+}
+.Privacy a{
+    display: inline-block;
+    margin-left: 10px;
+}
 footer{
     width: 100vw;
     height: 200px;
