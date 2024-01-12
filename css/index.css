@@ -77,6 +77,7 @@ header>article{
 }
 .gnb>li:hover>a{color: #00A25B;}
 .gnb>li>ul>li:hover{color: #00A25B;}
+.menu{display: none;}
 section{height: 1000px;}
 section>article{
     width: 1440px;
@@ -154,7 +155,6 @@ section>article{
     font-weight: 400;
 }
 .int_box{
-    /* padding: 125px 160px; */
     padding: 125px 160px;
 }
 .int_box h3{
@@ -266,9 +266,9 @@ section>article{
     width: 100%;
     margin:0 auto 140px;
     text-align: center;
+    font-size: 60px;
 }
 .w_content h2>span{
-    font-size: 60px;
     font-weight: 500;
     letter-spacing: -1.2px;
     border-bottom: 5px solid #00A25B;
@@ -361,12 +361,12 @@ section>article{
 }
 .news h2{
     text-align: center;
-    margin:0 auto 80px
-}
-.news h2 span{
+    margin:0 auto 80px;
     letter-spacing: -1.2px;
     font-weight: 500;
     font-size: 60px;
+}
+.news h2 span{
     border-bottom: 5px solid #00A25B;
 }
 
@@ -408,6 +408,11 @@ section>article{
     border-bottom: 1px solid black;
     letter-spacing: -0.36px;
     font-weight: 300;
+    transition: 0.5s color ease;
+}
+.notice ul li:hover{
+    color: #00A25B;
+    border-bottom:1px solid #00A25B;
 }
 .notice>li:nth-of-type(2){margin-top:30px;}
 .photo{
@@ -430,6 +435,19 @@ section>article{
     justify-content: space-between;
     align-content:space-between ;
 }
+.photo a{
+    width: 327px;
+    height: 272px;
+    overflow: hidden;
+    display: inline-block;
+}
+.photo a:hover img{
+    transition: 1s all ease;
+}
+.photo a:hover img{
+    transform: scale(1.1);
+}
+
 .etc{
     height: 100%;
     width: 100vw;
@@ -444,20 +462,27 @@ section>article{
     background: url(../img/unnamed.png) no-repeat left bottom 
 }
 .pray h3{
-    width: 90px;
+    text-align: center;
     color: #FFF;
     font-size: 45px;
     font-weight: 500;
     letter-spacing: -1.2px;
-    border-bottom: 5px solid #00A25B;
-    padding-bottom: 5px;
     margin:0 auto 140px;
 }
+.pray h3 span{
+    border-bottom: 5px solid #00A25B;
+
+}
+
 .P_C_box{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     font-size: 0;
+}
+.P_C_box a{
+    width: 250px;
+    height: 250px;   
 }
 .P_C_box img{
     width: 250px;
@@ -477,7 +502,7 @@ section>article{
     letter-spacing: -0.5px;
     transition: 0.7s  all ease;
 }
-.P_C_box p:hover{
+.P_C_box a:hover p{
     color: #FFF;
     background: #00A25B;
 }
@@ -493,12 +518,14 @@ section>article{
     box-sizing: border-box;
 }
 .consulting h3{
-    display: inline-block;
+    display: block;
     font-size: 45px;
     font-weight: 500;
     letter-spacing: -1.2px;
+}
+.consulting h3 span{
     border-bottom: 5px solid #00A25B;
-    padding-bottom: 5px;
+
 }
 .c_content_box>p{
     font-size: 30px;
@@ -535,7 +562,6 @@ footer{
     background: #3A4149;
 }
 footer>div{
-    border:1px solid red;
     width: 1440px;
     height: 100%;
     margin: 0 auto;

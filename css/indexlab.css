@@ -1,9 +1,8 @@
     @media all and (min-width:1024px) and (max-width:1440px)
     {
     header>article{
-            width: 1000px;
-    justify-content: space-around;
-
+        width: 1000px;
+        justify-content: space-around;
         }
     .logo span{
         font-family:'Istok We';
@@ -19,8 +18,13 @@
         font-weight: 400;
     }
     section>article{width: 1000px;}
-    s
-    .banner{width: 1440px;}
+    .banner{
+        width: 100%;
+        height: 1000px
+    }
+    .banner article{
+        height: 1000px;
+    }
     .b_writing1{
         width: 450px;
         height: 130px;
@@ -30,9 +34,9 @@
         border-top: 10px solid #00A25B;
         border-left: 10px solid #00A25B;
     }
-    .b_writing1 p{         font-size: 50px;    }
-    .int_box{        padding: 100px 0;    }
-    .int_box h3{        font-size: 45px;   }
+    .b_writing1 p{font-size: 50px;}
+    .int_box{padding: 100px 0;}
+    .int_box h3{font-size: 45px}
     .int_box ul{
         font-size: 20px;
         width: 1000px;
@@ -51,53 +55,88 @@
         height: 900px;
     }
     .w_content{padding: 125px 0;}
-.w_content h2>span{
-    font-size: 45px;
-    margin-bottom: 80px;
-}
-    .w_c_box{
-    justify-content: space-between;
+    .w_content h2>span{
+        font-size: 45px;
+        margin-bottom: 80px;
     }
+    .w_c_box{justify-content: space-between;}
     .w_c_box>div{
         width: 450px;
         height: 400px;
     }
-    .w_c_box img{
-        height: 250px;
-    }
+    .w_c_box img{height: 250px;}
     .w_c_title{
         height: 150px;
         padding: 20px 25px;   
     }
-    .title_info span:nth-of-type(3){
-        font-size: 27px;
+    .title_info span:nth-of-type(3){font-size: 27px;}
+    .news>article{padding: 80px 0;}
+    .news h2 span{font-size: 45px;}
+    .notice{
+        width: 350px;
+        font-size: 25px;
     }
-.news>article{
-    padding: 80px 0;
-}
-.news h2 span{
-    font-size: 45px;
-}
-.notice{
-width: 350px;
-font-size: 25px;
-}
-.notice a>span{
-    width: 250px;
-}
-.notice>li:nth-of-type(2){margin-top:20px;}
-
-.photo>span{
-    font-size: 25px;
-}
-.photo ul{
+    .notice a>span{    width: 250px;}
+    .notice>li:nth-of-type(2){margin-top:20px;}
+    .photo>span{    font-size: 25px;}
+    .photo ul{
+        width: 600px;
+        height: 600px;
+    }
+    .photo ul img{
+        width: 290px;
+        height: 290px;
+    }
+    .photo a{
+        width: 290px;
+        height: 290px;
+    }
+    .pray{
+        width: 1000px;
+        padding: 100px 0;
+        height: 1000px;
+    }
+    .pray h3{
+        font-size: 35px;
+        margin-bottom: 100px;
+    }
+    
+.P_C_box{
     width: 600px;
     height: 600px;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: space-around 
 }
-.photo ul img{
-    width: 290px;
-    height: 290px;
-    
+.c_content_box{
+    width: 1000px;
+    height: 450px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    padding: 60px 0;
+}
+.c_content_box>p{
+    font-size: 25px;
+    margin: 0;
+}
+.c_content_box>div a{
+    font-size: 25px;
+}
+.c_content_box>div{
+    flex-flow: column;
+    height: 100%;
+    justify-content: space-around;
+}
+.consulting h3{
+    font-size: 35px;
+}
+footer{
+    width: 100%;
+}
+footer>div{
+    width: 1000px;
 }
 
 
