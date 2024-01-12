@@ -99,7 +99,6 @@ section>article{
     background: rgba(0, 0, 0, 0.2);    
 } 
 .banner article{
-    border: 1px solid red;
     height: 560px;
     position: absolute;
     top:0;

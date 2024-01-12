@@ -230,12 +230,14 @@ article.choice{
 #name,#phone,#title{
     height: 40px;
     border-radius:10px ;
+    padding: 0 10px;
 }
 #counseling{
     border-radius: 10px;
     height: 350px;
     resize: none;
     border: 1px solid black;
+    padding: 10px;
 }
 .attach{
     justify-content: center;

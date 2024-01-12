@@ -97,7 +97,6 @@ section>article{
     background: rgba(0, 0, 0, 0.2);    
 }
 .banner article{
-    border: 1px solid red;
     height: 560px;
     position: absolute;
     top:0;
@@ -150,6 +149,7 @@ section>article{
     background: #00A25B;
     color: #fff;
     border-left:1px solid #fff ;
+    box-sizing: border-box;
 }
 .lnb li a:hover,.lnb li.on a{
     background: #fff;
