@@ -1,7 +1,7 @@
-@media all and (min-width:480px) and (max-width:767px) {   
+@media all and (max-width:479px) {   
     header{height: 90px;} 
     header>article{ 
-        width: 450px;    
+        width: 280px;    
         justify-content: space-between;
         padding: 10px 20px;
         box-sizing: border-box;
@@ -11,9 +11,13 @@
         color: white;
         background: none;
     }
-    .gnb{
-        display: none;
-    }
+    .gnb{        display: none;    }
+
+    .logo{width: 100%;}
+    .logo a{justify-content: space-around;}
+    .logo span{font-size: 22px;}
+    .logo img{margin: 0;}
+
     header.on .gnb{
         top:0;
         left: 0;
@@ -80,18 +84,18 @@
         z-index: 10;
         display: block;
     }
-    section>article{width: 450px;}
+    section>article{width: 280px;}
     .banner{
         width: 100%;
-        height: 700px;
+        height: 600px;
         background-size: cover;
     }
-    .banner article{height:700px;}
+    .banner article{height:600px;}
     .b_writing1{
-        width: 280px;
-        height: 90px;
+        width: 210px;
+        height: 60px;
         position: relative;
-        left:10%;    
+        left:5%;    
         top:40%;
         border-top: 10px solid #00A25B;
         border-left: 10px solid #00A25B;
@@ -107,21 +111,19 @@
     }
     .b_writing1::after{
         width: 10px;
-        height: 20px;
+        height: 15px;
     }
     .b_writing1 p{
-        width: 350px;
+        width: 260px;
         left: 22px;
-        font-size: 35px;
+        font-size: 25px;
         transform: translate(0%,-25%);
     }
-    .introduce{
-        height: 100%;
-    }
+    .introduce{height: 100%;}
     .int_box{
-        height: 600px;
+        height: 700px;
         padding: 60px 0;
-        width: 450px;
+        width: 280px;
         margin: 0 auto;
         display: flex;
         flex-flow: column;
@@ -129,20 +131,22 @@
     }
     .int_box h3{
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
         margin: 0 auto;
     }
     .int_box>p{
-        width: 350px;
+        width: 260px;
         font-size: 20px;
         flex: none;
         text-align: center;
         margin:0 auto;
+        line-height: normal;
     }
     .int_box ul{
-        width: 450px;
+        width: 260px;
         font-size: 18px;
         flex-flow: row wrap;
+        margin: 0 auto;
     }
     .int_box ul>li{margin: 10px;}
     .int_box ul>li:last-of-type{margin-right: 10px;}
@@ -154,7 +158,7 @@
         width: 45%;
     }
     .new_family{
-        width: 450px;
+        width: 260px;
         margin: 0 auto;
         padding:30px 0;
         height: 600px;
@@ -180,122 +184,148 @@
         height: 45px;
     }
     .new_f_icon{
+        position: relative;
         flex-flow: row wrap;
         justify-content:space-between;
-        font-size: 18px;
-        width: 350px;
-        height: 350px;
+        font-size: 15px;
+        width: 250px;
+        height: 300px;
         margin: 0 auto;
     }
     .new_f_icon li:nth-of-type(2n){
-        width: 60px;
+        width: 20px;
     }
-    .new_f_icon li:nth-of-type(4){display: none;}
+    .new_f_icon li:nth-of-type(4){
+        position: absolute;
+        height: 20px;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+    }
+    .new_f_icon li:nth-of-type(4) img{
+        transform: rotate(145deg);
+    }
     .new_f_icon li {
-        width: 120px;
+        width: 100px;
         height: 120px;
     }
-    .worship{height: 800px;}
+    .worship{height: 550px;}
     .w_content{
-        width: 450px;
+        width: 260px;
+        height: 550px;
         justify-content: space-around;
-        padding:110px 0 30px;
+        padding:60px 0 ;
     }
     .w_content h2{
-        margin-bottom: 80px;
-        font-size: 35px;
+        margin-bottom: 40px;
+        font-size: 30px;
     }
+    .w_c_title>span{font-size: 13px;}
     .w_c_box{justify-content: center;}
     .w_c_box>div:first-of-type{display: none;}
     .w_c_box>div{
-        width: 430px;
-        height: 400px;
+        width: 260px;
+        height: 300px;
     }
     .w_c_box img{
-        height: 260px;
+        height: 180px;
     }
     .w_c_title{
-        height: 140px;
+        flex-flow: column;
+        height: 120px;
         padding:15px 20px;
     }
-    .title_info{
-    }   
     .title_info span:nth-of-type(1),
     .title_info span:nth-of-type(4){
-        font-size: 20px;
+        font-size: 15px;
     }
     .title_info span:nth-of-type(1)::after,
-.title_info span:nth-of-type(4)::after{
-    font-size: 23px;
-}
-.title_info span:nth-of-type(2),
-.title_info span:nth-of-type(5){
-    font-size: 16px;
-}
+    .title_info span:nth-of-type(4)::after{
+        height: 16px;
+    }
+    .title_info span:nth-of-type(2),
+    .title_info span:nth-of-type(5){
+        font-size: 13px;
+    }
     .title_info span:nth-of-type(3){
-        font-size: 25px;
+        font-size: 20px;
     }
     .news{height: 100%;}
     .news>article{
-        width: 450px;
+        width: 260px;
         padding: 80px 0;
+        height: 2000px;
     }
     .news h2{
-        font-size: 35px;
+        font-size: 30px;
         margin-bottom: 30px;
     }
     .news_content_box{
         flex-flow: column;
         align-items: center;
         justify-content: space-around;
-        height: 1400px;
+        height: 100%;
     }
     .notice{
-        width: 430px;
-        height: 600px;
+        text-align: center;
+        align-items: center;
+        width: 260px;
+        height: 550px;
+        font-size: 25px;
     }
+    .notice li ul{        font-size: 15px;    }
+    .notice a>span{        width: 180px;    }
+    .photo{
+        align-items: center;
+    }
+    .photo>span{font-size: 25px;}
     .photo ul{
-        width: 450px;
-        height: 450px;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 260px;
+        height: 1000px;
     }
-
     .photo a{
-        width: 200px;
-        height: 200px;
+        width: 230px;
+        height: 230px;
     }
-
+    .photo a img{
+        width: 230px;
+        height: 230px;
+    }
     .etc{width: 100%;}
     .pray{
-        width: 450px;
-        padding: 100px 0;
-        height: 800px;
+        width: 280px;
+        padding: 60px 0;
+        height: 500px;
         display: flex;
         flex-flow: column;
         justify-content: space-around;
     }
     .pray h3{
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 40px;
     }
     .P_C_box{ 
-        width: 450px;
-        height: 450px;
+        width: 260px;
+        height: 260px;
         flex-flow:row wrap ;
         align-content: space-around;
         justify-content: space-around
     }
     .P_C_box a{
-        width: 200px;
-        height: 200px;
+        width: 120px;
+        height: 120px;
     }
     .P_C_box img{
-        width: 200px;
-        height:150px;
+        width: 120px;
+        height:80px;
     }
     .P_C_box p{
-        width: 200px;
-        height: 50px;
-        font-size: 20px;
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
     }
 
     .consulting {
@@ -304,30 +334,30 @@
     }
     .consulting h3{
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
     }
     .c_content_box{  
-        width: 450px;  
-        height:600px;  
-        padding: 100px 0;
+        width: 260px;  
+        height:450px;  
+        padding: 40px 0;
         display: flex;
         flex-flow: column;
         justify-content: space-around;
     }
     .c_content_box>p{
         margin: 0;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
     }
     .c_content_box>div{
-        height: 250px;
+        height: 200px;
         flex-flow: column;
         align-items: center;
     }
     .c_content_box>div a{
-        width: 200px;
-        height: 50px;
-        font-size: 18px;
+        width: 160px;
+        height: 40px;
+        font-size: 15px;
     }
 
     footer{width: 100%;}

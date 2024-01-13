@@ -442,7 +442,7 @@ section>article{
     border-radius: 10px;
 
 }
-.photo a:hover img{
+.photo a img{
     transition: 1s all ease;
 }
 .photo a:hover img{
