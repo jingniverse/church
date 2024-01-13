@@ -38,6 +38,7 @@
         overflow: auto;
         justify-content: center;
         align-items: center;
+        color: black;
     }
     .gnb>li{
         position: relative;

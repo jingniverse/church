@@ -38,6 +38,7 @@
         overflow: auto;
         justify-content: center;
         align-items: center;
+        color: black;
     }
     .gnb>li{
         position: relative;
@@ -297,10 +298,6 @@
         height: 1000px;
     }
     .photo a{
-        width: 230px;
-        height: 230px;
-    }
-    .photo a img{
         width: 230px;
         height: 230px;
     }
