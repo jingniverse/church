@@ -1,15 +1,20 @@
 @media all and (max-width:479px) {   
-    header{height: 90px;} 
+    header{height: 70px;} 
     header>article{ 
         width: 100%;    
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 0px 20px;
         box-sizing: border-box;
     }
     header:hover{
         height: 70px;
         color: white;
         background: none;
+    }
+    header.on:hover{
+        height: 70px;
+        color: black;
+        background: white;
     }
     .gnb{        display: none;    }
 
@@ -20,7 +25,7 @@
     }
     .logo span{font-size: 22px;}
 
-    header.on .gnb{
+    header.active .gnb{
         top:0;
         left: 0;
         display: flex;
@@ -56,10 +61,10 @@
     .menu{
         display: block;
     }
-    header.on .gnb>li.on{
+    header.active .gnb>li.on{
         height: 290px;
     }
-    header.on .gnb>li>ul{
+    header.active .gnb>li>ul{
         margin-top: 10px;
         display: flex;
         flex-flow: column;
@@ -76,9 +81,12 @@
         filter: invert(100%);
         display: block;
     }
-    header.on .menu span:nth-of-type(1){display: none;}
+    header.on .menu span:nth-of-type(1){
+        filter: invert(0%);
+    }
+    header.active .menu span:nth-of-type(1){display: none;}
     header .menu span:nth-of-type(2){display: none;}
-    header.on .menu span:nth-of-type(2){
+    header.active .menu span:nth-of-type(2){
         background: url(../img/close.svg)no-repeat center/cover;
         position: absolute;
         right: 20px;
