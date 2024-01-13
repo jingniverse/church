@@ -80,12 +80,12 @@ header>article{
 .menu{display: none;}
 section{height: 1000px;}
 section>article{
-    width: 1440px;
+    width: 1420px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 .banner{
-    width: 100vw;
+    width: 100%;
     height: 1200px;
     position: relative;
     background: url(../img/mainback.png) no-repeat 0 0/cover ;
@@ -451,11 +451,11 @@ section>article{
 
 .etc{
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background: #2C3D51;   
 }
 .pray{
-    width: 1440px;
+    width: 1420px;
     height:800px;
     margin: 0 auto;
     padding: 140px 120px;
@@ -501,20 +501,20 @@ section>article{
     font-size: 25px;
     font-weight: 400;
     letter-spacing: -0.5px;
-    transition: 0.7s  all ease;
+    transition: 0.7s background-color ease;
 }
 .P_C_box a:hover p{
     color: #FFF;
     background: #00A25B;
 }
 .consulting{
-    width: 100vw;
+    width: 100%;
     background: #fff;
     color: black;
 }
 .c_content_box{
     margin: 0 auto;
-    width: 1440px;
+    width: 1420px;
     padding: 100px 122px;
     box-sizing: border-box;
 }
@@ -560,12 +560,12 @@ section>article{
     background: #fff;
 }
 footer{
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background: #3A4149;
 }
 footer>div{
-    width: 1440px;
+    width: 1420px;
     height: 100%;
     margin: 0 auto;
     box-sizing: border-box;

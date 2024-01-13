@@ -1,7 +1,7 @@
 @media all and (max-width:479px) {   
     header{height: 90px;} 
     header>article{ 
-        width: 280px;    
+        width: 100%;    
         justify-content: space-between;
         padding: 10px 20px;
         box-sizing: border-box;
@@ -13,10 +13,12 @@
     }
     .gnb{        display: none;    }
 
-    .logo{width: 100%;}
-    .logo a{justify-content: space-around;}
+    .logo{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
     .logo span{font-size: 22px;}
-    .logo img{margin: 0;}
 
     header.on .gnb{
         top:0;

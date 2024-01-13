@@ -1,7 +1,7 @@
 @media all and (min-width:768px) and (max-width:1023px) {   
     header{height: 90px;} 
     header>article{ 
-        width: 740px;    
+        width: 100%;    
         justify-content: space-between;
         padding: 10px 20px;
         box-sizing: border-box;
@@ -11,6 +11,13 @@
         color: white;
         background: none;
     }
+    .logo{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
     .gnb{
         display: none;
     }
