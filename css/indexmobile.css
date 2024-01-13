@@ -1,7 +1,7 @@
-@media all and (min-width:768px) and (max-width:1023px) {   
+@media all and (min-width:480px) and (max-width:767px) {   
     header{height: 90px;} 
     header>article{ 
-        width: 740px;    
+        width: 450px;    
         justify-content: space-between;
         padding: 10px 20px;
         box-sizing: border-box;
@@ -30,7 +30,7 @@
     }
     .gnb>li{
         position: relative;
-        font-size: 40px;
+        font-size: 28px;
         width: 100%;
         display: flex;
         flex-flow: column;
@@ -38,20 +38,23 @@
         justify-content: center;
         overflow: hidden;
         transition: 1s height ease 0s;
-        height: 80px;
+        height: 55px;
     }
     .gnb>li>a{
-        padding: 20px 0;
+        padding: 10px 0;
         height: 100%;
+    }
+    .gnb>li>ul{
+        font-size: 20px;
     }
     .menu{
         display: block;
     }
     header.on .gnb>li.on{
-        height: 320px;
+        height: 290px;
     }
     header.on .gnb>li>ul{
-        margin-top: 40px;
+        margin-top: 10px;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -77,28 +80,25 @@
         z-index: 10;
         display: block;
     }
-    section>article{
-        width: 750px;
-        height: 800px;
-    }
+    section>article{width: 450px;}
     .banner{
         width: 100%;
-        height: 800px;
+        height: 700px;
         background-size: cover;
     }
-    .banner article{        height: 800px;    }
+    .banner article{height:700px;}
     .b_writing1{
-        width: 350px;
-        height: 100px;
+        width: 280px;
+        height: 90px;
         position: relative;
-        left:5%;    
+        left:10%;    
         top:40%;
         border-top: 10px solid #00A25B;
         border-left: 10px solid #00A25B;
     }
     .b_writing1::before{
         content: "";
-        width: 30px;
+        width: 15px;
         display: block;
         height: 10px;
         background: #00A25B;
@@ -107,20 +107,21 @@
     }
     .b_writing1::after{
         width: 10px;
-        height: 25px;
+        height: 20px;
     }
     .b_writing1 p{
         width: 420px;
-        left: 33px;
-        font-size: 45px;
+        left: 22px;
+        font-size: 35px;
         transform: translate(0%,-25%);
     }
     .introduce{
         height: 100%;
     }
     .int_box{
-        padding: 120px 0;
-        width: 750px;
+        height: 600px;
+        padding: 60px 0;
+        width: 450px;
         margin: 0 auto;
         display: flex;
         flex-flow: column;
@@ -128,93 +129,186 @@
     }
     .int_box h3{
         text-align: center;
-        font-size: 35px;
+        font-size: 30px;
         margin: 0 auto;
     }
     .int_box>p{
-        font-size: 23px;;
+        width: 350px;
+        font-size: 20px;
+        flex: none;
         text-align: center;
         margin:0 auto;
     }
     .int_box ul{
-        width: 750px;
+        width: 450px;
         font-size: 18px;
         flex-flow: row wrap;
     }
-    .int_box ul>li{margin: 10px 30px;}
-    .int_box ul>li:last-of-type{margin-right: 30px;}
+    .int_box ul>li{margin: 10px;}
+    .int_box ul>li:last-of-type{margin-right: 10px;}
+    .circle div a{
+        width: 100px;
+        height: 100px;
+    }
+    .circle div a img{
+        width: 45%;
+    }
     .new_family{
-        width: 750px;
+        width: 450px;
         margin: 0 auto;
         padding:30px 0;
-        height: 400px;
+        height: 600px;
         justify-content: space-around;
     }
-    .n_f_left h4{font-size: 30px;}
+    .n_f_left h4{font-size: 25px;
+    margin: 0;}
+    .n_f_left span{
+        display: inline-block;
+        margin: 20px auto;
+    }
+
     .new_f_box{
-        font-size: 20px;
+        font-size: 18px;
+        flex-flow: column;
+        text-align: center;
         justify-content: space-around;
         margin: 0;
     }
-    .new_f_icon{justify-content:space-around;}
-    .new_f_icon li:nth-of-type(2n){display: none;}
+    .n_f_right{
+        margin: 0 auto;
+        width: 200px;
+        height: 45px;
+    }
+    .new_f_icon{
+        flex-flow: row wrap;
+        justify-content:space-between;
+        font-size: 18px;
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+    }
+    .new_f_icon li:nth-of-type(2n){
+        width: 60px;
+    }
+    .new_f_icon li:nth-of-type(4){display: none;}
+    .new_f_icon li {
+        width: 120px;
+        height: 120px;
+    }
     .worship{height: 800px;}
     .w_content{
+        width: 450px;
         justify-content: space-around;
-        padding:110px 75px 30px;
+        padding:110px 0 30px;
     }
     .w_content h2{
         margin-bottom: 80px;
-        font-size: 40px;
+        font-size: 35px;
     }
-    .w_c_box>div:first-of-type{display: none;}
     .w_c_box{justify-content: center;}
+    .w_c_box>div:first-of-type{display: none;}
+    .w_c_box>div{
+        width: 430px;
+        height: 400px;
+    }
+    .w_c_box img{
+        height: 260px;
+    }
+    .w_c_title{
+        height: 140px;
+        padding:15px 20px;
+    }
+    .title_info{
+    }   
+    .title_info span:nth-of-type(1),
+    .title_info span:nth-of-type(4){
+        font-size: 20px;
+    }
+    .title_info span:nth-of-type(1)::after,
+.title_info span:nth-of-type(4)::after{
+    font-size: 23px;
+}
+.title_info span:nth-of-type(2),
+.title_info span:nth-of-type(5){
+    font-size: 16px;
+}
+    .title_info span:nth-of-type(3){
+        font-size: 25px;
+    }
     .news{height: 100%;}
     .news>article{
-        width: 750px;
-        padding: 120px 0;
-        height: 100%;
+        width: 450px;
+        padding: 80px 0;
     }
     .news h2{
-        font-size: 40px;
-        margin-bottom: 50px;
+        font-size: 35px;
+        margin-bottom: 30px;
     }
     .news_content_box{
         flex-flow: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 1400px;
     }
-    .notice{height: 650px;}
-    .etc{width: 100%;}
+    .notice{
+        width: 430px;
+        height: 600px;
+    }
+    .photo ul{
+        width: 450px;
+        height: 450px;
+    }
 
+    .photo a{
+        width: 200px;
+        height: 200px;
+    }
+
+    .etc{width: 100%;}
     .pray{
-        width: 750px;
+        width: 450px;
         padding: 100px 0;
-        height: 1000px;
+        height: 800px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
     }
     .pray h3{
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 40px;
     }
     .P_C_box{ 
-        width: 740px;
-        height: 740px;
+        width: 450px;
+        height: 450px;
         flex-flow:row wrap ;
         align-content: space-around;
         justify-content: space-around
     }
+    .P_C_box a{
+        width: 200px;
+        height: 200px;
+    }
+    .P_C_box img{
+        width: 200px;
+        height:150px;
+    }
+    .P_C_box p{
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+
     .consulting {
         width: 100%;
         height: 100%;
     }
     .consulting h3{
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
     }
     .c_content_box{  
-        width: 750px;  
-        height: 700px;  
+        width: 450px;  
+        height:600px;  
         padding: 100px 0;
         display: flex;
         flex-flow: column;
@@ -222,14 +316,20 @@
     }
     .c_content_box>p{
         margin: 0;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
     }
     .c_content_box>div{
-        height: 300px;
+        height: 250px;
         flex-flow: column;
         align-items: center;
     }
+    .c_content_box>div a{
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+
     footer{width: 100%;}
     footer>div{width: 750px;}
 
