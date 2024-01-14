@@ -251,11 +251,11 @@
     footer>div{width: 750px;}
     @supports (-webkit-appearance:none) {
         /* 이 안에 Safari(10.1 이상)에서만 적용할 스타일 작성 */
-        /* .b_writing1 p{
+        .b_writing1 p{
             width: 400px;
             left: 33px;
             font-size: 40px;
             transform: translate(0%,-25%);
-        } */
+        }
     }   
 }
