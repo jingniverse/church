@@ -7,7 +7,7 @@
     border: 0;
   }
 main{
-    font-family: 'Inter';
+    font-family: 'Pretendard';
 }
 /* 헤더 */
 header{
@@ -123,7 +123,7 @@ section>article{
 }
 /* 배너 글꾸미기 */
 .b_writing1{
-    width: 500px;
+    width: 455px;
     height: 145px;
     position: relative;
     left:5%;    
@@ -149,15 +149,15 @@ section>article{
     right: 0;
     background: #00A25B;
 }
-.b_writing1 p{ 
-    width: 550px;
+.b_writing1 p{
+    width: 482px;
     position: absolute;
     top:50%;
     font-size: 60px;
     font-weight: 500;
     color: #FFF;
     line-height: normal;
-    transform: translate(8%,-25%);
+    transform: translate(10%,-25%);
 }
 /*배너 글꾸미기 끝 */
 /* 소개페이지 */
