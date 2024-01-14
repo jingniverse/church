@@ -372,7 +372,7 @@
     @supports (-webkit-appearance:none) {
         /* 이 안에 Safari(10.1 이상)에서만 적용할 스타일 작성 */
         .b_writing1 p{
-            width: 220px;
+            width: 200px;
             left: 20px;
             font-size: 25px;
             transform: translate(0%,-25%);
