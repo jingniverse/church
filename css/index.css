@@ -62,7 +62,6 @@ header:hover,header.on:hover{
     justify-content: space-between;
 }
 .gnb>li{
-    font-family: 'Noto Sans KR';
     font-size: 25px;
     font-weight: 500;
     position: relative;

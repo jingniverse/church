@@ -6,6 +6,9 @@
     z-index: -1;
     border: 0;
   }
+  .wrap{
+    font-family: 'Pretendard';
+}
 header{
     height: 70px;
     width: 100%;
@@ -44,7 +47,6 @@ header>article{
     margin-right: 15px;
 }
 .logo span{
-    font-family:'Istok We';
     font-size: 30px;
     font-weight: 700;
     font-style: normal;
@@ -56,7 +58,6 @@ header>article{
     justify-content: space-between;
 }
 .gnb>li{
-    font-family: 'Noto Sans KR';
     font-size: 25px;
     font-weight: 500;
     position: relative;
@@ -77,14 +78,13 @@ header>article{
 }
 .gnb>li:hover>a{color: #00A25B;}
 .gnb>li>ul>li:hover{color: #00A25B;}
-main{font-family: 'Inter';}
 section>article{
-    width: 1440px;
+    width: 1400px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 .banner{
-    width: 100vw;
+    width: 100%;
     height: 560px;
     position: relative;
     background: url(../img/introduce_banner.png) no-repeat 0 0/cover ;
@@ -131,7 +131,7 @@ section>article{
     height: 35px;
 }
 
-.introduce_list{width: 100vw;}
+.introduce_list{width: 100%;}
 .lnb{
     display: flex;
     width: 100%;
@@ -150,21 +150,33 @@ section>article{
     color: #fff;
     border-left:1px solid #fff ;
     box-sizing: border-box;
+    transition: 0.5s all ease 0s;
 }
 .lnb li a:hover,.lnb li.on a{
     background: #fff;
     color: #00A25B;
     border: 1px solid #00A25B;
 }
-.introduce_content{padding: 110px 65px;}
-.greetings{display: flex;}
-.greetings>div{margin-left: 80px;}
+.introduce_content{padding: 110px 60px;}
+.greetings{
+    display: flex;
+    justify-content: space-between;
+}
+.greetings img{
+    width: 440px;
+    height: 540px;
+    object-fit: cover;
+}
+.greetings>div{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
 .greetings h3{
     font-size: 60px;
     font-weight: 700;
     color: #00A25B;
     letter-spacing: -0.6px;
-    margin-bottom: 80px;
 }
 .greetings p{
     width: 790px;
@@ -178,19 +190,22 @@ section>article{
     font-size: 45px;
     font-weight: 700;
     letter-spacing: -0.9px;
-    position: relative;
     margin-bottom: 40px;
 }
-.history h4::before{
+.history h4 span{
+    position: relative;
+}
+
+.history h4 span::before{
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     display: inline-block;
     background: #00A25B;
     z-index: -1;
-    top:-15px;
-    left:-14px;
+    top:-8px;
+    left:-12px;
 }
 .history h5{
     font-size: 35px;
@@ -233,13 +248,12 @@ section>article{
 }
 
 footer{
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background: #3A4149;
 }
 footer>div{
-    border:1px solid red;
-    width: 1440px;
+    width: 1000px;
     height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
