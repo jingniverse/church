@@ -6,6 +6,10 @@
     z-index: -1;
     border: 0;
   }
+main{
+    font-family: 'Inter';
+}
+/* 헤더 */
 header{
     height: 70px;
     width: 100%;
@@ -17,6 +21,13 @@ header{
     transition: 1s all ease;
     z-index: 3;
 }
+header>article{
+    margin: 0 auto;
+    width: 1035px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 header.on{
     background: #fff;
     color: black;
@@ -27,13 +38,7 @@ header:hover,header.on:hover{
     height: 300px;
     color: black;
 }
-header>article{
-    margin: 0 auto;
-    width: 1035px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/* 헤더로고 */
 .logo a{
     display: flex;
     align-items: center;
@@ -49,6 +54,8 @@ header>article{
     font-weight: 700;
     font-style: normal;
 }
+/* 헤더로고 끝 */
+/* 메인메뉴 */
 .gnb{
     width: 660px;
     display: flex;
@@ -62,28 +69,33 @@ header>article{
     position: relative;
     width: 130px;
 }
+.gnb>li:hover>a{color: #00A25B;}
 .gnb>li>ul{
     font-size: 20px;
     font-weight: 400;
     position: absolute;
     top:50px
 }
-.gnb>li>ul>li{
-    margin: 20px 0 0;
-}
+.gnb>li>ul>li{margin: 20px 0 0;}
+.gnb>li>ul>li:hover{color: #00A25B;}
 .gnb>li>ul>li a{
     display: block;
     width: 100%;
 }
-.gnb>li:hover>a{color: #00A25B;}
-.gnb>li>ul>li:hover{color: #00A25B;}
-.menu{display: none;}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+/* 메인메뉴 끝 */
+/* 헤더끝 */
+
 section{height: 1000px;}
 section>article{
     width: 1420px;
     margin: 0 auto;
     box-sizing: border-box;
 }
+/* 배너시작 */
 .banner{
     width: 100%;
     height: 1200px;
@@ -98,6 +110,7 @@ section>article{
     transform: translateX(-50%);
     z-index: 1;
 }
+/* 배너필터처리 */
 .banner::after{
     content: "";
     position: absolute;
@@ -108,6 +121,7 @@ section>article{
     background: rgba(0, 0, 0, 0.2);
     display: block;
 }
+/* 배너 글꾸미기 */
 .b_writing1{
     width: 500px;
     height: 145px;
@@ -125,7 +139,6 @@ section>article{
     background: #00A25B;
     position: absolute;
     bottom: 0;
-    
 }
 .b_writing1::after{
     content: "";
@@ -147,16 +160,16 @@ section>article{
     line-height: normal;
     transform: translate(8%,-25%);
 }
+/*배너 글꾸미기 끝 */
+/* 소개페이지 */
+/* 소개텍스트 */
 .introduce{
     height: 1000px;
-    font-family: Inter;
     font-size: 25px;
     letter-spacing: -0.5px;
     font-weight: 400;
 }
-.int_box{
-    padding: 125px 160px;
-}
+.int_box{padding: 125px 160px;}
 .int_box h3{
     font-size: 60px;
     font-weight: 600;
@@ -167,6 +180,7 @@ section>article{
     width: 654px;
     margin-bottom: 60px;
 }
+/* 간편메뉴 */
 .int_box ul{
     width: 1120px;
     display: flex;
@@ -190,6 +204,10 @@ section>article{
     box-sizing: border-box;
     transition: 0.5s background-color ease;
 }
+.circle:hover div a{
+    background: #FFF;
+    border: 1px solid #00A25B;
+}
 .circle>a{
     display: flex;
     justify-content: center;
@@ -199,17 +217,13 @@ section>article{
     color: #00A25B;
     font-weight: 500;
 }
-.circle:hover div a{
-    background: #FFF;
-    border: 1px solid #00A25B;
-}
-
+/* 간편메뉴 끝 */
+/* 소개텍스트 끝 */
+/* 새가족등록 */
 .new_family{
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
     padding: 35px 160px; 
-
 }
 .new_f_box{
     display: flex;
@@ -219,14 +233,13 @@ section>article{
     letter-spacing: -0.5px;
     margin-bottom: 60px;
 }
-.n_f_left h4{
+.n_f_text h4{
     font-size: 45px;
     font-weight: 400;
     letter-spacing: -0.9px;
     margin-bottom: 15px;
 }
-
-.n_f_right{
+.n_f_join{
     display: flex;
     width: 252px;
     height: 65px;
@@ -239,7 +252,7 @@ section>article{
     box-sizing: border-box;
     border-radius: 10px;
 }
-.n_f_right:hover{
+.n_f_join:hover{
     color: #00A25B;
     border: #00A25B 2px solid;
     background: #fff;
@@ -258,10 +271,10 @@ section>article{
 .new_f_icon li p{
     margin-top: 20px;
 }
-.w_content{
-    padding: 125px 70px;
-    font-family: Inter;
-}
+/* 새가족등록 끝 */
+/* 예배/설교 페이지 */
+.w_content{padding: 125px 70px;}
+/* 예배/설교 텍스트*/
 .w_content h2{
     width: 100%;
     margin:0 auto 140px;
@@ -282,6 +295,8 @@ section>article{
     padding-bottom: 3px;
     border-bottom: 2px solid #00A25B;
 }
+/* 예배/설교 텍스트 끝*/
+/* 예배/설교 컨텐츠*/
 .w_c_box{
     display: flex;
     justify-content: space-between;
@@ -301,6 +316,8 @@ section>article{
     border-radius: 10px;
     overflow: hidden;
 }
+/* 예배/설교 컨텐츠*/
+/* 예배/설교 박스 텍스트*/
 .w_c_title{
     line-height: normal;
     width: 100%;
@@ -320,9 +337,15 @@ section>article{
     flex-flow: row wrap;
 }
 .title_info span{
-    font-family: Inter;
     display: flex;
     align-items: center;
+}
+.title_info span:nth-of-type(1),
+.title_info span:nth-of-type(4){
+    font-size: 23px;
+    letter-spacing: -0.46px;
+    font-weight: 500;
+    line-height: 25px;
 }
 .title_info span:nth-of-type(1)::after,
 .title_info span:nth-of-type(4)::after{
@@ -334,13 +357,6 @@ section>article{
     width: 1px;
     border-right: 1px solid black;
     margin: 5px;
-}
-.title_info span:nth-of-type(1),
-.title_info span:nth-of-type(4){
-    font-size: 23px;
-    letter-spacing: -0.46px;
-    font-weight: 500;
-    line-height: 25px;
 }
 .title_info span:nth-of-type(2),
 .title_info span:nth-of-type(5){
@@ -355,6 +371,9 @@ section>article{
     letter-spacing: -0.6px;
     font-weight: 400;
 }
+/* 예배/설교 박스 텍스트 끝*/
+/* 예배/설교페이지 끝 */
+/* 교회소식페이지 */
 .news>article{
     padding: 105px 95px; 
 }
@@ -365,12 +384,8 @@ section>article{
     font-weight: 500;
     font-size: 60px;
 }
-.news h2 span{
-    border-bottom: 5px solid #00A25B;
-}
-
+.news h2 span{border-bottom: 5px solid #00A25B;}
 .news_content_box{
-    font-family: 'Inter';
     display: flex;
     justify-content: space-between;
 }
@@ -378,6 +393,7 @@ section>article{
     display: flex;
     flex-flow: column;
     justify-content: space-between;}
+/* 최신소식,공지사항 */
 .notice{
     width: 460px;
     font-size: 30px;
@@ -388,9 +404,7 @@ section>article{
     justify-content: space-between;
     height: 100%;
 }
-.notice li ul{
-    font-size: 18px;
-}
+.notice li ul{font-size: 18px;}
 .notice a>span{
     margin-top: 15px;
     display: inline-block;
@@ -414,6 +428,8 @@ section>article{
     border-bottom:1px solid #00A25B;
 }
 .notice>li:nth-of-type(2){margin-top:30px;}
+/* 최신소식,공지사항 끝 */
+/* 교회사진 */
 .photo{
     display: flex;
     flex-flow: column;
@@ -449,7 +465,9 @@ section>article{
 .photo a:hover img{
     transform: scale(1.1);
 }
-
+/* 교회사진 끝 */
+/* 교회소식페이지 끝 */
+/* 기도페이지 */
 .etc{
     height: 100%;
     width: 100%;
@@ -463,6 +481,7 @@ section>article{
     box-sizing: border-box;
     background: url(../img/unnamed.png) no-repeat left bottom 
 }
+/* 기도텍스트 */
 .pray h3{
     text-align: center;
     color: #FFF;
@@ -471,11 +490,9 @@ section>article{
     letter-spacing: -1.2px;
     margin:0 auto 140px;
 }
-.pray h3 span{
-    border-bottom: 5px solid #00A25B;
-
-}
-
+.pray h3 span{border-bottom: 5px solid #00A25B;}
+/* 기도텍스트 끝 */
+/* 기도 컨텐츠 */
 .P_C_box{
     margin: 0 auto;
     display: flex;
@@ -508,6 +525,9 @@ section>article{
     color: #FFF;
     background: #00A25B;
 }
+/* 기도컨텐츠 끝 */
+/* 기도페이지 끝 */
+/* 상담페이지 */
 .consulting{
     width: 100%;
     background: #fff;
@@ -519,22 +539,22 @@ section>article{
     padding: 100px 122px;
     box-sizing: border-box;
 }
-.consulting h3{
+/* 상담페이지 텍스트 */
+.c_content_box h3{
     display: block;
     font-size: 45px;
     font-weight: 500;
     letter-spacing: -1.2px;
 }
-.consulting h3 span{
-    border-bottom: 5px solid #00A25B;
-
-}
+.c_content_box h3 span{border-bottom: 5px solid #00A25B;}
 .c_content_box>p{
     font-size: 30px;
     font-weight: 400;
     letter-spacing: -0.6px;
     margin: 35px 0 60px;
 }
+/* 상담페이지 텍스트 끝*/
+/* 상담페이지 박스 */
 .c_content_box>div{
     justify-content: space-between;
     display: flex;
@@ -553,13 +573,14 @@ section>article{
     transition: 0.5s  all ease;
     box-sizing: border-box;
     border-radius: 10px;
-
 }
 .c_content_box a:hover{
     border: 1px solid #00A25B;
     color: #00A25B;
     background: #fff;
 }
+/* 상담페이지 박스 끝 */
+/* 상담페이지 끝  */
 footer{
     width: 100%;
     height: 200px;

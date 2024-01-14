@@ -54,7 +54,7 @@ $(document).ready(function(){
         $('.gnb>li>a').click(function(e){
             e.preventDefault()
         })
-        console.log(sct)	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
+        // console.log(sct)	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
     })}
 
     if(480< $(window).width() < 768){ 

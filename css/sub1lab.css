@@ -1,0 +1,19 @@
+@media all and (min-width:1024px) and (max-width:1440px){
+    header>article{
+        width: 1000px;
+        justify-content: space-around;
+        }
+    .logo span{
+        font-family:'Istok We';
+        font-size: 27px;
+    }    
+    .gnb>li{
+        font-size: 23px;
+        font-weight: 500;
+        letter-spacing: -0.4px;
+    } 
+    .gnb>li>ul{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
