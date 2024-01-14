@@ -125,7 +125,8 @@
         height: 15px;
     }
     .b_writing1 p{
-        width: 225px;
+        border: 1px solid;
+        width: 220px;
         left: 22px;
         font-size: 25px;
         transform: translate(0%,-25%);
@@ -369,13 +370,5 @@
 
     footer{width: 100%;}
     footer>div{width: 260px;}
-    @supports (-webkit-appearance:none) {
-        /* 이 안에 Safari(10.1 이상)에서만 적용할 스타일 작성 */
-        .b_writing1 p{
-            width: 200px;
-            left: 20px;
-            font-size: 25px;
-            transform: translate(0%,-25%);
-        }
-    }   
+    
 }
