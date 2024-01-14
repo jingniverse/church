@@ -18,7 +18,6 @@
     }
     .logo{
         display: flex;
-        width: 100%;
         justify-content: space-between;
         align-items: center;
     }
@@ -74,14 +73,14 @@
         height: 40px;
         border: none;
     }
-    header.on .menu span:nth-of-type(1){
-        filter: invert(0%);
-    }
     header .menu span:nth-of-type(1){
+        background: url(../img/hamburger_white.svg)
+        no-repeat center/cover;
+        display: block;
+    }
+    header.on .menu span:nth-of-type(1){
         background: url(../img/hamburger.svg)
         no-repeat center/cover;
-        filter: invert(100%);
-        display: block;
     }
     header.active .menu span:nth-of-type(1){display: none;}
     header .menu span:nth-of-type(2){display: none;}

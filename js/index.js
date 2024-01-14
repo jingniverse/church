@@ -17,60 +17,59 @@ $(document).ready(function(){
     // })
  
     // 일반pc
-    if($(window).width() > 1439){ 
         $(window).scroll(function () {
              var sct = $(window).scrollTop();
-             if(sct>1100){
+             if(sct>20){
                      $('header').addClass('on')
                 }
-            if(sct<1145){
+            if(sct<10){
                     $('header').removeClass('on')
                 }      
         // console.log(height);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
-    })}
+    })
 
-    // 탭버전
-    if(1023< $(window).width() < 1440){ 
-        $(window).scroll(function () {
-            var sct = $(window).scrollTop();
-            if(sct>920){
-                    $('header').addClass('on')
-                }
-            if(sct<920){
-                   $('header').removeClass('on')          
-                }
-        // console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
-    })}
+    // // 탭버전
+    // if(1023< $(window).width() < 1440){ 
+    //     $(window).scroll(function () {
+    //         var sct = $(window).scrollTop();
+    //         if(sct>920){
+    //                 $('header').addClass('on')
+    //             }
+    //         if(sct<920){
+    //                $('header').removeClass('on')          
+    //             }
+    //     // console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
+    // })}
 
-    if(767< $(window).width() < 1024){ 
-        $(window).scroll(function () {
-            var sct = $(window).scrollTop();
-            if(sct>700){
-                    $('header').addClass('on')
-                }
-            if(sct<700){
-                    $('header').removeClass('on')
-                }
-        $('.gnb>li>a').click(function(e){
-            e.preventDefault()
-        })
-        // console.log(sct)	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
-    })}
+    // if(767< $(window).width() < 1024){ 
+    //     $(window).scroll(function () {
+    //         var sct = $(window).scrollTop();
+    //         if(sct>700){
+    //                 $('header').addClass('on')
+    //             }
+    //         if(sct<700){
+    //                 $('header').removeClass('on')
+    //             }
+    //     $('.gnb>li>a').click(function(e){
+    //         e.preventDefault()
+    //     })
+    //     // console.log(sct)	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
+    // })}
 
-    if(480< $(window).width() < 768){ 
-        $(window).scroll(function () {
-            var sct = $(window).scrollTop();
-            if(sct>590){
-                    $('header').addClass('on')
-                }
-            if(sct<590){
-                    $('header').removeClass('on')
-                }
-                $('.gnb>li>a').click(function(e){
-                    e.preventDefault()
-                })
-        // console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
-    })}
+    // if(480< $(window).width() < 768){ 
+    //     $(window).scroll(function () {
+    //         var sct = $(window).scrollTop();
+    //         if(sct>590){
+    //                 $('header').addClass('on')
+    //             }
+    //         if(sct<590){
+    //                 $('header').removeClass('on')
+    //             }
+    //             $('.gnb>li>a').click(function(e){
+    //                 e.preventDefault()
+    //             })
+    //     // console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
+    // })}
 
 
 

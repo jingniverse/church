@@ -5,7 +5,6 @@
         justify-content: space-around;
         }
     .logo span{
-        font-family:'Istok We';
         font-size: 27px;
     }    
     .gnb>li{
@@ -145,3 +144,7 @@ footer>div{
 
 
     }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .c_content_box{    justify-content: space-around;        }
+        .P_C_box a{float: left;}
+        }

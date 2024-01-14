@@ -6,7 +6,7 @@
     z-index: -1;
     border: 0;
   }
-main{
+.wrap{
     font-family: 'Pretendard';
 }
 /* 헤더 */
@@ -49,7 +49,6 @@ header:hover,header.on:hover{
     margin-right: 15px;
 }
 .logo span{
-    font-family:'Istok We';
     font-size: 30px;
     font-weight: 700;
     font-style: normal;
@@ -176,7 +175,7 @@ section>article{
     letter-spacing: -1.2px;
 }
 .int_box>p{
-    width: 654px;
+    width: 500px;
     margin-bottom: 60px;
 }
 /* 간편메뉴 */
@@ -591,3 +590,11 @@ footer>div{
     margin: 0 auto;
     box-sizing: border-box;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .title_info{
+        width: 70%;
+    }
+    .notice ul li a{
+        display: inline-block;
+    }
+    }

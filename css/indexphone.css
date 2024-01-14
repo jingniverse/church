@@ -20,7 +20,6 @@
 
     .logo{
         display: flex;
-        width: 100%;
         justify-content: space-between;
     }
     .logo span{font-size: 22px;}
@@ -77,13 +76,13 @@
         border: none;
     }
     header .menu span:nth-of-type(1){
-        background: url(../img/hamburger.svg)
+        background: url(../img/hamburger_white.svg)
         no-repeat center/cover;
-        filter: invert(100%);
         display: block;
     }
     header.on .menu span:nth-of-type(1){
-        filter: invert(0%);
+        background: url(../img/hamburger.svg)
+        no-repeat center/cover;
     }
     header.active .menu span:nth-of-type(1){display: none;}
     header .menu span:nth-of-type(2){display: none;}
@@ -147,7 +146,7 @@
     }
     .int_box>p{
         width: 260px;
-        font-size: 20px;
+        font-size: 18px;
         flex: none;
         text-align: center;
         margin:0 auto;
@@ -177,9 +176,10 @@
     }
     .n_f_text h4{font-size: 25px;
     margin: 0;}
-    .n_f_text span{
+    .n_f_text>span{
         display: inline-block;
         margin: 20px auto;
+        font-size: 15px;
     }
 
     .new_f_box{
