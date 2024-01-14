@@ -173,9 +173,9 @@
         height: 600px;
         justify-content: space-around;
     }
-    .n_f_left h4{font-size: 25px;
+    .n_f_text h4{font-size: 25px;
     margin: 0;}
-    .n_f_left span{
+    .n_f_text span{
         display: inline-block;
         margin: 20px auto;
     }
@@ -185,9 +185,10 @@
         flex-flow: column;
         text-align: center;
         justify-content: space-around;
+        align-items: center;
         margin: 0;
     }
-    .n_f_right{
+    .n_f_join{
         margin: 0 auto;
         width: 200px;
         height: 45px;
@@ -347,3 +348,12 @@
     footer>div{width: 450px;}
 
 }
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+    .b_writing1 p{
+        width: 180px;
+        left: 22px;
+        font-size: 25px;
+        transform: translate(0%,-25%);
+    }
+}}

@@ -175,9 +175,9 @@
         height: 600px;
         justify-content: space-around;
     }
-    .n_f_left h4{font-size: 25px;
+    .n_f_text h4{font-size: 25px;
     margin: 0;}
-    .n_f_left span{
+    .n_f_text span{
         display: inline-block;
         margin: 20px auto;
     }
@@ -189,7 +189,7 @@
         justify-content: space-around;
         margin: 0;
     }
-    .n_f_right{
+    .n_f_join{
         margin: 0 auto;
         width: 200px;
         height: 45px;
@@ -374,7 +374,7 @@
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {
     .b_writing1 p{
-        width: 200px;
+        width: 180px;
         left: 22px;
         font-size: 25px;
         transform: translate(0%,-25%);
