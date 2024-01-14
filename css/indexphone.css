@@ -371,12 +371,12 @@
     footer>div{width: 260px;}
 
 }
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) {
+@supports (-webkit-appearance:none) {
+	/* 이 안에 Safari(10.1 이상)에서만 적용할 스타일 작성 */
     .b_writing1 p{
         width: 180px;
         left: 22px;
         font-size: 25px;
         transform: translate(0%,-25%);
     }
-}}
+}
