@@ -41,20 +41,21 @@ $(document).ready(function(){
     //     // console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
     // })}
 
-    // if(767< $(window).width() < 1024){ 
-    //     $(window).scroll(function () {
-    //         var sct = $(window).scrollTop();
-    //         if(sct>700){
-    //                 $('header').addClass('on')
-    //             }
-    //         if(sct<700){
-    //                 $('header').removeClass('on')
-    //             }
-    //     $('.gnb>li>a').click(function(e){
-    //         e.preventDefault()
-    //     })
-    //     // console.log(sct)	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
-    // })}
+    if(767<$(window).width()<1024){
+        $('.gnb>li>a').click(function(e){
+            e.preventDefault()
+        }
+        )}
+        // $(window).scroll(function () {
+        //     var sct = $(window).scrollTop();
+        //     if(sct>700){
+        //             $('header').addClass('on')
+        //         }
+        //     if(sct<700){
+        //             $('header').removeClass('on')
+        //         }
+        // console.log(sct)	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
+    // )}
 
     // if(480< $(window).width() < 768){ 
     //     $(window).scroll(function () {
@@ -65,11 +66,12 @@ $(document).ready(function(){
     //         if(sct<590){
     //                 $('header').removeClass('on')
     //             }
-    //             $('.gnb>li>a').click(function(e){
-    //                 e.preventDefault()
-    //             })
+                // $('.gnb>li>a').click(function(e){
+                //     e.preventDefault()
+                // })
     //     // console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
-    // })}
+    // }
+    // )}
 
 
 
