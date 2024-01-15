@@ -108,7 +108,7 @@ section>article{
     position: absolute;
     top:50%;
     right: 15% ;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 600;
     letter-spacing: -1.2px;
     display: flex;
@@ -117,7 +117,7 @@ section>article{
 }
 .banner p span{
     font-weight: 500;
-    font-size: 35px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;

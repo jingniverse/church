@@ -29,6 +29,7 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
     .lnb li a{
         font-size: 28px;
         height: 60px;
