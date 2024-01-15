@@ -119,7 +119,7 @@
         transform: translateX(-50%);
     }
     .banner p{font-size: 40px;}
-.banner p span{font-size: 35px;}
+    .banner p span{font-size: 35px;}
 
     .lnb li a{
         font-size: 23px;

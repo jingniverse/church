@@ -312,6 +312,11 @@ section>article{
     line-height: 0;
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.3s all ease 0s ;
+}
+.w_c_box>div:hover{
+    color: #00A25B;
+    border: 1px solid #00A25B;
 }
 /* 예배/설교 컨텐츠*/
 /* 예배/설교 박스 텍스트*/
