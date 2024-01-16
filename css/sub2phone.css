@@ -260,8 +260,8 @@ iframe{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 260px;
     border-radius: 20px;
     background: #00A25B;
     padding: 40px 10px;
@@ -301,7 +301,7 @@ footer{
     background: #3A4149;
 }
 footer>div{
-    width: 460px;
+    width: 280px;
     height: 100%;
     margin: 0 auto;
     box-sizing: border-box;

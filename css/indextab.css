@@ -94,7 +94,6 @@
     }
     section>article{
         width: 750px;
-        height: 800px;
     }
     .banner{
         width: 100%;
@@ -136,6 +135,7 @@
     .int_box{
         padding: 120px 0;
         width: 750px;
+        height: 800px;
         margin: 0 auto;
         display: flex;
         flex-flow: column;
@@ -247,6 +247,24 @@
         align-items: center;
     }
     footer{width: 100%;}
-    footer>div{width: 750px;}
     
+    footer>section{
+        width: 750px;
+        padding: 40px 0px;
+    }
+    footer section>article{
+        width: 50%;
+    }
+    .footer_left ul{
+        width: 100%;
+        font-size: 16px;
+    }
+    address{
+        font-size: 14px;
+    }
+.sns{width: 50%;}
+
+
+
+
 }

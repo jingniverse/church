@@ -345,7 +345,42 @@
         font-size: 18px;
     }
 
-    footer{width: 100%;}
-    footer>div{width: 450px;}
+    footer{width: 100%;
+        height: 400px;
+    }
+    footer .logo{justify-content: center;}
+    footer>section{
+        width: 450px;
+        padding: 40px 0;
+        height: 400px;
+    }
+    .footer_left{
+        display: block;
+        justify-content: flex-start;
+        height: 50%;
+    }
+    .footer_left ul{
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    address span{
+        text-align: center;
+        margin: 10px 0;
+    }
+    .footer_right{
+        width: 100%;
+        height: 50px;
 
+    }
+    .sns{
+        display: flex;
+        width: 100%;
+        align-items: center;        
+    }
+    footer article:last-of-type p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

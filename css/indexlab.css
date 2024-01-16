@@ -135,13 +135,17 @@
 .consulting h3{
     font-size: 35px;
 }
-footer{
+
+footer>section{
+    width: 1000px;
+    padding: 40px 0px;
+}
+footer section>article{
+    width: 50%;
+}
+.footer_left ul{
     width: 100%;
 }
-footer>div{
-    width: 1000px;
-}
-
 
     }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
