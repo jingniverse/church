@@ -167,7 +167,10 @@ section>article{
     letter-spacing: -0.5px;
     font-weight: 400;
 }
-.int_box{padding: 125px 160px;}
+.int_box{
+    padding: 125px 160px;
+    opacity: 0;
+}
 .int_box h3{
     font-size: 60px;
     font-weight: 600;
@@ -219,6 +222,7 @@ section>article{
 /* 소개텍스트 끝 */
 /* 새가족등록 */
 .new_family{
+    opacity: 0;
     display: flex;
     flex-flow: column;
     padding: 35px 160px; 
@@ -271,7 +275,10 @@ section>article{
 }
 /* 새가족등록 끝 */
 /* 예배/설교 페이지 */
-.w_content{padding: 125px 70px;}
+.w_content{
+    padding: 125px 70px;
+    opacity: 0;
+}
 /* 예배/설교 텍스트*/
 .w_content h2{
     width: 100%;
@@ -528,7 +535,7 @@ section>article{
     transition: 0.7s background-color ease;
 }
 .P_C_box a:hover{
-    animation: bing 1.5s ease 0s;
+    animation: bing 1.5s ease-in-out forwards;
 }
 
 .P_C_box a:hover p{
@@ -725,10 +732,22 @@ address span{
 
 
 
+.bing{
+animation: bing 1.5s ease-in-out forwards;}
 
+.left_to_right {
+    opacity: 0;
+    animation: left_to_right 1.5s ease-in-out forwards;
+  }
 
-
-
+  .right_to_left {
+    opacity: 0;
+    animation: right_to_left 1.5s ease-in-out forwards;
+  } 
+  .u_to_d {
+    opacity: 0;
+    animation: u_to_d 1.5s ease-in-out forwards;
+  }
 @keyframes bing{
     0%{ 
         transform: rotateY(0);
@@ -738,12 +757,8 @@ address span{
 
     }
 }
-.fade-in-text {
-    opacity: 0;
-    animation: fadeInText 1.5s ease-in-out forwards;
-  }
   
-  @keyframes fadeInText {
+  @keyframes left_to_right {
     from {
       opacity: 0;
       transform: translateX(-100px);
@@ -753,6 +768,28 @@ address span{
       transform: translatex(0);
     }
   }
+  @keyframes right_to_left {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+  @keyframes u_to_d {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+
+
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .title_info{

@@ -265,9 +265,12 @@ article.choice{
     height: 40px;
     width: 700px;
     border-radius: 10px;
-    border: 1px solid #000
+    border: 1px solid #000;
+    cursor: pointer;
+
 }
 .f_textbox{
+    cursor: pointer;
     height: 40px;
     width: 165px;
     background: #2C3D51;
@@ -303,6 +306,7 @@ article.choice{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .Privacy{
     text-align: center;   
@@ -313,14 +317,184 @@ article.choice{
     margin-left: 10px;
 }
 footer{
-    width: 100vw;
-    height: 200px;
+    width: 100%;
+    height: 300px;
     background: #3A4149;
-}
-footer>div{
-    border:1px solid red;
-    width: 1440px;
+    color: white;}
+footer>section{
+    width: 1420px;
     height: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
     box-sizing: border-box;
+    flex-flow: row wrap;
 }
+footer article{
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    width: 50%;
+}
+footer article:last-of-type{
+    width: 100%;
+}
+footer article:last-of-type p{
+    margin: 0 auto;
+    height: 100%;
+}
+.footer_left{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.footer_left ul{
+    font-size: 18px;
+    display:  flex;
+    width: 80%;
+}
+.footer_left ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_left ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+.footer_left ul li::after{
+    content: "";
+    display: flex;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 12px;
+    width: 1px;
+    border-right: 1px solid white;
+    margin: 4px 15px;
+}
+.footer_left ul li:last-of-type:after{
+    display: none;
+}
+address{
+    display: flex;
+    flex-flow: column;
+}
+address span{
+    margin: 10px 0;
+}
+
+.footer_right{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+.sns{width: 40%;}
+.sns>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.sns>ul li a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: .7s background ease 0s;
+}
+.sns>ul li:nth-of-type(1) a{
+    background: url(../img/you_white.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(2) a{
+    background: url(../img/insta_white.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(3) a{
+    background: url(../img/fa_white.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(4) a{
+    background: url(../img/ka_white.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(1) a:hover{
+    background: url(../img/you_red.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(2) a:hover{
+    background: url(../img/insta_icon.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(3) a:hover{
+    background: url(../img/facebook_blue.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(4) a:hover{
+    background: url(../img/kakao_yellow.png)
+    no-repeat center /contain;
+}
+
+
+
+.bing{
+    animation: bing 1.5s ease-in-out forwards;}
+    
+    .left_to_right {
+        opacity: 0;
+        animation: left_to_right 1.5s ease-in-out forwards;
+      }
+    
+      .right_to_left {
+        opacity: 0;
+        animation: right_to_left 1.5s ease-in-out forwards;
+      } 
+      .u_to_d {
+        opacity: 0;
+        animation: u_to_d 1.5s ease-in-out forwards;
+      }
+    @keyframes bing{
+        0%{ 
+            transform: rotateY(0);
+        }
+        100%{
+            transform: rotateY(360deg);
+    
+        }
+    }
+      
+      @keyframes left_to_right {
+        from {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+        to {
+          opacity: 1;
+          transform: translatex(0);
+        }
+      }
+      @keyframes right_to_left {
+        from {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translatex(0);
+        }
+      }
+      @keyframes u_to_d {
+        from {
+          opacity: 0;
+          transform: translateY(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translatex(0);
+        }
+      }
+    

@@ -295,17 +295,54 @@ iframe{
     width: 30px;
     height: 30px;
 }
-footer{
+footer{width: 100%;
+    height: 400px;
+    text-align: center;
+}
+footer .logo{justify-content: center;}
+footer>section{
+    width: 270px;
+    padding: 25px 0;
+    height: 400px;
+}
+.footer_left{
+    display: block;
+    justify-content: flex-start;
+    height: 50%;
+}
+.footer_left ul{
+    font-size: 13px;
     width: 100%;
-    height: 200px;
-    background: #3A4149;
+    justify-content: center;
+    margin: 10px 0;
 }
-footer>div{
-    width: 280px;
-    height: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
+.footer_left ul li::after{
+    margin: 4px 5px;
 }
+address span{
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    margin: 10px 0;
+}
+.footer_right{
+    width: 100%;
+    height: 50px;
+
+}
+
+.sns{
+    display: flex;
+    width: 100%;
+    align-items: center;        
+}
+footer article:last-of-type p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
 
 
 

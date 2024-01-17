@@ -177,9 +177,23 @@
 .edu_list li{
     font-size: 20px;
 }
-footer>div{
-    width: 750px;
-}
+footer{width: 100%;}
+    
+    footer>section{
+        width: 750px;
+        padding: 40px 0px;
+    }
+    footer section>article{
+        width: 50%;
+    }
+    .footer_left ul{
+        width: 100%;
+        font-size: 16px;
+    }
+    address{
+        font-size: 14px;
+    }
+.sns{width: 50%;}
 
 
 
