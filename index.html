@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="./css/indexedit.css">
     <link rel="stylesheet" href="./css/indexlab.css">
     <link rel="stylesheet" href="./css/indextab.css">
     <link rel="stylesheet" href="./css/indexmobile.css">
@@ -21,14 +22,13 @@
 <body>
     <div class="wrap">
         <!-- 헤더 -->
-        <header>
-            <article>
+        <header class="on">
+            <div>
                 <h1 class="logo">
                     <a href="https://jingniverse.github.io/church/">
                         <img src="./img/churchlogo.png" alt="교회로고">
                         <span>벧엘동산교회</span>
                     </a>
-                  
                 </h1>
                 <ul class="gnb">
                     <li><a href="https://jingniverse.github.io/church/subpage">교회소개</a>
@@ -68,11 +68,8 @@
                         </ul>
                     </li>
                 </ul>
-                <p class="menu">
-                    <span></span>
-                    <span></span>
-                </p>
-            </article>
+                <button class="menu"></button>
+            </div>
         </header>
         <!-- 헤더 end -->
         <!-- 메인  -->
@@ -92,55 +89,25 @@
                 <h2 class="blind">교회소개</h2>
                 <article class="int_box">
                     <h3>우리교회는?</h3>
-                    <p>안녕하십니까 우리교회는 이러이러하고 따뜻하게 여러분을 반겨드립니다</p>
+                    <p>안녕하십니까 우리교회는 공동체를 하나로 만들고 여러분을 환영합니다</p>
                     <ul>
                         <li class="circle">
-                            <div>
-                                <a href="#">
-                                    <img src="./img/church1.svg" alt="섬기는분들ICON">
-                                </a>
-                            </div>
-                            <a href="#"><p>섬기는 분들</p></a>
+                            <a href="#">섬기는분들</a>
                         </li>
                         <li class="circle">
-                            <div>
-                                <a href="#">
-                                    <img src="./img/주보아이콘.png" alt="">
-                                </a>
-                            </div>
-                            <a href="#"><p>주보</p></a>
+                            <a href="#">주보</a>
                         </li>
                         <li class="circle">
-                            <div>
-                                <a href="#">
-                                    <img src="./img/큐티아이콘.png" alt="">
-                                </a>
-                            </div>
-                            <a href="#"><p>QT</p></a>
+                            <a href="#">QT</a>
                         </li>
                         <li class="circle">
-                            <div>
-                                <a href="#">
-                                    <img src="./img/예배안내아이콘.png" alt="">
-                                </a>
-                            </div>
-                            <a href="#"><p>예배안내</p></a>
+                            <a href="#">예배시간</a>
                         </li>
                         <li class="circle">
-                            <div>
-                                <a href="#">
-                                    <img src="./img/교회소식아이콘.png" alt="">
-                                </a>
-                            </div>
-                            <a href="#"><p>교회소식</p></a>
+                            <a href="#">교회소식</a>
                         </li>
                         <li class="circle">
-                            <div>
-                                <a href="#">
-                                    <img src="./img/문의하기아이콘.png" alt="">
-                                </a>
-                            </div>
-                            <a href="#"><p>문의하기</p></a>
+                            <a href="#">문의하기</a>
                         </li>
                     </ul>
                 </article>
@@ -149,28 +116,21 @@
                     <div class="new_f_box">
                         <div class="n_f_text">
                             <h4>처음오셨나요?</h4>
-                            <span>새가족이 되어 더 따뜻한 목회를 경험하세요!</span>
+                            <p>새가족이 되어 더 따뜻한 목회를 경험하세요!</p>
                         </div>
-                        <a href="#" class="n_f_join"><p>새가족등록하기</p></a>
+                        <a href="#" class="n_f_join">새 가족 등록하기</a>
                     </div>
                     <ul class="new_f_icon">
                         <li>
-                            <img src="./img/교회방문아이콘.png" alt="">
                             <p>벧엘교회 방문</p>
                         </li>
-                        <li><img src="./img/화살표.png" alt=""></li>
                         <li>
-                            <img src="./img/새가족등록아이콘.png" alt="">
                             <p>새가족등록</p>
                         </li>
-                        <li><img src="./img/화살표.png" alt=""></li>
                         <li>
-                            <img src="./img/교육아이콘.png" alt="">
                             <p>교육(4주)</p>
                         </li>
-                        <li><img src="./img/화살표.png" alt=""></li>
                         <li>
-                            <img src="./img/공동체배정아이콘.png" alt="">
                             <p>공동체 배정</p>
                         </li>
                     </ul>
@@ -181,20 +141,19 @@
             <section class="worship">
                 <article class="w_content">
                     <h2><span>예배/설교</span></h2>
-                    <p><a href="https://jingniverse.github.io/church/subpage2">+더보기</a></p>
+                    <a href="https://jingniverse.github.io/church/subpage2">+더보기</a>
                     <div class="w_c_box">
                         <div class="w_c_left">
                             <a href="https://jingniverse.github.io/church/subpage2">
                                 <img src="./img/주일오전.png" alt="">
                                 <div class="w_c_title">
                                     <div class="title_info">
-                                        <span>설교</span>
+                                        <span class="w_bedge">설교</span>
                                         <span>주일예배</span>
-                                        <span>주일오전예배1부</span>
-                                        <span>성경</span>
+                                        <span class="w_t">그사람이 말하는것처럼</span>
                                         <span>요한복음 7장 19~24절 말씀</span>
+                                        <span>2023.12.10</span>
                                     </div>
-                                    <span>2023.12.10</span>
                                 </div>
                             </a>    
                         </div>
@@ -203,13 +162,12 @@
                                 <img src="./img/say.jpg" alt="">
                                 <div class="w_c_title">
                                     <div class="title_info">
-                                        <span>설교</span>
+                                        <span class="w_bedge">설교</span>
                                         <span>주일예배</span>
-                                        <span>주일오전예배1부</span>
-                                        <span>성경</span>
+                                        <span class="w_t">그사람이 말하는것처럼</span>
                                         <span>요한복음 7장 45~52절 말씀</span>
+                                        <span>2023.12.10</span>
                                     </div>
-                                    <span>2023.12.10</span>
                                 </div>
                             </a>    
                         </div>
@@ -224,48 +182,81 @@
                     <div class="news_content_box">
                         <article class="news_content">
                             <ul class="notice">
-                                <li>최신소식
+                                <li>최신소식<span>공동체의 최신소식을 이곳에서!</span>
                                     <ul>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
+                                        <li>
+                                            <p class="n_badge">청년</p>    
+                                            <a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a>
+                                            <span>2023.11.03</span>
+                                        </li>
+                                        <li>
+                                            <p class="n_badge o">장년</p>    
+                                            <a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a>
+                                            <span>2023.11.03</span>
+                                        </li>
+                                        <li>
+                                            <p class="n_badge y">유치부</p>    
+                                            <a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a>
+                                            <span>2023.11.03</span>
+                                        </li>
+                                        <li>
+                                            <p class="n_badge e">중장년</p>    
+                                            <a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a>
+                                            <span>2023.11.03</span>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li>공지사항
+                                <li>공지사항<span> 공지 한번씩 읽어주세요!</span>
                                     <ul>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
-                                        <li><a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a><span>2023.11.03</span></li>
+                                        <li>
+                                            <p class="n_badge em">긴급</p>    
+                                            <a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a>
+                                            <span>2023.11.03</span>
+                                        </li>
+                                        <li>
+                                            <p class="n_badge al">상시</p>    
+                                            <a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a>
+                                            <span>2023.11.03</span>
+                                        </li>
+                                        <li>
+                                            <p class="n_badge al">상시</p>    
+                                            <a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a>
+                                            <span>2023.11.03</span>
+                                        </li>
+                                        <li>
+                                            <p class="n_badge end">종료</p>    
+                                            <a href="#"><span>1월 12일 ~ 13일 청년수련회 참석여부 투표</span></a>
+                                            <span>2023.11.03</span>
+                                        </li>
                                     </ul>
                                 </li>
                         </article>
                         <article class="photo">
-                            <span>교회사진</span>
+                            <p>교회사진</p>
                             <ul>   
                                 <li>
                                     <a href="#">
-                                        <img src="./img/활동사진2.png" alt="">
+                                        <p>중장년 여성부 나들이</p>
+                                        <span>2023.04.12</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="./img/활동사진1.png" alt="">
+                                        <p>청년부 점심 모임</p>
+                                        <span>2023.04.12</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="./img/활동사진3.png" alt="">
+                                        <p>신년 친목모임</p>
+                                        <span>2023.04.12</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="p_board">
                                     <a href="#">
-                                        <img src="./img/활동사진4.png" alt="눈길에서 노는사진">
+                                        <span>구성원들의 색다른 모습</span>
+                                        <span>행사,활동, 예배 등</span>                                        
+                                        <span>더 보러가기</span>
                                     </a>
                                 </li>
                             </ul>
@@ -280,28 +271,32 @@
                 <article class="pray">
                     <h3><span>기도</span></h3>
                     <div class="P_C_box">
-                        <a href="#">
+                        <a href="#" class="p_1">
+                            <img src="./img/중보기도.jpg" alt="">
                             <div>
-                                <img src="./img/중보기도.png" alt="">
                                 <p>중보기도</p>
+                                <span>하나님의 사역역사의 현장이 이곳이며 생명을 살리는 현장인 이곳에 여러 분들을 초대합니다.</span>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" class="p_2">
+                            <img src="./img/중보기도응답방법1.jpg" alt="">
                             <div>
-                                <img src="./img/합심기도.png" alt="">
-                                <p>금주의 합심 기도</p>
+                                <p>합심기도</p>
+                                <span>기도제목을 앞에 놓고 모두 다같이 마음을 함께하여 한주간 기도합시다</span>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" class="p_1">
+                            <img src="./img/100대기도.png" alt="">
                             <div>
-                                <img src="./img/100대기도.png" alt="">
                                 <p>100대 기도제목</p>
+                                <span>기도의 무릎으로 회복을 넘어 부흥으로 나아갑니다.</span>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" class="p_2">
+                            <img src="./img/새벽기도.jpg" alt="">
                             <div>
-                                <img src="./img/새벽.png" alt="">
-                                <p>특별새벽기도</p>
+                                <p>새벽기도</p>
+                                <span>하루의 시작을 기도로 시작합시다!</span>
                             </div>
                         </a>
                     </div>
@@ -331,7 +326,7 @@
         <footer>
             <section>
                 <article class="footer_left">
-                    <h1 class="logo">
+                    <h1 class="logo fo_logo">
                         <a href="https://jingniverse.github.io/church/">
                             <img src="./img/churchlogo.png" alt="교회로고">
                             <span>벧엘동산교회</span>

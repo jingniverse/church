@@ -1,0 +1,982 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -1;
+    border: 0;
+    clip-path: polygon(0 0, 0 0, 0 0);
+  }
+.wrap{font-family: 'Pretendard';}
+/* 헤더시작 */
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 90px;
+    transition: 1s all ease 0s;
+    overflow: hidden;
+    color: #fff;
+    z-index: 10;
+}
+header:hover{
+    height: 330px;
+    color: black;
+    background:#fff;
+}
+header.on{
+    border-bottom: 1px solid #0000002c;
+    background: #FFF;color: black;}
+header>div{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.logo{margin-right: 150px;}
+.logo>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.logo span{margin-left: 20px;}
+.gnb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gnb>li{
+    position: relative;
+    width: 130px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.gnb>li+li{margin-left: 70px;}
+.gnb>li>a{display: inline-block;}
+.gnb>li>ul{
+    position: absolute;
+    top:70px;
+    left: 0;
+    font-size: 23px;
+    font-weight: 400;
+}
+.gnb>li>ul li+li{margin-top: 20px;}
+.menu{display: none;}
+/* 헤더 끝 */
+section{width: 100%;}
+/* 배너시작 */
+.banner{
+    position: relative;
+    width: 100%;
+    height: 950px;
+    background: url(../img/mainback.png) no-repeat 0 0/ contain;
+    background-size: 100% 950px;    
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: block;
+    }    
+.banner>article{
+    position: absolute;
+    width: 550px;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.b_writing1{
+    width: 455px;
+    height: 145px;
+    position: relative;
+    left:5%;    
+    top:40%;
+    border-top: 10px solid #00A25B;
+    border-left: 10px solid #00A25B;
+}
+.b_writing1::before{
+    content: "";
+    width: 40px;
+    display: block;
+    height: 10px;
+    background: #00A25B;
+    position: absolute;
+    bottom: 0;
+}
+.b_writing1::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    background: #00A25B;
+}
+.b_writing1 p{
+    width: 482px;
+    position: absolute;
+    top:50%;
+    font-size: 60px;
+    font-weight: 500;
+    color: #FFF;
+    line-height: normal;
+    transform: translate(10%,-25%);
+}
+/* 배너 끝 */
+/* 소개페이지 시작 */
+.introduce{
+    width: 1440px;
+    padding:  150px 100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+/* 우리교회는? */
+.int_box{
+    margin-bottom: 130px;
+    box-sizing: border-box;
+}
+.int_box h3{    font-size: 45px;   font-weight: bold; }
+.int_box p{font-size: 30px; width: 500px; line-height: 35px;margin: 45px 0 35px;}
+.int_box ul{
+    display: flex;
+    justify-content: center;
+}
+.int_box ul li+li{
+    margin-left: 50px;
+}
+.circle a{
+    position: relative;
+    display:flex ;
+    flex-flow: column;
+    align-items: center;
+    font-size: 23px;
+    line-height:27px;
+}
+.circle a:hover{
+    color: #00A25B;
+}
+.circle a::before{
+    content: "";
+    display:flex;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 15px;
+}
+.circle a::after{
+    content: "";
+    top:0;
+    left: 0;
+    position: absolute;
+    display:flex;
+    width: 140px;
+    height: 140px;
+    background: #00A25B;
+    border-radius: 50%;
+    transition: .4s all ease 0s;
+    z-index: -1;
+    box-sizing: border-box;
+}
+.circle a:hover::after{
+    background: #FFF;
+    border: 1px solid #00A25B;
+}
+ul li.circle:first-of-type>a::before{background: url(../img/교회방문아이콘.png) no-repeat center;}
+ul li.circle:nth-of-type(2)>a::before{background: url(../img/주보아이콘.png) no-repeat center;}
+ul li.circle:nth-of-type(3)>a::before{background: url(../img/큐티아이콘.png) no-repeat center;}
+ul li.circle:nth-of-type(4)>a::before{background: url(../img/예배안내아이콘.png) no-repeat center;}
+ul li.circle:nth-of-type(5)>a::before{background: url(../img/교회소식아이콘.png) no-repeat center;}
+ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘.png) no-repeat center;}
+/* 우리교회는 끝 */
+/* 새가족등록 */
+.new_family{
+    box-sizing: border-box;
+}
+.new_f_box{
+    display: flex;
+    justify-content: space-between;
+
+}
+.n_f_text h4{
+    font-size: 40px;
+    font-weight: bold;
+}
+.n_f_text p{
+    font-size: 25px;
+    margin: 45px 0 35px;
+}
+.n_f_join{
+    width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #FFF;
+    background: #00A25B;
+    border: 1px solid #00A25B;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: .4s all ease 0s;
+}
+.new_f_icon{
+    display: flex;
+    justify-content: center;
+}
+.new_f_icon li{    display: flex;
+    justify-content: center;
+}
+.new_f_icon li+li{    margin-left: 50px;}
+.new_f_icon li p{
+    font-size: 20px;
+    text-align: center;
+}
+.new_f_icon li p::before{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.new_f_icon li:first-of-type p::before{
+    background: url(../img/교회방문아이콘.png) no-repeat center;
+    background-size: 70%;
+}
+.new_f_icon li:nth-of-type(2) p::before{
+    background: url(../img/새가족등록아이콘.png) no-repeat center;
+    background-size: 70%;
+}
+.new_f_icon li:nth-of-type(3) p::before{
+    background: url(../img/교육아이콘.png) no-repeat center;
+    background-size: 70%;
+}
+.new_f_icon li:last-of-type p::before{
+    background: url(../img/공동체배정아이콘.png) no-repeat center;
+    background-size: 70%;
+}
+.n_f_join:hover{
+    background: #FFF;
+    color: #00A25B;
+}
+.new_f_icon li::after{
+    content: "";
+    background: url(../img/화살표.png) no-repeat center;
+    width: 30px;
+    height: 100%;
+    display: block;
+    margin-left: 50px;
+}
+.new_f_icon li:last-of-type:after{display: none;}
+
+/* 새가족등록 끝 */
+/* 예배설교 */
+.worship{
+    width: 1440px;
+    padding: 50px 100px 150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.w_content{
+    display: flex;
+    flex-flow: column;
+}
+
+.w_content h2{
+    width: 100%;
+    margin:0 auto 70px;
+    text-align: center;
+    font-size: 50px;
+}
+.w_content h2>span{
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+    border-bottom: 5px solid #00A25B;
+}
+.w_content>a{
+    display: inline-block;
+    align-self: flex-end;
+    border-bottom: 5px solid #00A25B;
+    margin-bottom: 10px;
+}
+.w_c_box{
+    display: flex;
+    justify-content: space-between;
+}
+.w_c_box a{
+    width:600px;
+    height: 500px;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s color ease 0s;
+}
+.w_c_box a:hover{
+    border: 1px solid #00A25B;
+    color: #00A25B;
+}
+.w_c_box a img{
+    width: 600px;
+    height: 350px;
+    font-size: 0;
+    line-height: 0;
+}
+.w_c_title{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 150px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+.title_info{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 100%;
+}
+.title_info .w_bedge{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    color: #FFF;
+    background: blue;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.title_info .w_t{font-size: 25px;}
+.title_info span:last-of-type{
+    height: 100%;
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+}
+/* 예배설교 끝 */
+/* 교회소식 */
+.news{
+    width: 1440px;
+    padding: 50px 100px 150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.news h2{
+    width: 100%;
+    margin:0 auto 70px;
+    text-align: center;
+    font-size: 50px;
+}
+.news h2>span{
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+    border-bottom: 5px solid #00A25B;
+}
+.news_content{
+    width: 100%;
+    display: flex;
+}
+.notice{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.notice>li{
+    width: 500px;
+    font-size: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.notice>li::before{
+    content: "";
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: url(../img/news.png)no-repeat center;
+}
+.notice>li>span{
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.notice>li:last-of-type::before{
+    background: url(../img/notice.png)no-repeat center;
+}
+
+.notice ul{
+    width: 100%;
+    height: 500px;
+    font-size: 18px;
+    background: #00a25c15;
+    padding: 50px;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 1s background ease 0s;
+    overflow-y: auto;
+}
+.notice ul::-webkit-scrollbar{
+    width: 7px;
+}
+.notice ul::-webkit-scrollbar-thumb{
+    height: 25%;
+    background: #00A25B;
+    border-radius: 0 20px 20px 0;
+}
+.notice ul::-webkit-scrollbar-track{
+    background: #0cdb8154;
+    border-radius: 0 20px 20px 0;
+}
+.notice ul:hover{
+    background: #00a25c15;
+}
+.notice ul li{
+    flex: none;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    padding: 10px;
+    /* background: #d4eee2; */
+    background: #fff;
+    border-radius: 10px;
+    color: gray;
+    transition: 0.5s all ease 0s;
+    box-sizing: border-box;
+}
+.notice ul li:hover{    transform: scale(1.05);}
+.notice ul li:hover .n_badge{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.notice ul li:hover a{color: #00A25B;}
+
+.notice ul li+li{
+    margin-top: 50px;
+}
+.notice ul li a{
+    display: block;
+    color: black;
+    margin-bottom: 20px;
+}
+.n_badge{
+    position: absolute;
+    left:50%;
+    top: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    color: #FFF;
+    border-radius: 40px;
+    width: 60px;
+    height: 30px;
+    transform: translate(-50%,0);
+    transition: .5s all ease 0s;
+}
+.n_badge.y{background: lightgreen;}
+.n_badge.o{background: orange;}
+.n_badge.e{background: brown;}
+.n_badge.em{background: red;}
+.n_badge.end{background: black;}
+.n_badge.al{background: salmon;}
+
+.photo>p{   
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;    
+}
+.photo ul{
+    display: flex;
+    width: 100%;
+}
+.photo ul li{
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+.photo ul li+li{    margin-left: 15px;}
+.photo ul li img{
+    width: 300px;
+    height: 300px;
+}
+.photo ul li a{
+    display: flex;
+    position: relative;
+    width: 300px;
+    color: #FFF;
+    height: 300px;
+    transition: .5s transform ease 0s;
+    z-index: 1;
+    padding: 30px;
+    flex-flow: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.photo ul li a span{
+    margin-top: 20px;
+    font-size: 15px;
+    color: lightgray;
+}
+
+.photo ul li a:hover{    transform: scale(1.1);}
+.photo ul li:first-of-type a{    
+    background: url(../img/활동사진2.png) no-repeat;
+    background-size: 300px 300px;
+}
+.photo ul li:nth-of-type(2) a{    
+    background: url(../img/활동사진3.png) no-repeat;
+    background-size: 300px 300px;
+}
+.photo ul li:nth-of-type(3) a{    
+    background: url(../img/활동사진1.png) no-repeat;
+    background-size: 300px 300px;
+}
+.photo ul li a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;  
+    border-radius: 20px;
+      
+}
+.photo ul li:hover a::after{
+    opacity: 1;
+}
+.photo ul li a p,.photo ul li a span{
+    opacity: 0;
+}
+.photo ul li:hover a p,.photo ul li:hover a span{
+    opacity: 1;
+    transform: scale(0.9);
+}
+.photo ul li:last-of-type:hover a::after{
+    background: none;
+}
+.photo ul li:last-of-type a span{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.photo ul .p_board a{
+    display: flex;
+    flex-flow: column;
+    background:linear-gradient(0deg, #1d8558 0%,#0cdb81 100%);
+}
+.photo ul .p_board a span{
+    color: white;
+}
+.p_board span:first-of-type{
+    font-size: 23px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.p_board span:nth-of-type(2){
+    margin: 30px 0 100px;
+    font-size: 20px;
+}
+.p_board span:last-of-type{
+    line-height: 20px;
+    font-size: 18px;
+    display: flex;
+}
+.photo ul li.p_board a:hover{
+    transform: scale(1);
+    background:linear-gradient(0deg, #1d8558 0%,#0cdb81 100%);
+    
+}
+.p_board span:last-of-type::after{
+    content: "";
+    background: url(../img/arrow_right_white.png) no-repeat center;
+    width: 30px;
+    height: 18px;
+    display: inline-block;
+    margin-left: 10px;
+    transition: 0.5s all ease 0s;
+}
+.p_board:hover span:last-of-type::after{
+    animation: bing 1.5s infinite 0s;
+}
+/* 교회소식 끝 */
+/* 기도 */
+.etc{
+    width: 100%;
+    background:#2C3D51 url(../img/unnamed.png) no-repeat right 30px top 50px;
+    background-size: 400px 400px;
+}
+.pray{
+    width: 1440px;
+    padding:  50px 150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.pray h3{
+    text-align: center;
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+    margin:0 auto 70px;
+}
+.pray h3 span{
+    border-bottom: 5px solid #00A25B;
+    display: inline-block;
+}
+.P_C_box{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.P_C_box a+a{
+    margin-top: 40px;
+}
+.P_C_box a{
+    display: flex;
+    width: 700px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.p_1{    margin-right: 300px;}
+.p_2{
+    flex-flow: row-reverse;
+    margin-left: 300px;
+}
+.P_C_box a p{
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+.p_1 img,.p_2 img{
+    object-fit: fill;
+    width: 300px;
+    height: 300px;
+}
+.p_1 div,.p_2 div{
+    width: 400px;
+    height: 300px;
+    background: white;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.P_C_box a span{
+    line-height: 30px;
+    font-weight: 400px;
+    font-size: 20px;
+}
+/* 기도 끝*/
+
+.consulting{
+    width: 100%;
+    background: #fff;
+    color: black;
+}
+.c_content_box{
+    margin: 0 auto;
+    width: 1420px;
+    padding: 50px 150px;
+    box-sizing: border-box;
+}
+.c_content_box h3{
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+}
+.c_content_box h3 span{
+    display: inline-block;
+    border-bottom: 5px solid #00A25B;}
+.c_content_box>p{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    margin: 45px 0 35px;
+}
+.c_content_box>div{
+    display: flex;
+    justify-content: center;
+}
+.c_content_box a{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 300px;
+    height: 120px;
+    background:linear-gradient(135deg, #0cdb81 0%,#1d8558 100%);
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 30px;
+}
+.c_content_box a+a{
+    margin-left: 50px;
+}
+.c_content_box a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+
+.c_content_box a:first-of-type::after{
+    background: url(../img/heart.png) no-repeat center left 30px;
+    background-size: 80px 80px;
+}
+.c_content_box a:nth-of-type(2)::after{
+    background: url(../img/house.png) no-repeat center left 30px;
+    background-size: 100px 100px;
+}
+.c_content_box a:last-of-type::after{
+    background: url(../img/문의.png) no-repeat center left 30px;
+    background-size: 100px 100px;
+}
+
+
+.c_content_box a:first-of-type:hover::after{
+    animation: u_d 3s infinite linear 0s;
+    background-size: 80px 80px;
+}
+.c_content_box a:nth-of-type(2):hover::after{
+    background-size: 100px 100px;
+    animation: house 3s infinite linear 0s;
+
+}
+.c_content_box a:last-of-type:hover::after{
+    background-size: 100px 100px;
+    animation: bing2 3s infinite linear 0s;
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 300px;
+    background: #3A4149;
+    color: white;}
+footer>section{
+    width: 1420px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+}
+footer article{
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    width: 50%;
+}
+footer .logo a{
+    justify-content: flex-start;
+}
+footer article:last-of-type{
+    width: 100%;
+}
+footer article:last-of-type p{
+    margin: 0 auto;
+    height: 100%;
+}
+.footer_left{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.footer_left ul{
+    font-size: 18px;
+    display:  flex;
+    width: 70%;
+}
+.footer_left ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_left ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+.footer_left ul li::after{
+    content: "";
+    display: flex;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 12px;
+    width: 1px;
+    border-right: 1px solid white;
+    margin: 4px 15px;
+}
+.footer_left ul li:last-of-type:after{
+    display: none;
+}
+address{
+    display: flex;
+    flex-flow: column;
+}
+address span{
+    margin: 10px 0;
+}
+
+.footer_right{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+.sns{width: 40%;}
+.sns>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.sns>ul li a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: .7s background ease 0s;
+}
+.sns>ul li:nth-of-type(1) a{
+    background: url(../img/you_white.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(2) a{
+    background: url(../img/insta_white.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(3) a{
+    background: url(../img/fa_white.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(4) a{
+    background: url(../img/ka_white.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(1) a:hover{
+    background: url(../img/you_red.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(2) a:hover{
+    background: url(../img/insta_icon.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(3) a:hover{
+    background: url(../img/facebook_blue.png)
+    no-repeat center /contain;
+}
+.sns>ul li:nth-of-type(4) a:hover{
+    background: url(../img/kakao_yellow.png)
+    no-repeat center /contain;
+}
+
+
+
+
+@keyframes bing{
+    0%{ 
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+@keyframes bing2{
+    33%{ 
+        background: url(../img/문의.png) no-repeat top 20px left 30px ;
+        background-size: 100px 100px;
+    }
+    66%{
+        background: url(../img/문의.png) no-repeat bottom 20px left 30px ;
+        background-size: 100px 100px;
+    }
+    100%{
+        background: url(../img/문의.png) no-repeat center left 30px;
+background-size: 100px 100px;
+    }
+}
+
+@keyframes u_d{
+    33%{ 
+        background: url(../img/heart.png) no-repeat top 30px left 30px ;
+        background-size: 80px 80px;
+    }
+    66%{
+        background: url(../img/heart.png) no-repeat bottom 30px left 30px ;
+        background-size: 80px 80px;
+    }
+    100%{
+        background: url(../img/heart.png) no-repeat center left 30px;
+        background-size: 80px 80px;
+    }
+}
+
+@keyframes house{
+    33%{ 
+        background: url(../img/house.png) no-repeat top 30px left 30px ;
+        background-size: 100px 100px;
+    }
+    66%{
+        background: url(../img/house.png) no-repeat bottom 30px left 30px ;
+        background-size: 100px 100px;
+    }
+    100%{
+        background: url(../img/house.png) no-repeat center left 30px;
+        background-size: 100px 100px;
+    }
+}
+
