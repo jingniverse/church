@@ -20,11 +20,12 @@ header{
     color: #fff;
     z-index: 10;
 }
-header:hover{
+header.active,header:hover{
     height: 330px;
     color: black;
     background:#fff;
 }
+
 header.on{
     border-bottom: 1px solid #0000002c;
     background: #FFF;color: black;}
@@ -53,19 +54,25 @@ header>div{
 .gnb>li{
     position: relative;
     width: 130px;
-    font-size: 25px;
-    font-weight: 500;
 }
 .gnb>li+li{margin-left: 70px;}
-.gnb>li>a{display: inline-block;}
+.gnb>li>a{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+}
+.gnb>li:hover>a{
+    color: #00A25B;
+}
 .gnb>li>ul{
     position: absolute;
     top:70px;
     left: 0;
-    font-size: 23px;
-    font-weight: 400;
+    font-size: 20px;
+    font-style: 400;
 }
 .gnb>li>ul li+li{margin-top: 20px;}
+.gnb>li>ul li:hover a{ color: #00A25B;}
 .menu{display: none;}
 /* 헤더 끝 */
 section{width: 100%;}
@@ -359,16 +366,18 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     width: 70px;
     height: 30px;
     color: #FFF;
-    background: blue;
+    background: #ffb02b;
     font-size: 18px;
     border-radius: 20px;
 }
-.title_info .w_t{font-size: 25px;}
+.w_k{color:#ffb02b ;}
+.title_info .w_t{font-size: 25px; font-weight: 600;}
 .title_info span:last-of-type{
     height: 100%;
     align-self: flex-end;
     display: flex;
     align-items: flex-end;
+    color: lightgray;
 }
 /* 예배설교 끝 */
 /* 교회소식 */
@@ -429,7 +438,6 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 
 .notice ul{
     width: 100%;
-    height: 500px;
     font-size: 18px;
     background: #00a25c15;
     padding: 50px;
@@ -439,7 +447,6 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     align-items: center;
     box-sizing: border-box;
     transition: 1s background ease 0s;
-    overflow-y: auto;
 }
 .notice ul::-webkit-scrollbar{
     width: 7px;
@@ -525,7 +532,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     width: 300px;
     height: 300px;
 }
-.photo ul li+li{    margin-left: 15px;}
+.photo ul li+li{margin-left: 40px;}
 .photo ul li img{
     width: 300px;
     height: 300px;
@@ -696,12 +703,19 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     height: 300px;
     background: white;
     padding: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
     box-sizing: border-box;
 }
 .P_C_box a span{
+    color: rgba(0, 0, 0, .4);
     line-height: 30px;
     font-weight: 400px;
     font-size: 20px;
+    text-align: center;
 }
 /* 기도 끝*/
 
@@ -716,7 +730,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     padding: 50px 150px;
     box-sizing: border-box;
 }
-.c_content_box h3{
+.c_content_box h3{ 
     font-size: 45px;
     font-weight: 500;
     letter-spacing: -1.2px;
@@ -728,7 +742,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     font-size: 30px;
     font-weight: 400;
     letter-spacing: -0.6px;
-    margin: 45px 0 35px;
+    margin: 55px 0 35px;
 }
 .c_content_box>div{
     display: flex;
@@ -749,7 +763,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     font-size: 30px;
 }
 .c_content_box a+a{
-    margin-left: 50px;
+    margin-left: 110px;
 }
 .c_content_box a::after{
     position: absolute;

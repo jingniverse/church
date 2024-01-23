@@ -28,15 +28,15 @@ $(document).ready(function(){
         // 헤더에 탭 키로 이동했을 때
         $('.gnb>li').on('keyup', function(e) {
           if (e.which === 9) { // Tab 키를 눌렀을 때
-            $('header').removeClass('active'); // 원하는 높이로 변경
+            $('header').addClass('active'); // 원하는 높이로 변경
           }else if(e.which === 9 && e.shiftKey){
-            $('header').removeClass('active'); // 원하는 높이로 변경
+            $('header').addClass('active'); // 원하는 높이로 변경
           }
 
         });
         $('.circle').on('keyup', function(e) {
             if (e.which === 9) { // Tab 키를 눌렀을 때
-              $('header').addClass('active')
+              $('header').removeClass('active')
               $('header').slideup(200)
               // 원하는 높이로 변경
                 }
@@ -50,7 +50,7 @@ $(document).ready(function(){
         // 헤더에서 Shift + Tab 키로 나갔을 때
         $('.logo').on('keyup', function(e) {
           if (e.which === 9 && e.shiftKey) { // Shift + Tab 키를 눌렀을 때
-            $('header').addClass('active'); // 초기 높이로 복원
+            $('header').removeClass('active'); // 초기 높이로 복원
           }
         });
       });
