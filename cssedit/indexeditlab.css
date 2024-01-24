@@ -1,0 +1,149 @@
+@media all and (min-width:1024px) and (max-width:1440px)
+{
+/* 헤더시작 */
+header>div{    width: 100%;}
+.logo{margin-right: 70px;}
+.gnb>li+li{margin-left: 35px;}
+.gnb>li>ul{
+    position: absolute;
+    top:70px;
+    left: 0;
+    font-size: 20px;
+    font-style: 400;
+}
+/* 헤더 끝 */
+/* 배너시작 */
+.banner{    height: 850px;    background-size: 100% 850px;    }
+.banner>article{    width: 420px;}
+.b_writing1{    width: 400px;    height: 130px;}
+.b_writing1 p{width: 430px;font-size: 50px;transform: translate(12%,-25%);}
+/* 배너 끝 */
+/* 소개페이지 시작 */
+.introduce{    width: 1000px;    padding:  150px 0px;}
+/* 우리교회는? */
+.int_box{    margin-bottom: 100px;}
+.int_box h3{    font-size: 40px;}
+.int_box p{font-size:27px; width:450px;margin: 50px 0 30px;}
+.int_box ul li+li{    margin-left: 35px;}
+.circle a::before{    width: 130px;   height: 130px;}
+.circle a::after{    width: 130px;    height: 130px;}
+/* 우리교회는 끝 */
+/* 새가족등록 */
+.n_f_text h4{    font-size: 35px;}
+.n_f_text p{    font-size: 23px;    margin: 50px 0 30px;}
+.n_f_join{    width: 230px;    font-size: 23px;}
+.new_f_icon li+li{ margin-left: 35px;}
+.new_f_icon li p::before{    width: 140px;    height: 140px;}
+.new_f_icon li:last-of-type:after{display: none;}
+/* 새가족등록 끝 */
+/* 예배설교 */
+.worship{width: 980px;padding:50px 0px 150px;}
+.w_content h2{    margin:0 auto 50px;   font-size: 45px;}
+.w_c_box a{    width:450px;    height: 400px;}
+.w_c_box a img{    width: 450px;    height: 260px;}
+.w_c_box a:hover .w_k{color: #ffb02b;}
+.w_c_title{width: 450px;   height: 140px;  padding: 20px 40px;}
+/* 예배설교 끝 */
+/* 교회소식 */
+.news h2{    margin:0 auto 50px;   font-size: 45px;}
+.news_content{    padding: 0 ;    width: 1000px;}
+.notice{    margin-bottom: 50px;}
+.notice>li{    width: 450px;}
+.photo{    width: 800px;}
+.photo ul {    flex-flow: row wrap;}
+.photo ul li{    margin: 50px;}
+.photo ul li+li{margin-left: 50px;}
+/* 교회소식 끝 */
+/* 기도 */
+.etc{
+    background:#2C3D51 url(../img/unnamed.png) no-repeat right 30px top 50px;
+    background-size: 400px 400px;
+}
+.pray{    width: 1000px;    padding:  50px 0px;}
+.pray h3{    font-size: 40px;    margin:0 auto 50px;}
+.P_C_box{    flex-flow: row wrap; justify-content: center;  }
+.P_C_box a+a{    margin-top: 40px;}
+.P_C_box a{flex-flow:column;width:300px;height:500px;margin:40px;}
+.p_1{        margin-right: 0px;}
+.p_2{    margin-left: 0px;}
+.P_C_box a p{    margin-bottom: 20px;}
+.p_1 div,.p_2 div{width: 300px; height: 200px;padding: 30px;}
+.P_C_box a span{    letter-spacing: 1px;}
+/* 기도 끝*/
+.c_content_box{    width: 1000px;    padding: 50px 0px;}
+.c_content_box h3{     font-size: 40px;}
+.c_content_box>p{    font-size: 23px;    margin: 50px 0 30px;}
+.c_content_box a{    height: 100px;    padding:30px 40px;}
+.c_content_box a+a{    margin-left: 100px;}
+.c_content_box a:first-of-type::after{background-size: 60px;}
+.c_content_box a:nth-of-type(2)::after{background-size: 80px;}
+.c_content_box a:last-of-type::after{background-size: 70px;}
+.c_content_box a:first-of-type:hover::after{background-size:60px;}
+.c_content_box a:nth-of-type(2):hover::after{background-size:80px;}
+.c_content_box a:last-of-type:hover::after{background-size:70px;}
+footer>section{width: 1000px;padding: 40px 20px;}
+footer section>article{ width: 50%;}
+.footer_left ul{    width: 100%;}
+
+
+
+@keyframes bing{
+    0%{ 
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+@keyframes bing2{
+    33%{ 
+        background: url(../img/문의.png) no-repeat top 20px left 30px ;
+        background-size: 70px;
+    }
+    66%{
+        background: url(../img/문의.png) no-repeat bottom 20px left 30px ;
+        background-size: 70px;
+    }
+    100%{
+        background: url(../img/문의.png) no-repeat center left 30px;
+        background-size: 70px;
+    }
+}
+
+@keyframes u_d{
+    33%{ 
+        background: url(../img/heart.png) no-repeat top 30px left 30px ;
+        background-size: 60px;
+    }
+    66%{
+        background: url(../img/heart.png) no-repeat bottom 30px left 30px ;
+        background-size: 60px;
+    }
+    100%{
+        background: url(../img/heart.png) no-repeat center left 30px;
+        background-size: 60px;
+    }
+}
+
+@keyframes house{
+    33%{ 
+        background: url(../img/house.png) no-repeat top 30px left 30px ;
+        background-size: 80px;
+    }
+    66%{
+        background: url(../img/house.png) no-repeat bottom 30px left 30px ;
+        background-size: 80px;
+    }
+    100%{
+        background: url(../img/house.png) no-repeat center left 30px;
+        background-size: 80px;
+    }
+}
+
+}

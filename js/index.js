@@ -1,14 +1,23 @@
 $(document).ready(function(){
-    $(".menu>span:first-of-type").click(function(){
-        $("header").addClass("active")
+    let da = false
+    $(".menu").click(function(){
+        if(da == false){
+            $("header").addClass("full")
+            da=true
+        }else{
+            $("header").removeClass("full")
+            da=false
+        }
+        
+
     })
-    $(".menu>span:last-of-type").click(function(){
-        $("header").removeClass("active")
-    })
+    // $(".menu").click(function(){
+    //     $("header").removeClass("full")
+    // })
 
     $(".gnb>li").click(function(){
         $(".gnb>li").removeClass('on')
-        $('this').addClass("on")
+        $(this).addClass("on")
     })
 
 

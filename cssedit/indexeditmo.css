@@ -1,0 +1,244 @@
+@media all and (min-width:480px) and (max-width:767px) {   
+    /* 헤더 */
+header>div{    width: 450px;}
+header:hover{height: 90px;background: none;color:#FFF}
+header.active.on{    background: #fff;    color: black;
+    border-bottom: 1px solid #0000002d;}
+header.on:hover{height: 90px;color: black;background:white;}
+header.full .gnb{
+    top:0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: white;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+/* 헤더로고 */
+.logo a{    display: flex;    align-items: center;}
+.logo img{ width: 34px;    height: 50px;    margin-right: 15px;}
+.logo span{font-size:30px;font-weight: 700;font-style: normal;}
+/* 헤더로고 끝 */
+/* 메인메뉴 */
+.gnb{    display: none;}
+.gnb>li{
+    position: relative;
+    font-size: 40px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1s height ease 0s;
+    height: 70px;
+}
+.gnb>li+li{margin-left: 0px;}
+.gnb>li>a{height: 100%; padding: 20px 0; display: flex;}
+.menu{display: block;}
+header.full .gnb>li.on{    height: 290px;}
+header.full .gnb>li>ul{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+header .menu{background: url(../img/hamburger_white.svg)no-repeat center/cover; display: block;}
+header.on .menu{background: url(../img/hamburger.svg) no-repeat center/cover;}
+header.full .menu{
+    background: url(../img/close.svg)no-repeat center/cover;
+    position: absolute;
+    right: 20px;
+    top:20px;
+    z-index: 10;
+    display: block;
+}
+header .menu{display: block;cursor: pointer;width: 40px;height: 40px;border: none;}
+/* 메인메뉴 끝 */
+/* 헤더끝 */
+
+/* 배너시작 */
+.banner{width: 100%;height: 850px;  background-size: fill 850px;}
+.banner article{    width: 400px;}
+/* 배너필터처리 */
+/* 배너 글꾸미기 */
+.b_writing1{    width: 345px;    height: 120px;}
+.b_writing1::before{    width: 30px;}
+.b_writing1::after{    height: 30px;}
+.b_writing1 p{    width: 370px;    font-size: 45px;}
+/*배너 글꾸미기 끝 */
+/* 소개페이지 */
+/* 소개텍스트 */
+.introduce{    width: 750px;   padding: 150px 0}
+.int_box h3{    font-size: 35px; text-align: center;}
+.int_box>p{text-align: center;font-size: 23px; width: 400px;margin: 45px auto 25px;}
+/* 간편메뉴 */
+.int_box ul{ margin: 0 auto; width: 650px;  flex-flow: row wrap;}
+.int_box ul li{margin: 30px;}
+.int_box ul li+li{    margin-left: 30px;}
+.circle a{font-size: 20px;}
+.circle>a::before{    width: 110px;    height: 110px;}
+.circle a::after{    width: 110px;    height: 110px; }
+ul li.circle:first-of-type>a::before{    background-size:70px;}
+/* 간편메뉴 끝 */
+/* 소개텍스트 끝 */
+/* 새가족등록 */
+.new_family{    box-sizing: border-box;}
+.n_f_text h4{font-size: 30px;}
+.n_f_text p{    font-size: 23px;    margin: 45px 0 25px;}
+.n_f_join{width: 200px;font-size: 20px;height: 50px;}
+.new_f_icon li::after{    display: none;}
+.new_f_icon li p{ font-size: 18px;}
+/* 새가족등록 끝 */
+/* 예배/설교 페이지 */
+.worship{width: 750px;padding:50px 0px 150px;}
+/* 예배/설교 텍스트*/
+.w_content h2{margin:0 auto 40px;   font-size: 40px;}
+/* 예배/설교 텍스트 끝*/
+/* 예배/설교 컨텐츠*/
+.w_c_box a{    width:350px;    height: 350px;}
+.w_c_box a img{    width: 350px;    height: 200px;}
+/* 예배/설교 컨텐츠*/
+/* 예배/설교 박스 텍스트*/
+.w_c_title{    width: 350px; padding: 20px;}
+.title_info{font-size: 18px;}
+.title_info .w_bedge{font-size: 16px;width: 60px;height: 25px;  letter-spacing: 2px;}
+.w_t{font-size: 23px;}
+.w_bible{font-size: 16px;}
+/* 예배/설교 박스 텍스트 끝*/
+/* 예배/설교페이지 끝 */
+/* 교회소식페이지 */
+.news>article{width: 750px;padding: 50px 0 0px; margin: 0 auto;}
+.news h2{    margin:0 auto 40px;    font-size: 40px;}
+.news_content_box{flex-flow: column;justify-content: center;}
+.news_content{width: 750px;}
+.notice{margin: 0 auto;flex-flow: column;align-items: center;}
+.notice>li{font-size: 25px;}
+.notice>li+li{margin-top: 50px;}
+.notice>li::before{width: 30px;height: 30px;}
+/* 최신소식,공지사항 */
+/* 최신소식,공지사항 끝 */
+/* 교회사진 */
+.photo{width: 750px; margin-top: 50px;}
+.photo>p{font-size: 25px;}
+.photo>p::before{width: 30px;    height: 30px;}
+.photo ul {    flex-flow: row wrap;}
+.photo ul li+li{margin-left: 30px;}
+.photo ul li{margin: 30px;}
+/* 교회사진 끝 */
+/* 교회소식페이지 끝 */
+/* 기도페이지 */
+.pray{    width: 750px;    padding:  50px 0px;}
+.pray h3{    font-size: 35px;    margin:0 auto 40px;}
+.P_C_box{    flex-flow: row wrap; justify-content: center;  }
+.P_C_box a+a{    margin-top: 30px;}
+.P_C_box a{flex-flow:column;width:300px;height:400px;margin:30px;}
+.P_C_box a p{ font-size: 25px;  margin-bottom: 20px;}
+.P_C_box a span{font-size: 18px;}
+.p_1 div,.p_2 div{width: 300px; height: 200px;padding: 30px;}
+.p_1 img,.p_2 img{ height: 200px;} 
+.P_C_box a span{    letter-spacing: 1px;}
+/* 상담페이지 */
+.c_content_box{display: flex;flex-flow: column wrap;justify-content:space-around;height:400px;width:750px;padding:50px 0px;}
+/* 상담페이지 텍스트 */
+.c_content_box h3{    font-size: 35px;}
+.c_content_box>p{ font-size: 25px; margin:  0 0;}
+/* 상담페이지 텍스트 끝*/
+/* 상담페이지 박스 */
+.c_content_box>div{height: 100%;align-items:flex-end;flex-flow: column;}
+.c_content_box a+a{margin-left: 0;margin-top: 35px;}
+.c_content_box>div a{padding:20px;width:220px;height:70px;    font-size: 20px;}
+.c_content_box a:first-of-type::after{background-size: 55px;}
+.c_content_box a:nth-of-type(2)::after{background-size: 70px;}
+.c_content_box a:last-of-type::after{background-size: 60px;}
+.c_content_box a:first-of-type:hover::after{background-size:55px;}
+.c_content_box a:nth-of-type(2):hover::after{background-size:70px;}
+.c_content_box a:last-of-type:hover::after{background-size:60px;}
+/* 상담페이지 박스 끝 */
+/* 상담페이지 끝  */
+footer{width: 100%;}    
+footer>section{width: 750px;padding: 40px 0px;}
+footer section>article{    width: 50%;}
+.footer_left ul{    width: 100%;    font-size: 16px;}
+address{    font-size: 14px;}
+.sns{width: 50%;}
+
+.bing{animation: bing 1.5s ease-in-out forwards;}
+.left_to_right {opacity: 0;animation: left_to_right 1.5s ease-in-out forwards;}
+.right_to_left {opacity: 0;animation: right_to_left 1.5s ease-in-out forwards;} 
+.u_to_d {opacity:0;animation: u_to_d 1.5s ease-in-out forwards;}
+
+  @keyframes bing{
+    0%{ 
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes bing2{
+    33%{ 
+        background: url(../img/문의.png) no-repeat top 20px left 30px ;
+        background-size: 60px;
+    }
+    66%{
+        background: url(../img/문의.png) no-repeat bottom 20px left 30px ;
+        background-size:  60px;
+    }
+    100%{
+        background: url(../img/문의.png) no-repeat center left 30px;
+        background-size:  60px;
+
+    }
+}
+
+@keyframes u_d{
+    33%{ 
+        background: url(../img/heart.png) no-repeat top 30px left 30px ;
+        background-size: 70px;
+    }
+    66%{
+        background: url(../img/heart.png) no-repeat bottom 30px left 30px ;
+        background-size: 70px;
+    }
+    100%{
+        background: url(../img/heart.png) no-repeat center left 30px;
+        background-size: 70px;
+    }
+}
+
+@keyframes house{
+    33%{ 
+        background: url(../img/house.png) no-repeat top 30px left 30px ;
+        background-size: 60px
+    }
+    66%{
+        background: url(../img/house.png) no-repeat bottom 30px left 30px ;
+        background-size: 60px
+    }
+    100%{
+        background: url(../img/house.png) no-repeat center left 30px;
+        background-size: 60px
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .title_info{
+        width: 70%;
+    }
+    .notice ul li a{
+        display: inline-block;
+    }
+    }
+}

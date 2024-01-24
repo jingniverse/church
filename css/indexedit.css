@@ -21,7 +21,7 @@ header{
     z-index: 10;
 }
 header.active,header:hover{
-    height: 330px;
+    height: 300px;
     color: black;
     background:#fff;
 }
@@ -154,7 +154,7 @@ section{width: 100%;}
     box-sizing: border-box;
 }
 .int_box h3{    font-size: 45px;   font-weight: bold; }
-.int_box p{font-size: 30px; width: 500px; line-height: 35px;margin: 45px 0 35px;}
+.int_box p{font-size: 30px; width: 500px; line-height: 35px;margin: 55px 0 35px;}
 .int_box ul{
     display: flex;
     justify-content: center;
@@ -220,7 +220,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 }
 .n_f_text p{
     font-size: 25px;
-    margin: 45px 0 35px;
+    margin: 55px 0 35px;
 }
 .n_f_join{
     width: 250px;
@@ -260,14 +260,14 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 }
 .new_f_icon li:nth-of-type(2) p::before{
     background: url(../img/새가족등록아이콘.png) no-repeat center;
-    background-size: 70%;
+    background-size: 50%;
 }
 .new_f_icon li:nth-of-type(3) p::before{
     background: url(../img/교육아이콘.png) no-repeat center;
     background-size: 70%;
 }
 .new_f_icon li:last-of-type p::before{
-    background: url(../img/공동체배정아이콘.png) no-repeat center;
+    background: url(../img/공동체배정아이콘.svg) no-repeat center;
     background-size: 70%;
 }
 .n_f_join:hover{
@@ -335,11 +335,16 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     border: 1px solid #00A25B;
     color: #00A25B;
 }
+
 .w_c_box a img{
     width: 600px;
     height: 350px;
     font-size: 0;
     line-height: 0;
+}
+.w_c_box a:hover .w_k{
+    color: #ffb02b;
+    transition: .5s color ease 0s;
 }
 .w_c_title{
     display: flex;
@@ -370,26 +375,22 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     font-size: 18px;
     border-radius: 20px;
 }
-.w_k{color:#ffb02b ;}
-.title_info .w_t{font-size: 25px; font-weight: 600;}
+.w_bible{    font-size: 18px;}
+.w_t{font-size: 25px; font-weight: 600;}
 .title_info span:last-of-type{
     height: 100%;
     align-self: flex-end;
     display: flex;
     align-items: flex-end;
     color: lightgray;
+    font-size: 15px;
 }
 /* 예배설교 끝 */
 /* 교회소식 */
-.news{
-    width: 1440px;
-    padding: 50px 100px 150px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
+
 .news h2{
     width: 100%;
-    margin:0 auto 70px;
+    margin:50px auto 70px;
     text-align: center;
     font-size: 50px;
 }
@@ -400,7 +401,10 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     border-bottom: 5px solid #00A25B;
 }
 .news_content{
-    width: 100%;
+    box-sizing: border-box;
+    padding: 0 100px;
+    margin: 0 auto;
+    width: 1440px;
     display: flex;
 }
 .notice{
@@ -429,8 +433,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 30px 0 20px;
 }
 .notice>li:last-of-type::before{
     background: url(../img/notice.png)no-repeat center;
@@ -441,14 +444,14 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     font-size: 18px;
     background: #00a25c15;
     padding: 50px;
-    border-radius: 20px 0 0 20px;
+    border-radius: 10px;
     display: flex;
     flex-flow: column;
     align-items: center;
     box-sizing: border-box;
     transition: 1s background ease 0s;
 }
-.notice ul::-webkit-scrollbar{
+/* .notice ul::-webkit-scrollbar{
     width: 7px;
 }
 .notice ul::-webkit-scrollbar-thumb{
@@ -459,7 +462,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 .notice ul::-webkit-scrollbar-track{
     background: #0cdb8154;
     border-radius: 0 20px 20px 0;
-}
+} */
 .notice ul:hover{
     background: #00a25c15;
 }
@@ -496,6 +499,10 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     color: black;
     margin-bottom: 20px;
 }
+.notice ul li>span{
+    font-size: 15px;
+}
+
 .n_badge{
     position: absolute;
     left:50%;
@@ -506,8 +513,9 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     background: blue;
     color: #FFF;
     border-radius: 40px;
-    width: 60px;
+    width: 80px;
     height: 30px;
+    letter-spacing: 1.5px;
     transform: translate(-50%,0);
     transition: .5s all ease 0s;
 }
@@ -517,15 +525,33 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 .n_badge.em{background: red;}
 .n_badge.end{background: black;}
 .n_badge.al{background: salmon;}
-
+.photo{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1440px;
+    padding-bottom: 150px;
+}
 .photo>p{   
     font-size: 30px;
-    text-align: center;
     margin-bottom: 30px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.photo>p::before{
+    content: "";
+    display: flex;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/교회사진.png) no-repeat center;
+}   
 .photo ul{
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 .photo ul li{
     border-radius: 10px;
@@ -534,8 +560,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 }
 .photo ul li+li{margin-left: 40px;}
 .photo ul li img{
-    width: 300px;
-    height: 300px;
+    width: 100%;height: 100%;
 }
 .photo ul li a{
     display: flex;
@@ -674,7 +699,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     align-items: center;
 }
 .P_C_box a+a{
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .P_C_box a{
     display: flex;
@@ -683,7 +708,8 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     border-radius: 20px;
     overflow: hidden;
 }
-.p_1{    margin-right: 300px;}
+.p_1{   
+     margin-right: 300px;}
 .p_2{
     flex-flow: row-reverse;
     margin-left: 300px;
@@ -790,15 +816,15 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 
 .c_content_box a:first-of-type:hover::after{
     animation: u_d 3s infinite linear 0s;
-    background-size: 80px 80px;
+    background-size: 80px;
 }
 .c_content_box a:nth-of-type(2):hover::after{
-    background-size: 100px 100px;
+    background-size: 100px ;
     animation: house 3s infinite linear 0s;
 
 }
 .c_content_box a:last-of-type:hover::after{
-    background-size: 100px 100px;
+    background-size: 100px ;
     animation: bing2 3s infinite linear 0s;
 }
 
@@ -993,4 +1019,37 @@ background-size: 100px 100px;
         background-size: 100px 100px;
     }
 }
+
+  
+@keyframes left_to_right {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+  @keyframes right_to_left {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+  @keyframes u_to_d {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+
 
