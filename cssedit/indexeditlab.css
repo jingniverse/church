@@ -63,11 +63,12 @@ header>div{    width: 100%;}
 .pray h3{    font-size: 40px;    margin:0 auto 50px;}
 .P_C_box{    flex-flow: row wrap; justify-content: center;  }
 .P_C_box a+a{    margin-top: 40px;}
-.P_C_box a{flex-flow:column;width:300px;height:500px;margin:40px;}
+.P_C_box a{flex-flow:column;width:400px;height:400px;margin:40px;}
 .p_1{        margin-right: 0px;}
 .p_2{    margin-left: 0px;}
 .P_C_box a p{    margin-bottom: 20px;}
-.p_1 div,.p_2 div{width: 300px; height: 200px;padding: 30px;}
+.p_1 img,.p_2 img{width: 400px; height: 250px;} 
+.p_1 div,.p_2 div{width: 400px; height: 150px;padding: 25px;}
 .P_C_box a span{    letter-spacing: 1px;}
 /* 기도 끝*/
 .c_content_box{    width: 1000px;    padding: 50px 0px;}

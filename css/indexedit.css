@@ -296,7 +296,6 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     display: flex;
     flex-flow: column;
 }
-
 .w_content h2{
     width: 100%;
     margin:0 auto 70px;
@@ -519,7 +518,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     transform: translate(-50%,0);
     transition: .5s all ease 0s;
 }
-.n_badge.y{background: lightgreen;}
+.n_badge.y{background: rgb(78, 215, 78);}
 .n_badge.o{background: orange;}
 .n_badge.e{background: brown;}
 .n_badge.em{background: red;}
