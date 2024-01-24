@@ -9,11 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/sub1.css">
-    <link rel="stylesheet" href="./css/sub1lab.css">
-    <link rel="stylesheet" href="./css/sub1tab.css">
-    <link rel="stylesheet" href="./css/sub1mobile.css">
-    <link rel="stylesheet" href="./css/sub1phone.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <!-- <link rel="stylesheet" href="./css/indexlab.css">
+    <link rel="stylesheet" href="./css/indextab.css">
+    <link rel="stylesheet" href="./css/indexmobile.css">
+    <link rel="stylesheet" href="./css/indexphone.css"> -->
+    <link rel="stylesheet" href="./cssedit/subpageedit.css">
+    <link rel="stylesheet" href="./cssedit/subpageeditlab.css">
+    <link rel="stylesheet" href="./cssedit/subpageedittab.css">
+    <link rel="stylesheet" href="./cssedit/subpageeditmo.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
     <title>벧엘동산교회</title>
@@ -21,12 +25,12 @@
 <body>
     <div class="wrap">
         <!-- 헤더 -->
-        <header>
-            <article>
+        <header class="">
+            <div>
                 <h1 class="logo">
                     <a href="https://jingniverse.github.io/church/">
                         <img src="./img/churchlogo.png" alt="교회로고">
-                            <span>벧엘동산교회</span>
+                        <span>벧엘동산교회</span>
                     </a>
                 </h1>
                 <ul class="gnb">
@@ -67,11 +71,8 @@
                         </ul>
                     </li>
                 </ul>
-                <p class="menu">
-                    <span></span>
-                    <span></span>
-                </p>
-            </article>
+                <button class="menu"></button>
+            </div>
         </header>
         <!-- 헤더 end -->
         <!-- 메인  -->
@@ -85,7 +86,7 @@
             </section>
             <!-- 배너 end -->
             <!-- 교회소개 목록 -->
-            <section class="introduce_list">
+            <section class="submenu_list">
                     <ul class="lnb">
                         <li class="on"><a href="#">인사말</a></li>
                         <li ><a href="#">비전/연혁</a></li>
@@ -102,9 +103,12 @@
                         <img src="./img/int_img2.png" alt="">
                         <div>
                             <h3>온전한 제자로 겸손히 섬김</h3>
-                            <p>제자훈련에 눈물과 피와 땀을 쏟아 왔습니다. 한국 경제의 압축 성장기인 도시화, 산업화 시대의 제자도는 ‘제자훈련의 절대적 필요’를 강조하며 평신도를 깨우는 데 초점을 맞췄습니다.
-                                이제 세월이 흘러 포스트모더니즘 사회, 쌍방향 네트워킹이 활성화된 SNS 시 대로 접어들면서 산업화시대의 ‘제자훈련 1.0’에서 글로벌 네트워킹 시대의 '제자훈련 2.0'으로, 광인론에서 온전론으로 제자훈련이 발전적 계승을 이루어야 할 때가 되었습니다.
-                                현장 사역으로서 제자훈련의 원형(prototype)은 예수님의 성육신입니다.</p>
+                            <div>
+                                <p>제자훈련에 눈물과 피와 땀을 쏟아 왔습니다. 한국 경제의 압축 성장기인 도시화, 산업화 시대의 제자도는 ‘제자훈련의 절대적 필요’를 강조하며 평신도를 깨우는 데 초점을 맞췄습니다.</p>
+                                <p>이제 세월이 흘러 포스트모더니즘 사회, 쌍방향 네트워킹이 활성화된 SNS 시 대로 접어들면서 산업화시대의 ‘제자훈련 1.0’에서 글로벌 네트워킹 시대의 '제자훈련 2.0'으로, 광인론에서 온전론으로 제자훈련이 발전적 계승을 이루어야 할 때가 되었습니다.</p>
+                                <p> 현장 사역으로서 제자훈련의 원형(prototype)은 예수님의 성육신입니다.</p>
+                            </div>
+                            <p class="name">벧엘동산교회 담임목사<span>김 덕 현</span></p>
                         </div>
                     </div>
                 </article>    
@@ -127,7 +131,7 @@
                                     <li>빛의 숲 문화재단 이사장 (2020.4~현재)</li>
                                 </ul>
                             </li>
-                            <li>2010년대
+                            <li>2000년대
                                 <ul>
                                     <li>서울남연회 제 16대 감독 (2020.10.28~2022.10.28)</li>
                                     <li>사회복지법인 광림복지재단 이사장 (2020.6~현재)</li>
@@ -149,12 +153,12 @@
                 </article>
             </section>
         </main>
-        <!-- 메인 end -->
+       <!-- 메인 end -->
         <!-- 푸터 -->
         <footer>
             <section>
                 <article class="footer_left">
-                    <h1 class="logo">
+                    <h1 class="logo fo_logo">
                         <a href="https://jingniverse.github.io/church/">
                             <img src="./img/churchlogo.png" alt="교회로고">
                             <span>벧엘동산교회</span>

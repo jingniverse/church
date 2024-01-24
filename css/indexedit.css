@@ -36,6 +36,7 @@ header>div{
     padding: 20px;
     box-sizing: border-box;
     justify-content: space-between;
+    align-items: center;
 }
 .logo{margin-right: 150px;}
 .logo>a{
@@ -150,6 +151,7 @@ section{width: 100%;}
 }
 /* 우리교회는? */
 .int_box{
+    opacity: 0;
     margin-bottom: 130px;
     box-sizing: border-box;
 }
@@ -207,12 +209,12 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 /* 우리교회는 끝 */
 /* 새가족등록 */
 .new_family{
+    opacity: 0;
     box-sizing: border-box;
 }
 .new_f_box{
     display: flex;
     justify-content: space-between;
-
 }
 .n_f_text h4{
     font-size: 40px;
@@ -293,6 +295,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     box-sizing: border-box;
 }
 .w_content{
+    opacity: 0;
     display: flex;
     flex-flow: column;
 }
@@ -707,9 +710,9 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     border-radius: 20px;
     overflow: hidden;
 }
-.p_1{   
+.p_1{   opacity: 0;
      margin-right: 300px;}
-.p_2{
+.p_2{opacity: 0;
     flex-flow: row-reverse;
     margin-left: 300px;
 }
@@ -718,6 +721,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     margin-bottom: 40px;
     font-weight: 500;
 }
+.P_C_box a:hover p{ color: #00A25B;}
 .p_1 img,.p_2 img{
     object-fit: fill;
     width: 300px;
@@ -735,6 +739,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 
     box-sizing: border-box;
 }
+
 .P_C_box a span{
     color: rgba(0, 0, 0, .4);
     line-height: 30px;
@@ -885,6 +890,9 @@ footer article:last-of-type p{
     height: 20px;
     line-height: 20px;
 }
+.footer_left ul li a:hover{
+    color: #00A25B;
+}
 .footer_left ul li::after{
     content: "";
     display: flex;
@@ -956,6 +964,13 @@ address span{
     background: url(../img/kakao_yellow.png)
     no-repeat center /contain;
 }
+
+
+.bing{animation: bing 1.5s ease-in-out forwards;}
+.left_to_right {opacity: 1;animation: left_to_right 1.5s ease-in-out forwards;}
+.right_to_left {opacity: 1;animation: right_to_left 1.5s ease-in-out forwards;} 
+.u_to_d {opacity:0;animation: u_to_d 1.5s ease-in-out forwards;}
+.d_to_u {opacity:0;animation: d_to_u 1.5s ease-in-out forwards;}
 
 
 
@@ -1044,6 +1059,16 @@ background-size: 100px 100px;
     from {
       opacity: 0;
       transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+  @keyframes d_to_u {
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
     }
     to {
       opacity: 1;

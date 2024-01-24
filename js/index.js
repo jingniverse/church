@@ -19,8 +19,15 @@ $(document).ready(function(){
         $(".gnb>li").removeClass('on')
         $(this).addClass("on")
     })
-
-
+    $(".lnb>li").click(function(){
+        $(".lnb>li").removeClass('on')
+        $(this).addClass("on")
+    })
+    $(".choice>label").click(function(){
+        $(".choice>label").removeClass('on')
+        $(this).addClass("on")
+    })
+   
     // $('.gnb').on('focus', function(){
     //     $('header').removeClass('active');
     // });
@@ -43,7 +50,7 @@ $(document).ready(function(){
           }
 
         });
-        $('.circle').on('keyup', function(e) {
+        $('.gnb>li:last-of-type>ul>li:last-of-type').on('keydown', function(e) {
             if (e.which === 9) { // Tab 키를 눌렀을 때
               $('header').removeClass('active')
               $('header').slideup(200)
@@ -150,6 +157,8 @@ function 함수이름(){
             if(sct>320){$('.int_box').addClass('left_to_right')}
             if(sct>600){$('.new_family').addClass('right_to_left')}
             if(sct>1400){$('.w_content').addClass('u_to_d')}
+            if(sct>3700){$('.p_1').addClass('left_to_right')}
+            if(sct>4100){$('.p_2').addClass('right_to_left')}
             
         console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
     })
@@ -160,7 +169,8 @@ function 함수이름(){
             if(sct>150){$('.int_box').addClass('left_to_right')}
             if(sct>600){$('.new_family').addClass('right_to_left')}
             if(sct>1100){$('.w_content').addClass('u_to_d')}
-
+            if(sct>4200){$('.p_1').addClass('d_to_u')}
+            if(sct>4200){$('.p_2').addClass('u_to_d')}
         console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
     })
     }else if(768 <= ww <1024) {
@@ -209,42 +219,45 @@ function 함수이름(){
 
 
 
-    // let train = $(".banner_imgList")
-    // let trainLi = train.children()
-    // let trainLength = trainLi.length
+let count = 0
+$(".btn_next").click(function(){
+    count++
+    if(count>7){count=0}
+    // 기차칸 li태그가 전부 선택되서 on클래스가 지워지고
+    // 순번에 맞는 기차칸 li태그만 on클래스가 추가가 되면 됨
+    $(".w_list").css("transform",`translateX(${10*-count}%)`)
+   
+})
+$(".btn_prev").click(function(){
+    count--
+    if(count<0){count=7}
+    $(".w_list").css("transform",`translateX(${10*-count}%)`)
+
+})
+  
     
-    // let des =  $(".banner_desList")
-    // let desLi = des.children()
-
-    // let count = 0
-
 
     
-    // let stopSlide = setInterval(function(){
-    //     count++
-    //     if(count>(trainLength - 1)){count=0}
-    //     trainLi.removeClass("on")
-    //     trainLi.eq(count).addClass("on")
-
-    //     desLi.removeClass("on")
-    //     desLi.eq(count).addClass("on")
-    // }, 4200)
-
-    // trainLi.click(function(){
-    //     clearInterval(stopSlide)
-    //     let idx = $(this)
-    //     trainLi.removeClass("on")
-    //     trainLi.eq(this).addClass("on")
-    //     desLi.removeClass("on")
-    //     desLi.eq(idx).addClass("on")
-    //     // clearInterval(stopSlide)
+    $(".category>span").click(function(){
+        $(".category>span").removeClass('on')
+        $(this).addClass("on")
+    })
+    
+    // $(".choice>label:fitst-of-type").click(function(){
+    //     $(".camo").text('상담내용')
     // })
-    
-    // $(".category>span").click(function(){
-    //     $(".category>span").removeClass('on')
-    //     $(this).addClass("on")
+    // $(".choice>label:nth-of-type(2)").click(function(){
+    //     $(".camo").text('심방내용')
+
     // })
-    
+    // $(".choice>label:last-of-type").click(function(){
+    //     $(".camo").text('문의내용')
+
+    // })
+    $("#file_send").on('change',function(){
+        var fileName = $("#file_send").val();
+        $(".f_s").val(fileName);
+      });
 
 
 

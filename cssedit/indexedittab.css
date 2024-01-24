@@ -1,6 +1,6 @@
 @media all and (min-width:768px) and (max-width:1023px) {   
 /* 헤더 */
-header>div{    width: 750px;}
+header>div{    width:100%;}
 header:hover{height: 90px;background: none;color:#FFF}
 header.active.on{    background: #fff;    color: black;
     border-bottom: 1px solid #0000002d;}
@@ -25,7 +25,6 @@ header.full .gnb{
 .logo img{ width: 34px;    height: 50px;    margin-right: 15px;}
 .logo span{font-size:30px;font-weight: 700;font-style: normal;}
 /* 헤더로고 끝 */
-/* 메인메뉴 */
 .gnb{    display: none;}
 .gnb>li{
     position: relative;
@@ -70,10 +69,10 @@ header .menu{display: block;cursor: pointer;width: 40px;height: 40px;border: non
 .banner article{    width: 400px;}
 /* 배너필터처리 */
 /* 배너 글꾸미기 */
-.b_writing1{    width: 345px;    height: 120px;}
-.b_writing1::before{    width: 30px;}
-.b_writing1::after{    height: 30px;}
-.b_writing1 p{    width: 370px;    font-size: 45px;}
+.b_writing1{    width: 310px;    height: 100px;}
+.b_writing1::before{    width: 25px;}
+.b_writing1::after{    height: 25px;}
+.b_writing1 p{    width: 323px;    font-size: 40px;}
 /*배너 글꾸미기 끝 */
 /* 소개페이지 */
 /* 소개텍스트 */

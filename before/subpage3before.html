@@ -9,25 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <!-- <link rel="stylesheet" href="./css/index.css"> -->
-    <!-- <link rel="stylesheet" href="./css/indexlab.css">
-    <link rel="stylesheet" href="./css/indextab.css">
-    <link rel="stylesheet" href="./css/indexmobile.css">
-    <link rel="stylesheet" href="./css/indexphone.css"> -->
-    <link rel="stylesheet" href="./cssedit/subpage3edit.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/sub3.css">
+    <link rel="stylesheet" href="./css/sub3lab.css">
+    <link rel="stylesheet" href="./css/sub3tab.css">
+    <link rel="stylesheet" href="./css/sub3mo.css">
+    <link rel="stylesheet" href="./css/sub3phone.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
     <title>벧엘동산교회</title>
 </head>
 <body>
     <div class="wrap">
         <!-- 헤더 -->
-        <header class="">
-            <div>
+        <header>
+            <article>
                 <h1 class="logo">
                     <a href="https://jingniverse.github.io/church/">
                         <img src="./img/churchlogo.png" alt="교회로고">
-                        <span>벧엘동산교회</span>
+                            <span>벧엘동산교회</span>
                     </a>
                 </h1>
                 <ul class="gnb">
@@ -68,8 +67,11 @@
                         </ul>
                     </li>
                 </ul>
-                <button class="menu"></button>
-            </div>
+                <p class="menu">
+                    <span></span>
+                    <span></span>
+                </p>
+            </article>
         </header>
         <!-- 헤더 end -->
         <!-- 메인  -->
@@ -83,13 +85,13 @@
             </section>
             <!-- 배너 end -->
             <!-- 교회소개 목록 -->
-            <section class="submenu_list">
+            <section class="news_list">
                     <ul class="lnb">
-                        <li class="on"><a href="#">인사말</a></li>
-                        <li ><a href="#">비전/연혁</a></li>
-                        <li><a href="#">섬기는 이들</a></li>
-                        <li><a href="#">예배시간</a></li>
-                        <li><a href="#">오시는길</a></li>
+                        <li class="on"><a href="#">주보/QT</a></li>
+                        <li><a href="#">교회소식</a></li>
+                        <li><a href="#">교회사진</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">상담 및 문의</a></li>
                     </ul>
             </section>
             <!-- 교회소개 목록 end -->
@@ -97,16 +99,19 @@
                 <h2 class="blind">문의사항</h2>             
                 <article class="consulting_content">
                     <div class="c_c_box">
-                        <p><span>안녕하세요!</span></p>
-                        <span>여러분의 소리를 귀기울여 듣겠습니다.</span>
+                        <div>
+                            <p><span>안녕하세요!</span></p>
+                            <span>여러분의 소리를 귀기울여 듣겠습니다.</span>
+                        </div>
+
                     </div>
                     <form action="">
                         <article class="choice">
                             <label for="ch_rad1">상담문의</label>
-                            <label for="ch_rad2">심방요청</label>
-                            <label for="ch_rad3">문의사항</label>
                             <input class="blind" id="ch_rad1" type="radio" name="consult">
+                            <label for="ch_rad2">심방요청</label>
                             <input class="blind" id="ch_rad2" type="radio" name="consult">
+                            <label for="ch_rad3">문의사항</label>
                             <input class="blind" id="ch_rad3" type="radio" name="consult">
                         </article>
                         <article class="detail">
@@ -116,16 +121,16 @@
                             <input id="phone" type="number">
                             <label for="title">제목</label>
                             <input id="title" type="text">
-                            <label class="camo" for="counseling">상담내용</label>
+                            <label for="counseling">상담내용</label>
                             <textarea name="" id="counseling" cols="30" rows="10"></textarea>
                         </article>
                         <article class="attach">
                             <p>첨부파일</p>
                             <p>사진 및 첨부파일</p>
                             <div class="file_send_box">
-                                <input class="f_s"  placeholder="첨부파일">
+                                <label class="f_s" for="file_send"></label>
                                 <label class="f_textbox" for="file_send">찾아보기</label>
-                                <input  class="blind" id="file_send" type="file">
+                                <input class="blind" id="file_send" type="file">
                                 <p>삭제</p>
                             </div>
                             <div class="Privacy">
@@ -139,12 +144,12 @@
                 
             </section>
         </main>
-       <!-- 메인 end -->
+        <!-- 메인 end -->
         <!-- 푸터 -->
         <footer>
             <section>
                 <article class="footer_left">
-                    <h1 class="logo fo_logo">
+                    <h1 class="logo">
                         <a href="https://jingniverse.github.io/church/">
                             <img src="./img/churchlogo.png" alt="교회로고">
                             <span>벧엘동산교회</span>
