@@ -95,27 +95,142 @@ header .menu{display: block;cursor: pointer;width: 40px;height: 40px;border: non
 .lnb>li.on{  opacity: 1;  height: 50px;}
 .lnb.active>li{  height: 50px;  opacity: 1;}
 .lnb>li.on{    background: #FFF;    color: #0e4194;}
-.lnb>li:hover{ border: 1px solid #0e4194; background: #0e4194;color: #FFF;}
+.lnb>li:hover{background: #0e4194;color: #FFF;}
 /* 서브메뉴 끝 */
 /* 메인소개 */
-.introduce{    width: 100%;}
-.introduce_content{width: 460px;padding: 150px 0px 50px;}
-.greetings{flex-flow: column;align-items: center;justify-content: center;}
-.greetings::before{width:300px;height:525px;top:-25px;left: 25px;}
-.greetings::after{ font-size: 20px;top:-25px; left:30px;transform: rotate(0deg);}
-.greetings img{width: 450px;height: 500px;margin-right:0px; margin-bottom: 60px;}
-.greetings h3{padding-bottom: 30px;margin-bottom:30px;text-align:center;font-size: 35px;}
-.greetings p{    font-size: 18px;}
-.greetings .name{font-size: 23px;margin-top: 30px;}
-.greetings .name span{    font-size: 28px;}
-/* 걸어온길 */
-.history{width: 460px;  padding: 100px 0px; display: flex; flex-flow: column; align-items: center;}
-.history h4{    font-size: 30px;}
-.career,.Education{align-items: center;    width:460px;}
-.ca_list, .edu_list{ text-align: center; font-size: 23px; margin: 20px 0 0;}
-.edu_list{ text-align: left;}
-.career h5,.Education h5{font-size: 25px;}
-.ca_list>li:nth-of-type(2n){  margin-left:0 ;}
+.consulting{    width: 100%;}
+.consulting_content{    width: 460px;    padding: 130px 0 50px;}
+.c_c_box{display: flex; flex-flow: column; align-items: center;}
+.c_c_box p span{ font-size: 35px;}
+.c_c_box>span{   font-size: 25px;    margin: 20px 0 40px;}
+form{  padding: 60px 40px;
+box-sizing: border-box;}
+.choice{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.choice label{
+    display:flex;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+}
+.choice label+label{margin-left: 10px;}
+.detail,.attach{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.detail label{
+    font-size: 20px;
+    letter-spacing: -0.7px;
+    margin:20px 0 15px;
+    font-weight: bold;
+}
+#name,#phone,#title{
+    height: 40px;
+    border-radius:10px ;
+    padding: 0 10px;
+    font-size: 23px;
+    font-weight: normal;
+}
+#counseling{
+    border-radius: 10px;
+    height: 150px;
+    resize: none;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 23px;
+}
+.attach>p{
+    width: 100%;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+}
+.attach p:nth-of-type(2){
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+    margin: 25px 0 10px;
+}
+
+.file_send_box{
+    display: flex;
+    flex-flow: column;
+}
+.f_s{
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    background: #FFF;
+    color: #000;
+    font-size: 20px;
+    padding:0 10px ;
+}
+.f_textbox{
+    align-self: center;
+    cursor: pointer;
+    height: 40px;
+    width: 165px;
+    background:#0e4194;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.file_send_box p{
+    height: 40px;
+    width: 165px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    border-radius: 10px;
+    }
+
+#send{
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #1d8558 0%,#0cdb81 100%);
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Privacy{
+    text-align: center;   
+    margin: 20px 0 ; 
+}
+.Privacy a{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
+
+
+
 footer{width: 100%; height: 400px;}
 footer .logo{ margin: 0}
 footer .logo a{ width: 100%;justify-content: center;}

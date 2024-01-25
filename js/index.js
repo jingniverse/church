@@ -11,6 +11,21 @@ $(document).ready(function(){
         
 
     })
+
+    let ma = false
+    $(".submenu_list>button").click(function(){
+        if(ma == false){
+            $(".lnb").addClass("active")
+            $(".submenu_list>button").addClass("rotate")
+            ma=true
+        }else{
+            $(".lnb").removeClass("active")
+            $(".submenu_list>button").removeClass("rotate")
+            ma=false
+        }
+        
+
+    })
     // $(".menu").click(function(){
     //     $("header").removeClass("full")
     // })
@@ -27,6 +42,7 @@ $(document).ready(function(){
         $(".choice>label").removeClass('on')
         $(this).addClass("on")
     })
+    
    
     // $('.gnb').on('focus', function(){
     //     $('header').removeClass('active');
@@ -222,7 +238,7 @@ function 함수이름(){
 let count = 0
 $(".btn_next").click(function(){
     count++
-    if(count>7){count=0}
+    if(count>9){count=0}
     // 기차칸 li태그가 전부 선택되서 on클래스가 지워지고
     // 순번에 맞는 기차칸 li태그만 on클래스가 추가가 되면 됨
     $(".w_list").css("transform",`translateX(${10*-count}%)`)
@@ -230,7 +246,7 @@ $(".btn_next").click(function(){
 })
 $(".btn_prev").click(function(){
     count--
-    if(count<0){count=7}
+    if(count<0){count=9}
     $(".w_list").css("transform",`translateX(${10*-count}%)`)
 
 })

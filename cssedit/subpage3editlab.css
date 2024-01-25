@@ -15,29 +15,130 @@ section{width: 100%;}
 
 /* 서브메뉴 끝 */
 /* 메인소개 */
-.introduce{    width: 100%;}
-.introduce_content{width: 1000px;padding: 150px 0px 50px;}
-.greetings::before{width:370px;height:550px;top:40px;    left: 30px;}
-.greetings::after{ font-size: 25px;top:565px; left:43px;transform: rotate(0deg);}
-.greetings img{width: 350px;height: 550px;   object-fit: cover; margin-right:80px;}
-.greetings h3{    font-size: 45px;}
-.greetings p{    font-size: 25px;}
-.greetings p+p{    margin-top: 25px;}
-.greetings .name{font-size: 27px;margin-top: 50px;}
-.greetings .name span{    font-size: 35px;}
-/* 걸어온길 */
-.history{width: 1000px;  padding: 100px 0px;}
-.history h4{    font-size: 40px;}
-.career,.Education{width:900px;}
-.ca_list>li+li{margin-top: 30px;}
-.ca_list ul,.edu_list ul{
+.consulting{    width: 100%;}
+.consulting_content{    width: 1000px;    padding: 150px 0 50px;}
+.c_c_box p span{   font-size: 45px;}
+.c_c_box>span{    font-size: 35px;    margin: 20px 0 60px;}
+form{  padding: 60px 40px;
+box-sizing: border-box;}
+.choice{
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.choice label{
+    display:flex;
+    width: 230px;
+    height: 70px;
+    font-size: 30px;
+}
+
+.detail,.attach{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.detail label{
+    font-size: 25px;
+    letter-spacing: -0.7px;
+    margin:40px 0 20px;
+    font-weight: bold;
+}
+#name,#phone,#title{
+    height: 40px;
+    border-radius:10px ;
+    padding: 0 10px;
+    font-size: 23px;
     font-weight: normal;
-    color: black;
+}
+#counseling{
+    border-radius: 10px;
+    height: 300px;
+    resize: none;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 23px;
+}
+.attach>p{
+    width: 100%;
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+}
+.attach p:nth-of-type(2){
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+    margin: 40px 0 20px;
+}
+
+.file_send_box{
+    display: flex;
+}
+.f_s{
+    height: 40px;
+    width: 700px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    background: #FFF;
+    color: #000;
     font-size: 20px;
+    padding:0 10px ;
 }
-.ca_list>li:nth-of-type(2n){
-    margin-left:0 ;
+.f_textbox{
+    cursor: pointer;
+    height: 40px;
+    width: 165px;
+    background:#0e4194;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    margin: 0 15px;
+    border-radius: 10px;
 }
+.file_send_box p{
+    height: 40px;
+    width: 165px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    border-radius: 10px;
+    }
+
+#send{
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #1d8558 0%,#0cdb81 100%);
+    width: 300px;
+    height: 70px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Privacy{
+    text-align: center;   
+    margin: 70px 0 50px; 
+}
+.Privacy a{
+    display: inline-block;
+    margin-left: 10px;
+}
+
 footer>section{width: 1000px;padding: 40px 20px;}
 footer section>article{ width: 50%;}
 .footer_left ul{    width: 100%;}

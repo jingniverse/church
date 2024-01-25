@@ -1,5 +1,5 @@
-@media all and (min-width:480px) and (max-width:767px) {   
-
+@media all and (min-width:768px) and (max-width:1023px)    
+  {
 /* 헤더시작 */
 header>div{    width:100%;}
 header:hover{height: 90px;background: none;color:#FFF}
@@ -73,59 +73,115 @@ header .menu{display: block;cursor: pointer;width: 40px;height: 40px;border: non
 .banner p{font-size:35px;}
 .banner span{    font-size: 30px;}
 /* 배너끝 */
-.submenu_list{width: 100%;background-color:#0e4194;position:relative;}
-.lnb{  position: absolute;top:0;left:0;;width: 100%;display: flex;box-sizing: border-box;height:50px;flex-flow:column;z-index:1;background:#0e4194;transition: .5s all ease 0s;}
-.submenu_list button{
-  background:url(../img/화살표.png) no-repeat center;        
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top:0;
-  right: 0;
-  transition: .5s transform ease 0s;
-  transform: rotate(90deg);
-  z-index: 2;
-  display: block;
-  border: 0;
-  cursor: pointer;
-}
-.submenu_list button.rotate{  transform: rotate(-90deg);}
-.lnb.active{  height: 250px;}
-.lnb>li{width: 100%;display: flex;justify-content: center;align-items: center;height:0;color: white;font-size: 25px;letter-spacing: 3px;font-weight: 500;opacity: 0;  transition: .5s all ease 0s;}
-.lnb>li.on{  opacity: 1;  height: 50px;}
-.lnb.active>li{  height: 50px;  opacity: 1;}
-.lnb>li.on{    background: #FFF;    color: #0e4194;}
-.lnb>li:hover{ border: 1px solid #0e4194; background: #0e4194;color: #FFF;}
+.lnb{  width: 750px;}
+.lnb a{  font-size: 23px;}
+
 /* 서브메뉴 끝 */
 /* 메인소개 */
-.introduce{    width: 100%;}
-.introduce_content{width: 460px;padding: 150px 0px 50px;}
-.greetings{flex-flow: column;align-items: center;justify-content: center;}
-.greetings::before{width:300px;height:525px;top:-25px;left: 25px;}
-.greetings::after{ font-size: 20px;top:-25px; left:30px;transform: rotate(0deg);}
-.greetings img{width: 450px;height: 500px;margin-right:0px; margin-bottom: 60px;}
-.greetings h3{padding-bottom: 30px;margin-bottom:30px;text-align:center;font-size: 35px;}
-.greetings p{    font-size: 18px;}
-.greetings .name{font-size: 23px;margin-top: 30px;}
-.greetings .name span{    font-size: 28px;}
-/* 걸어온길 */
-.history{width: 460px;  padding: 100px 0px; display: flex; flex-flow: column; align-items: center;}
-.history h4{    font-size: 30px;}
-.career,.Education{align-items: center;    width:460px;}
-.ca_list, .edu_list{ text-align: center; font-size: 23px; margin: 20px 0 0;}
-.edu_list{ text-align: left;}
-.career h5,.Education h5{font-size: 25px;}
-.ca_list>li:nth-of-type(2n){  margin-left:0 ;}
-footer{width: 100%; height: 400px;}
-footer .logo{ margin: 0}
-footer .logo a{ width: 100%;justify-content: center;}
-footer>section{width: 450px;padding: 40px 0;height: 400px;}
-.footer_left{width: 100%;    height: 50%;}
-.footer_left ul{ width:100%;justify-content:center;margin: 10px 0;}
-address span{text-align: center;  margin: 10px 0;}
-.footer_right{    width: 100%;    height: 50px;}
-.sns{display: flex; width: 100%; align-items: center;  }
-footer article:last-of-type p{ display: flex;justify-content: center;align-items: center;}
+.worship_service{    width: 100%;}
+.w_s_video{ width: 750px;  padding: 150px 0 50px;}
+.w_s_video iframe{width: 750px; height: 450px;}
+.w_s_info{    width: 750px;}
+.info_title{font-size: 30px; }
+.bible p{    font-size: 25px;    margin-bottom: 20px;}
+.bible p span{font-size: 23px; color: black;}
+.bible>span{display: flex;flex-flow: column;font-size: 18px;  }
+.bible span i{display: flex ; align-items: center;font-size: 23px;color: #00A25B;margin-right: 0px; margin-bottom: 5px;}
+.bible>span+span{margin-top: 15px;}
+.name{   font-size: 30px; font-weight: bold;
+text-align: right; margin-top: 30px;}
+.worship_content{
+    width: 750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 65px 0px 100px;
+}
+.worship_content>p{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+}
+.w_c_box{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.w_list{
+    width: 256%;
+    display: flex;
+    transition: 1s ease all 0s;
+   
+}
+.w_box{
+    margin-top: 90px;
+    margin-right: 50px;
+}
+.w_box a{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    background:linear-gradient(0deg, #1d8558 0%,#0cdb81 100%);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    color: #FFF;
+    transition: 1s all ease 0s ;
+}
+.w_box:hover a{
+    background:linear-gradient(0deg, #1d8558 100%,white 0%);
+    border: 1px solid #00A25B;
+}
+.w_box p:nth-of-type(1){
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    
+}
+.w_box p:nth-of-type(2){
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.4px; 
+}
+.w_box p:nth-of-type(3){
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+.pagearrow{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    height:40px;
+    top:0;
+    right: 0;
+    justify-content: space-between;
+}
+.pagearrow button{
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid;
+    display: block;
+    background: #fff url(../img/화살표.png) no-repeat center;
+    width: 40px;
+}
+.pagearrow button:nth-of-type(1){
+    transform: rotate(180deg);
+}
+
+
+
+
+footer{width: 100%;}    
+footer>section{width: 750px;padding: 40px 0px;}
+footer section>article{    width: 50%;}
+.footer_left ul{    width: 100%;    font-size: 16px;}
+address{    font-size: 14px;}
+.sns{width: 50%;}
 
 
 

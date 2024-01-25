@@ -1,7 +1,7 @@
-@media all and (min-width:480px) and (max-width:767px) {   
+@media all and (max-width:480px) {   
 
 /* 헤더시작 */
-header>div{    width:100%;}
+header>div{width:100%;}
 header:hover{height: 90px;background: none;color:#FFF}
 header.active.on{    background: #fff;    color: black;
     border-bottom: 1px solid #0000002d;}
@@ -22,11 +22,10 @@ header.full .gnb{
     color: black;
 }
 /* 헤더로고 */
-
 .logo a{    display: flex;    align-items: center;}
-.logo img{ width: 34px;    height: 50px;    margin-right: 15px;}
-.logo span{font-size:30px;font-weight: 700;font-style: normal;}
-.logo{margin-right: 70px;}
+.logo img{ width: 34px;    height: 50px;    margin-right: 10px;}
+.logo span{font-size:24px;font-weight: 700;font-style: normal;margin: 0;}
+.logo{margin-right: 0px;}
 /* 헤더로고 끝 */
 /* 메인메뉴 */
 
@@ -70,8 +69,9 @@ header .menu{display: block;cursor: pointer;width: 40px;height: 40px;border: non
 /* 메인메뉴 끝 */
 /* 헤더 끝 */
 /* 배너시작 */
-.banner p{font-size:35px;}
-.banner span{    font-size: 30px;}
+.banner>article{right: 3%;}
+.banner p{font-size:30px;}
+.banner span{font-size: 25px;}
 /* 배너끝 */
 .submenu_list{width: 100%;background-color:#0e4194;position:relative;}
 .lnb{  position: absolute;top:0;left:0;;width: 100%;display: flex;box-sizing: border-box;height:50px;flex-flow:column;z-index:1;background:#0e4194;transition: .5s all ease 0s;}
@@ -95,37 +95,46 @@ header .menu{display: block;cursor: pointer;width: 40px;height: 40px;border: non
 .lnb>li.on{  opacity: 1;  height: 50px;}
 .lnb.active>li{  height: 50px;  opacity: 1;}
 .lnb>li.on{    background: #FFF;    color: #0e4194;}
-.lnb>li:hover{ border: 1px solid #0e4194; background: #0e4194;color: #FFF;}
+.lnb>li:hover{background: #0e4194;color: #FFF;}
 /* 서브메뉴 끝 */
 /* 메인소개 */
-.introduce{    width: 100%;}
-.introduce_content{width: 460px;padding: 150px 0px 50px;}
+.introduce_content{width: 280px;padding: 100px 0px 50px;}
 .greetings{flex-flow: column;align-items: center;justify-content: center;}
-.greetings::before{width:300px;height:525px;top:-25px;left: 25px;}
-.greetings::after{ font-size: 20px;top:-25px; left:30px;transform: rotate(0deg);}
-.greetings img{width: 450px;height: 500px;margin-right:0px; margin-bottom: 60px;}
-.greetings h3{padding-bottom: 30px;margin-bottom:30px;text-align:center;font-size: 35px;}
-.greetings p{    font-size: 18px;}
-.greetings .name{font-size: 23px;margin-top: 30px;}
-.greetings .name span{    font-size: 28px;}
+.greetings::before{width:260px;height:25px;top:-15px;left:10px;}
+.greetings::after{ font-size: 13px;top:-15px; left:11px;transform: rotate(0deg);}
+.greetings img{width: 260px;height: 400px;margin-right:0px; margin-bottom: 40px;}
+.greetings h3{padding-bottom: 20px;margin-bottom:20px;text-align:center;font-size: 25px;}
+.greetings p{    font-size: 15px;}
+.greetings .name{font-size: 20px;margin-top: 30px;}
+.greetings .name span{    font-size: 25px;}
 /* 걸어온길 */
-.history{width: 460px;  padding: 100px 0px; display: flex; flex-flow: column; align-items: center;}
-.history h4{    font-size: 30px;}
-.career,.Education{align-items: center;    width:460px;}
-.ca_list, .edu_list{ text-align: center; font-size: 23px; margin: 20px 0 0;}
+.history{width: 260px;  padding: 50px 0px; display: flex; flex-flow: column; align-items: center;}
+.history h4{    font-size: 25px;}
+.history h4::before{width: 20px;height: 20px;}
+.career,.Education{align-items: center;    width:260px;}
+.career h5,.Education h5{font-size: 23px;}
+.ca_list, .edu_list{ text-align: center; font-size: 18px; margin: 20px 0 0;}
+.ca_list ul>li, .edu_list ul>li{  font-size: 15px;}
 .edu_list{ text-align: left;}
-.career h5,.Education h5{font-size: 25px;}
+.edu_list>li{display: flex; flex-flow: column; align-items: center; font-size: 15px;}
+.edu_list span{font-size: 18px; margin-right: 0; margin-bottom: 5px;}
 .ca_list>li:nth-of-type(2n){  margin-left:0 ;}
+
+
 footer{width: 100%; height: 400px;}
 footer .logo{ margin: 0}
 footer .logo a{ width: 100%;justify-content: center;}
-footer>section{width: 450px;padding: 40px 0;height: 400px;}
+footer>section{width: 270px;padding: 40px 0;height: 400px;}
 .footer_left{width: 100%;    height: 50%;}
-.footer_left ul{ width:100%;justify-content:center;margin: 10px 0;}
+.footer_left ul{ width:100%;justify-content:center;margin: 10px 0;font-size: 13px;}
 address span{text-align: center;  margin: 10px 0;}
 .footer_right{    width: 100%;    height: 50px;}
 .sns{display: flex; width: 100%; align-items: center;  }
-footer article:last-of-type p{ display: flex;justify-content: center;align-items: center;}
+footer article:last-of-type p{text-align: center;font-size:13px;}
+.footer_left ul li::after{ margin: 4px 5px;}
+
+
+
 
 
 

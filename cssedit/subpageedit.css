@@ -121,30 +121,40 @@ section{width: 100%;}
     width: 35px;
     height: 35px;}
 /* 배너끝 */
-.submenu_list{    width: 100%;    background-color: #0e4194;}
+.submenu_list{
+    height: 50px;
+    width: 100%;background: #0e4194;}
+.l_button{  display: none;  }
 .lnb{
     width: 1440px;
     margin: 0 auto;
     display: flex;
-    height: 60px;
-    justify-content: center;
-}
-.lnb>li{
-    width: 250px;
-    display: flex;
+    height: 50px;
     justify-content: center;
     align-items: center;
-    height: 100%;
+}
+.lnb>li{
+    box-sizing: border-box;
+    width: 250px;
+    height: 50px;
     color: white;
     font-size: 25px;
     letter-spacing: 3px;
     font-weight: 500;
 }
-.lnb>li.on,.lnb>li:hover{
-    background: #FFF;
-    color: #0e4194;
+.lnb>li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
+.lnb>li.on,.lnb>li:hover{
+    border: 1px solid #0e4194;
+    background: #FFF;
+    color: #0e4194;
+} 
 /* 서브메뉴 끝 */
 /* 메인소개 */
 .introduce{

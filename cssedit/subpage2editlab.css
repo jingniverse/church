@@ -15,28 +15,86 @@ section{width: 100%;}
 
 /* 서브메뉴 끝 */
 /* 메인소개 */
-.introduce{    width: 100%;}
-.introduce_content{width: 1000px;padding: 150px 0px 50px;}
-.greetings::before{width:370px;height:550px;top:40px;    left: 30px;}
-.greetings::after{ font-size: 25px;top:565px; left:43px;transform: rotate(0deg);}
-.greetings img{width: 350px;height: 550px;   object-fit: cover; margin-right:80px;}
-.greetings h3{    font-size: 45px;}
-.greetings p{    font-size: 25px;}
-.greetings p+p{    margin-top: 25px;}
-.greetings .name{font-size: 27px;margin-top: 50px;}
-.greetings .name span{    font-size: 35px;}
-/* 걸어온길 */
-.history{width: 1000px;  padding: 100px 0px;}
-.history h4{    font-size: 40px;}
-.career,.Education{width:900px;}
-.ca_list>li+li{margin-top: 30px;}
-.ca_list ul,.edu_list ul{
-    font-weight: normal;
-    color: black;
-    font-size: 20px;
+.worship_service{    width: 100%;}
+.w_s_video{width: 1000px;    padding: 150px 0px 50px;}
+.w_s_video iframe{width: 1000px; height: 550px;}
+.w_s_info{    width: 1000px;}
+.info_title{    font-size: 37px;}
+.worship_content{    width: 1000px;    padding: 65px 0 100px;}
+.worship_content>p{  font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
 }
-.ca_list>li:nth-of-type(2n){
-    margin-left:0 ;
+.w_c_box{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.w_list{
+    width: 256%;
+    display: flex;
+    transition: 1s ease all 0s;
+   
+}
+.w_box{
+    margin-top: 90px;
+    margin-right: 50px;
+}
+.w_box a{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    background:linear-gradient(0deg, #1d8558 0%,#0cdb81 100%);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    color: #FFF;
+    transition: 1s all ease 0s ;
+}
+.w_box:hover a{
+    background:linear-gradient(0deg, #1d8558 100%,white 0%);
+    border: 1px solid #00A25B;
+}
+.w_box p:nth-of-type(1){
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    
+}
+.w_box p:nth-of-type(2){
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.4px; 
+}
+.w_box p:nth-of-type(3){
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+.pagearrow{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    height:40px;
+    top:0;
+    right: 0;
+    justify-content: space-between;
+}
+.pagearrow button{
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid;
+    display: block;
+    background: #fff url(../img/화살표.png) no-repeat center;
+    width: 40px;
+}
+.pagearrow button:nth-of-type(1){
+    transform: rotate(180deg);
 }
 footer>section{width: 1000px;padding: 40px 20px;}
 footer section>article{ width: 50%;}

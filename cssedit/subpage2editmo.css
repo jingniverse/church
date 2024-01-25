@@ -95,27 +95,109 @@ header .menu{display: block;cursor: pointer;width: 40px;height: 40px;border: non
 .lnb>li.on{  opacity: 1;  height: 50px;}
 .lnb.active>li{  height: 50px;  opacity: 1;}
 .lnb>li.on{    background: #FFF;    color: #0e4194;}
-.lnb>li:hover{ border: 1px solid #0e4194; background: #0e4194;color: #FFF;}
+.lnb>li:hover{background: #0e4194;color: #FFF;}
 /* 서브메뉴 끝 */
 /* 메인소개 */
-.introduce{    width: 100%;}
-.introduce_content{width: 460px;padding: 150px 0px 50px;}
-.greetings{flex-flow: column;align-items: center;justify-content: center;}
-.greetings::before{width:300px;height:525px;top:-25px;left: 25px;}
-.greetings::after{ font-size: 20px;top:-25px; left:30px;transform: rotate(0deg);}
-.greetings img{width: 450px;height: 500px;margin-right:0px; margin-bottom: 60px;}
-.greetings h3{padding-bottom: 30px;margin-bottom:30px;text-align:center;font-size: 35px;}
-.greetings p{    font-size: 18px;}
-.greetings .name{font-size: 23px;margin-top: 30px;}
-.greetings .name span{    font-size: 28px;}
-/* 걸어온길 */
-.history{width: 460px;  padding: 100px 0px; display: flex; flex-flow: column; align-items: center;}
-.history h4{    font-size: 30px;}
-.career,.Education{align-items: center;    width:460px;}
-.ca_list, .edu_list{ text-align: center; font-size: 23px; margin: 20px 0 0;}
-.edu_list{ text-align: left;}
-.career h5,.Education h5{font-size: 25px;}
-.ca_list>li:nth-of-type(2n){  margin-left:0 ;}
+.worship_service{    width: 100%;}
+.w_s_video{ width: 460px;  padding: 130px 0 50px;}
+.w_s_video iframe{width: 460px; height: 280px;}
+.w_s_info{    width: 460px;}
+.info_title{font-size: 25px; }
+.bible p{    font-size: 20px;    margin-bottom: 20px;}
+.bible p span{font-size: 18px; color: black;}
+.bible>span{display: flex;flex-flow: column;font-size: 15px;  }
+.bible span i{display: flex ; align-items: center;font-size: 18px;color: #00A25B;margin-right: 0px; margin-bottom: 5px;}
+.bible>span+span{margin-top: 15px;}
+.name{   font-size: 25px;  margin-top: 30px;}
+.worship_content{width: 460px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 65px 0 100px;
+}
+
+.worship_content>p{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+}
+.w_c_box{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.w_list{
+    width: 256%;
+    display: flex;
+    transition: 1s ease all 0s;
+   
+}
+.w_box{
+    margin-top: 90px;
+    margin-right: 50px;
+}
+.w_box a{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background:linear-gradient(0deg, #1d8558 0%,#0cdb81 100%);
+    padding: 20px 13px;
+    box-sizing: border-box;
+    color: #FFF;
+    transition: 1s all ease 0s ;
+}
+.w_box:hover a{
+    background:linear-gradient(0deg, #1d8558 100%,white 0%);
+    border: 1px solid #00A25B;
+}
+.w_box p:nth-of-type(1){
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    
+}
+.w_box p:nth-of-type(2){
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.4px; 
+}
+.w_box p:nth-of-type(3){
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+.pagearrow{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    height:40px;
+    top:0;
+    right: 0;
+    justify-content: space-between;
+}
+.pagearrow button{
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid;
+    display: block;
+    background: #fff url(../img/화살표.png) no-repeat center;
+    width: 40px;
+}
+.pagearrow button:nth-of-type(1){
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
 footer{width: 100%; height: 400px;}
 footer .logo{ margin: 0}
 footer .logo a{ width: 100%;justify-content: center;}
