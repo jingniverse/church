@@ -21,7 +21,7 @@ header{
     z-index: 10;
 }
 header.active,header:hover{
-    height: 300px;
+    height: 320px;
     color: black;
     background:#fff;
 }
@@ -227,7 +227,7 @@ section{width: 100%;}
     bottom: 0;
     z-index: -1;
 }
-.greetings p{    font-size: 27px;}
+.greetings p{line-height: 37px;    font-size: 27px;}
 .greetings p+p{    margin-top: 30px;}
 .greetings .name{
     display: flex;

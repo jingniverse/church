@@ -127,14 +127,14 @@ header .menu{display: block;cursor: pointer;width: 40px;height: 40px;border: non
 
 }
 .w_list{
-    width: 256%;
+    width: 3470px;
     display: flex;
     transition: 1s ease all 0s;
    
 }
 .w_box{
     margin-top: 90px;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 .w_box a{
     display: flex;
@@ -167,7 +167,7 @@ header .menu{display: block;cursor: pointer;width: 40px;height: 40px;border: non
 .w_box p:nth-of-type(3){
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     letter-spacing: -0.36px;
 }

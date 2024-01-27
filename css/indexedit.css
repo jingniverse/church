@@ -21,7 +21,7 @@ header{
     z-index: 10;
 }
 header.active,header:hover{
-    height: 300px;
+    height: 320px;
     color: black;
     background:#fff;
 }
@@ -156,7 +156,7 @@ section{width: 100%;}
     box-sizing: border-box;
 }
 .int_box h3{    font-size: 45px;   font-weight: bold; }
-.int_box p{font-size: 30px; width: 500px; line-height: 35px;margin: 55px 0 35px;}
+.int_box p{font-size: 30px; width: 500px; line-height: 45px;margin: 55px 0 35px;}
 .int_box ul{
     display: flex;
     justify-content: center;
@@ -468,6 +468,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 .notice ul:hover{
     background: #00a25c15;
 }
+
 .notice ul li{
     flex: none;
     position: relative;
@@ -485,6 +486,17 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     transition: 0.5s all ease 0s;
     box-sizing: border-box;
 }
+.notice ul li>span{  font-size: 15px;}
+.notice ul>li:first-of-type{
+    background: none;
+    height: 100%;
+}
+.notice ul>.n_title span{
+    font-size:20px;
+    color: black;
+}
+
+
 .notice ul li:hover{    transform: scale(1.05);}
 .notice ul li:hover .n_badge{
     width: 100%;
@@ -500,9 +512,6 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     display: block;
     color: black;
     margin-bottom: 20px;
-}
-.notice ul li>span{
-    font-size: 15px;
 }
 
 .n_badge{
@@ -710,9 +719,9 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     border-radius: 20px;
     overflow: hidden;
 }
-.p_1{   opacity: 0;
+.p_1,.p_3 {   opacity: 0;
      margin-right: 300px;}
-.p_2{opacity: 0;
+.p_2,.p_4{opacity: 0;
     flex-flow: row-reverse;
     margin-left: 300px;
 }
@@ -722,12 +731,13 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     font-weight: 500;
 }
 .P_C_box a:hover p{ color: #00A25B;}
-.p_1 img,.p_2 img{
+
+.p_3 img,.p_4 img,.p_1 img,.p_2 img{
     object-fit: fill;
     width: 300px;
     height: 300px;
 }
-.p_1 div,.p_2 div{
+.p_1 div,.p_2 div,.p_3 div,.p_4 div{
     width: 400px;
     height: 300px;
     background: white;
@@ -757,7 +767,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 .c_content_box{
     margin: 0 auto;
     width: 1420px;
-    padding: 50px 150px;
+    padding: 150px 200px;
     box-sizing: border-box;
 }
 .c_content_box h3{ 
@@ -772,7 +782,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     font-size: 30px;
     font-weight: 400;
     letter-spacing: -0.6px;
-    margin: 55px 0 35px;
+    margin: 40px 0 100px;
 }
 .c_content_box>div{
     display: flex;

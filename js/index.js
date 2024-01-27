@@ -175,7 +175,8 @@ function 함수이름(){
             if(sct>1400){$('.w_content').addClass('u_to_d')}
             if(sct>3700){$('.p_1').addClass('left_to_right')}
             if(sct>4100){$('.p_2').addClass('right_to_left')}
-            
+            if(sct>4500){$('.p_3').addClass('left_to_right')}
+            if(sct>4800){$('.p_4').addClass('right_to_left')}
         console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
     })
     }else if(1024 <= ww <1440) {
@@ -185,8 +186,10 @@ function 함수이름(){
             if(sct>150){$('.int_box').addClass('left_to_right')}
             if(sct>600){$('.new_family').addClass('right_to_left')}
             if(sct>1100){$('.w_content').addClass('u_to_d')}
-            if(sct>4200){$('.p_1').addClass('d_to_u')}
-            if(sct>4200){$('.p_2').addClass('u_to_d')}
+            if(sct>4200){$('.p_1').addClass('left_to_right')}
+            if(sct>4400){$('.p_2').addClass('right_to_left')} 
+            if(sct>4600){$('.p_3').addClass('left_to_right')}
+            if(sct>4800){$('.p_4').addClass('right_to_left')}
         console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
     })
     }else if(768 <= ww <1024) {
@@ -218,12 +221,10 @@ function 함수이름(){
             if(sct>120){$('.int_box').addClass('left_to_right')}
             if(sct>850){$('.new_family').addClass('right_to_left')}
             if(sct>950){$('.w_content').addClass('u_to_d')}
-              
-        console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)
-    
             
+        console.log(sct);	// 스크롤할때마다 해당 스크롤 위치 좌표값(높이)          
     })
- 
+
     }
 
 }
@@ -233,21 +234,21 @@ function 함수이름(){
 
 
 
-
-
+// console.log(list2)
 let count = 0
+let list2 = $('.w_list>li').length
 $(".btn_next").click(function(){
     count++
-    if(count>9){count=0}
+    if(count>list2-4){count=0}
     // 기차칸 li태그가 전부 선택되서 on클래스가 지워지고
     // 순번에 맞는 기차칸 li태그만 on클래스가 추가가 되면 됨
-    $(".w_list").css("transform",`translateX(${10*-count}%)`)
+    $(".w_list").css("transform",`translateX(${(-100/list2*count)}%)`)
    
 })
 $(".btn_prev").click(function(){
     count--
-    if(count<0){count=9}
-    $(".w_list").css("transform",`translateX(${10*-count}%)`)
+    if(count<0){count=list2-4}
+    $(".w_list").css("transform",`translateX(${(-100/10*count)}%)`)
 
 })
   
