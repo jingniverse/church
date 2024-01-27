@@ -95,7 +95,6 @@
     .lnb>li.on{  opacity: 1;  height: 50px;}
     .lnb.active>li{  height: 50px;  opacity: 1;}
     .lnb>li.on{    background: #FFF;    color: #0e4194;}
-    .lnb>li:hover{background: #0e4194;color: #FFF;}
     /* 서브메뉴 끝 */
     /* 메인소개 */
     .worship_service{    width: 100%;}
