@@ -69,7 +69,7 @@ header .menu{
 /* 헤더끝 */
 
 /* 배너시작 */
-.banner{width: 100%;height: 700px;  background-size: 100% 700px;}
+.banner{width: 100%;height: 500px;  background-size: 100% 500px;}
 .banner article{left: 50%;    width: 280px;}
 /* 배너필터처리 */
 /* 배너 글꾸미기 */

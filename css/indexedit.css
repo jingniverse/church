@@ -82,7 +82,7 @@ section{width: 100%;}
     position: relative;
     width: 100%;
     height: 950px;
-    background: url(../img/mainback.png) no-repeat 0 0/ contain;
+    background: url(../img/main_back2.jpg) no-repeat 0 0/ cover;
     background-size: 100% 950px;    
 }
 .banner::after{
