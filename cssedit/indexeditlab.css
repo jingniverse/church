@@ -13,7 +13,7 @@ header>div{    width: 100%;}
 }
 /* 헤더 끝 */
 /* 배너시작 */
-.banner{    height: 750px;    background-size: 100% 750px;    }
+.banner{    height: 750px;    background-size: 1440px 750px;    }
 .banner>article{    width: 420px;}
 .b_writing1{    width: 400px;    height: 130px;}
 .b_writing1 p{width: 430px;font-size: 50px;transform: translate(12%,-25%);}
@@ -76,12 +76,9 @@ header>div{    width: 100%;}
 .c_content_box>p{    font-size: 23px;    margin: 50px 0 30px;}
 .c_content_box a{    height: 100px;    padding:30px 40px;}
 .c_content_box a+a{    margin-left: 100px;}
-.c_content_box a:first-of-type::after{background-size: 60px;}
-.c_content_box a:nth-of-type(2)::after{background-size: 80px;}
-.c_content_box a:last-of-type::after{background-size: 70px;}
-.c_content_box a:first-of-type:hover::after{background-size:60px;}
-.c_content_box a:nth-of-type(2):hover::after{background-size:80px;}
-.c_content_box a:last-of-type:hover::after{background-size:70px;}
+.c_content_box a::after{ top: 20px; left: 30px; width: 60px; height: 60px; background-size: 60px 60px;}
+.c_content_box a:hover::after{ background-size: 60px;}
+
 footer>section{width: 1000px;padding: 40px 20px;}
 footer section>article{ width: 50%;}
 .footer_left ul{    width: 100%;}
@@ -100,51 +97,5 @@ footer section>article{ width: 50%;}
     }
 }
 
-
-
-@keyframes bing2{
-    33%{ 
-        background: url(../img/문의.png) no-repeat top 20px left 30px ;
-        background-size: 70px;
-    }
-    66%{
-        background: url(../img/문의.png) no-repeat bottom 20px left 30px ;
-        background-size: 70px;
-    }
-    100%{
-        background: url(../img/문의.png) no-repeat center left 30px;
-        background-size: 70px;
-    }
-}
-
-@keyframes u_d{
-    33%{ 
-        background: url(../img/heart.png) no-repeat top 30px left 30px ;
-        background-size: 60px;
-    }
-    66%{
-        background: url(../img/heart.png) no-repeat bottom 30px left 30px ;
-        background-size: 60px;
-    }
-    100%{
-        background: url(../img/heart.png) no-repeat center left 30px;
-        background-size: 60px;
-    }
-}
-
-@keyframes house{
-    33%{ 
-        background: url(../img/house.png) no-repeat top 30px left 30px ;
-        background-size: 80px;
-    }
-    66%{
-        background: url(../img/house.png) no-repeat bottom 30px left 30px ;
-        background-size: 80px;
-    }
-    100%{
-        background: url(../img/house.png) no-repeat center left 30px;
-        background-size: 80px;
-    }
-}
 
 }

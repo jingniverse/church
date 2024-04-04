@@ -65,7 +65,7 @@ header .menu{display: block;cursor: pointer;width: 40px;height: 40px;border: non
 /* 헤더끝 */
 
 /* 배너시작 */
-.banner{width: 100%;height: 600px;  background-size: 100% 600px;}
+.banner{width: 100%;height: 600px;  background-size:767px 600px;}
 .banner article{left: 40%;    width: 350px;}
 /* 배너필터처리 */
 /* 배너 글꾸미기 */
@@ -126,7 +126,7 @@ ul li.circle:first-of-type>a::before{background-size:70px;}
 .news_content{width: 450px;}
 .notice{margin:0 auto;flex-flow: column;align-items: center;}
 .notice ul{width: 450px;}
-.notice>li{font-size: 25px;}
+.notice>li{font-size: 25px; width: 450px;}
 .notice>li+li{margin-top: 50px;}
 .notice>li::before{width: 30px;height: 30px;}
 /* 최신소식,공지사항 */
@@ -160,12 +160,8 @@ ul li.circle:first-of-type>a::before{background-size:70px;}
 .c_content_box>div{height: 100%;align-items:flex-end;flex-flow: column;}
 .c_content_box a+a{margin-left: 0;margin-top: 35px;}
 .c_content_box>div a{padding:20px 30px;width:220px;height:70px;    font-size: 20px;}
-.c_content_box a:first-of-type::after{background-size: 55px;}
-.c_content_box a:nth-of-type(2)::after{background-size: 70px;}
-.c_content_box a:last-of-type::after{background-size: 60px;}
-.c_content_box a:first-of-type:hover::after{background-size:55px;}
-.c_content_box a:nth-of-type(2):hover::after{background-size:70px;}
-.c_content_box a:last-of-type:hover::after{background-size:60px;}
+.c_content_box a::after{ top: 10px; left: 30px; width: 50px; height: 50px; background-size: 50px 50px;}
+.c_content_box a:hover::after{ background-size: 50px;} 
 /* 상담페이지 박스 끝 */
 /* 상담페이지 끝  */
 footer{width: 100%; height: 400px;}
@@ -199,49 +195,21 @@ footer article:last-of-type p{ display: flex;justify-content: center;align-items
         transform: translateX(0px);
     }
 }
-@keyframes bing2{
-    33%{ 
-        background: url(../img/문의.png) no-repeat top 20px left 30px ;
-        background-size: 60px;
+@keyframes last{
+    0%{ 
+        transform: translateY(0px);
     }
-    66%{
-        background: url(../img/문의.png) no-repeat bottom 20px left 30px ;
-        background-size:  60px;
+    25%{
+        transform: translateY(10px);
     }
-    100%{
-        background: url(../img/문의.png) no-repeat center left 30px;
-        background-size:  60px;
-
+    50%{
+        transform: translateY(0px);
     }
-}
-
-@keyframes u_d{
-    33%{ 
-        background: url(../img/heart.png) no-repeat top 30px left 30px ;
-        background-size: 55px;
-    }
-    66%{
-        background: url(../img/heart.png) no-repeat bottom 30px left 30px ;
-        background-size: 55px;
+    75%{
+        transform: translateY(-10px);
     }
     100%{
-        background: url(../img/heart.png) no-repeat center left 30px;
-        background-size: 55px;
-    }
-}
-
-@keyframes house{
-    33%{ 
-        background: url(../img/house.png) no-repeat top 30px left 30px ;
-        background-size: 70px
-    }
-    66%{
-        background: url(../img/house.png) no-repeat bottom 30px left 30px ;
-        background-size: 70px
-    }
-    100%{
-        background: url(../img/house.png) no-repeat center left 30px;
-        background-size: 70px
+        transform: translateY(0px);
     }
 }
 

@@ -444,7 +444,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 .notice ul{
     width: 100%;
     font-size: 18px;
-    background: #00a25c15;
+    background: #04ff9215;
     padding: 50px;
     border-radius: 10px;
     display: flex;
@@ -466,7 +466,7 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     border-radius: 0 20px 20px 0;
 } */
 .notice ul:hover{
-    background: #00a25c15;
+    background: #05dc7f;
 }
 
 .notice ul li{
@@ -494,6 +494,8 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 .notice ul>.n_title span{
     font-size:20px;
     color: black;
+    font-family: Gmarket;
+    font-weight: bold;
 }
 
 
@@ -513,7 +515,12 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
     color: black;
     margin-bottom: 20px;
 }
-
+.notice ul li a span{
+    font-family: Gmarket;
+    width: 100%;
+    display: flex;
+    letter-spacing: -.4px;
+}
 .n_badge{
     position: absolute;
     left:50%;
@@ -808,43 +815,27 @@ ul li.circle:last-of-type>a::before{background: url(../img/문의하기아이콘
 .c_content_box a::after{
     position: absolute;
     content: "";
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
+    width: 80px;
+    height: 80px;
+    top:20px;
+    left: 20px;
+    background-size: 80px 80px;
+
 }
 
 .c_content_box a:first-of-type::after{
-    background: url(../img/heart.png) no-repeat center left 30px;
-    background-size: 80px 80px;
+    background: url(../img/counsel.svg) no-repeat center ;
 }
 .c_content_box a:nth-of-type(2)::after{
-    background: url(../img/house.png) no-repeat center left 30px;
-    background-size: 100px 100px;
+    background: url(../img/home.svg) no-repeat center ;
 }
 .c_content_box a:last-of-type::after{
-    background: url(../img/문의.png) no-repeat center left 30px;
-    background-size: 100px 100px;
+    background: url(../img/qa.svg) no-repeat center ;
 }
-
-
-.c_content_box a:first-of-type:hover::after{
-    animation: u_d 3s infinite linear 0s;
+.c_content_box a:hover::after{
+    animation: last 3s infinite linear 0s;
     background-size: 80px;
 }
-.c_content_box a:nth-of-type(2):hover::after{
-    background-size: 100px ;
-    animation: house 3s infinite linear 0s;
-
-}
-.c_content_box a:last-of-type:hover::after{
-    background-size: 100px ;
-    animation: bing2 3s infinite linear 0s;
-}
-
-
-
-
 
 footer{
     width: 100%;
@@ -997,52 +988,24 @@ address span{
     }
 }
 
-
-
-@keyframes bing2{
-    33%{ 
-        background: url(../img/문의.png) no-repeat top 20px left 30px ;
-        background-size: 100px 100px;
+@keyframes last{
+    0%{ 
+        transform: translateY(0px);
     }
-    66%{
-        background: url(../img/문의.png) no-repeat bottom 20px left 30px ;
-        background-size: 100px 100px;
+    25%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-15px);
     }
     100%{
-        background: url(../img/문의.png) no-repeat center left 30px;
-background-size: 100px 100px;
+        transform: translateY(0px);
     }
 }
 
-@keyframes u_d{
-    33%{ 
-        background: url(../img/heart.png) no-repeat top 30px left 30px ;
-        background-size: 80px 80px;
-    }
-    66%{
-        background: url(../img/heart.png) no-repeat bottom 30px left 30px ;
-        background-size: 80px 80px;
-    }
-    100%{
-        background: url(../img/heart.png) no-repeat center left 30px;
-        background-size: 80px 80px;
-    }
-}
-
-@keyframes house{
-    33%{ 
-        background: url(../img/house.png) no-repeat top 30px left 30px ;
-        background-size: 100px 100px;
-    }
-    66%{
-        background: url(../img/house.png) no-repeat bottom 30px left 30px ;
-        background-size: 100px 100px;
-    }
-    100%{
-        background: url(../img/house.png) no-repeat center left 30px;
-        background-size: 100px 100px;
-    }
-}
 
   
 @keyframes left_to_right {
