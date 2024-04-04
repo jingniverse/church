@@ -859,6 +859,7 @@ footer article{
     width: 50%;
 }
 footer .logo a{
+    width: 210px;
     justify-content: flex-start;
 }
 footer article:last-of-type{
