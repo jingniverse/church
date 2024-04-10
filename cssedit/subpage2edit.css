@@ -251,7 +251,13 @@ text-align: right; margin-top: 30px;}
     font-size: 20px;
     font-weight: 500;
     letter-spacing: -0.4px; 
+    justify-content: space-between;
+    display: flex;
 }
+.w_box p:nth-of-type(2) span{
+    margin-left: auto;
+}
+
 .w_box p:nth-of-type(3){
     display: flex;
     justify-content: space-between;
