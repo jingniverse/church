@@ -55,6 +55,8 @@ header>div{
 .gnb>li{
     position: relative;
     width: 130px;
+    flex: none;
+
 }
 .gnb>li+li{margin-left: 70px;}
 .gnb>li>a{
@@ -861,6 +863,7 @@ footer article{
 footer .logo a{
     width: 210px;
     justify-content: flex-start;
+    flex: none;
 }
 footer article:last-of-type{
     width: 100%;
