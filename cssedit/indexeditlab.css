@@ -68,7 +68,7 @@ header>div{    width: 100%;}
 .p_2,.p_4{    margin-left: 0px;}
 .P_C_box a p{    margin-bottom: 20px;}
 .p_1 img,.p_2 img,.p_3 img,.p_4 img{width: 400px; height: 250px;} 
-.p_1 div,.p_2 div,.p_1 div,.p_2 div{width: 400px; height: 150px;padding: 25px;}
+.p_1 div,.p_2 div,.p_3 div,.p_4 div{width: 400px; height: 150px;padding: 25px;}
 .P_C_box a span{    letter-spacing: 1px;}
 /* 기도 끝*/
 .c_content_box{    width: 1000px;    padding: 50px 0px;}
